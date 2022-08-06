@@ -1,0 +1,29 @@
+==24090== Memcheck, a memory error detector
+==24090== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==24090== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==24090== Command: /rhome/j/jhasanovic1/workspace/OR/Z2/Z3/.runme
+==24090== Parent PID: 24077
+==24090== 
+==24090== Conditional jump or move depends on uninitialised value(s)
+==24090==    at 0x1087EF: main (main.c:12)
+==24090== 
+==24090== 
+==24090== Process terminating with default action of signal 1 (SIGHUP)
+==24090==    at 0x514E152: write (write.c:27)
+==24090==    by 0x50C91BC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
+==24090==    by 0x50C9B2E: new_do_write (fileops.c:457)
+==24090==    by 0x50C9B2E: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1277)
+==24090==    by 0x509C706: buffered_vfprintf (vfprintf.c:2350)
+==24090==    by 0x5099725: vfprintf (vfprintf.c:1301)
+==24090==    by 0x50A2F25: printf (printf.c:33)
+==24090==    by 0x1087CB: main (main.c:10)
+==24090== 
+==24090== HEAP SUMMARY:
+==24090==     in use at exit: 0 bytes in 0 blocks
+==24090==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==24090== 
+==24090== All heap blocks were freed -- no leaks are possible
+==24090== 
+==24090== For counts of detected and suppressed errors, rerun with: -v
+==24090== Use --track-origins=yes to see where uninitialised values come from
+==24090== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)

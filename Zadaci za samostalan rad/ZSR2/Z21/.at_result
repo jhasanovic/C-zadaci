@@ -1,0 +1,102 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:28:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if(d==4)\n       ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "28",
+                "col": "7",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9550/main.c:28:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if(d==4)       ^~",
+                "code": "if(d==4)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "5387": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite trenutno vrijeme (hh:mm): Unesite redni broj dana u sedmici: Pas ce pojesti 1.91kg hrane, od toga 0.64kg mesa i 1.27kg ostale hrane.\nMacka ce pojesti 1.28kg hrane.\nKornjaca ce pojesti 0.15kg hrane.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5388": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite trenutno vrijeme (hh:mm): Unesite redni broj dana u sedmici: Pas ce pojesti 1.47kg hrane, od toga 0.49kg mesa i 0.98kg ostale hrane.\nMacka ce pojesti 1.17kg hrane.\nKornjaca ce pojesti 0.12kg hrane.\nKornjaca ce dobiti i kalcij posto je cetvrtak.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5389": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite trenutno vrijeme (hh:mm): Unesite redni broj dana u sedmici: Pas ce pojesti 1.15kg hrane, od toga 0.38kg mesa i 0.76kg ostale hrane.\nMacka ce pojesti 0.54kg hrane.\nKornjaca ce pojesti 0.10kg hrane.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5390": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite trenutno vrijeme (hh:mm): Unesite redni broj dana u sedmici: Pas ce dobiti 42 kreker/a.\nMacka ce pojesti 1.81kg hrane.\nKornjaca ce pojesti 0.16kg hrane.\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5391": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite trenutno vrijeme (hh:mm): Unesite redni broj dana u sedmici: Ljubimci ne smiju jesti prije 8:00h!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1571947029
+}

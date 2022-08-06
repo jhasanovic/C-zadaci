@@ -1,0 +1,102 @@
+{
+    "id": 5582,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 5, zadatak 1",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT1: Tri tima, dva su izba\u010dena *\/\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "3\nSloboda\n3\n6\n1\n18\n19\nSarajevo\n5\n4\n1\n21\n16\nZeljeznicar\n7\n3\n2\n23\n20"
+            },
+            "expected": [
+                "Unesite broj timova: Unesite naziv 1. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova: \\nUnesite naziv 2. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 3. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nNajvecu gol razliku ima:\\nZeljeznicar\\nTabela nakon izbacivanja:\\n1. Zeljeznicar"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT2: 4 tima, 2 su izbacena imaju po 19 bodova, top 2 imaju jednake bodove (dva tacna rjesenja) *\/\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\nSloboda\n5\n4\n7\n13\n13\nSarajevo\n13\n4\n2\n43\n15\nZeljeznicar\n5\n4\n7\n28\n22\nZrinjski\n13\n4\n2\n30\n16"
+            },
+            "expected": [
+                "Unesite broj timova: Unesite naziv 1. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova: \\nUnesite naziv 2. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 3. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 4. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nNajvecu gol razliku ima:\\nSarajevo\\nTabela nakon izbacivanja:\\n1. Sarajevo\\n2. Zrinjski",
+                "Unesite broj timova: Unesite naziv 1. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova: \\nUnesite naziv 2. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 3. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 4. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nNajvecu gol razliku ima:\\nSarajevo\\nTabela nakon izbacivanja:\\n1. Zrinjski\\n2. Sarajevo"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT3: Tim sa razmacima u imenu, najbolja gol razlika je izbacen i ne treba ga ispisati *\/\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\nTuzla City\n5\n4\n7\n19\n3\nBorac\n13\n4\n2\n30\n15\nMladost Doboj Kakanj\n8\n4\n7\n40\n22\nVelez\n13\n5\n2\n30\n16"
+            },
+            "expected": [
+                "Unesite broj timova: Unesite naziv 1. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova: \\nUnesite naziv 2. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 3. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 4. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nNajvecu gol razliku ima:\\nMladost Doboj Kakanj\\nTabela nakon izbacivanja:\\n1. Velez\\n2. Borac\\n3. Mladost Doboj Kakanj"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT4: Nijedan nije izbacen, posljednji ima najbolju gol razliku *\/\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\nSloboda\n5\n5\n7\n29\n13\nCelik\n13\n4\n2\n30\n15\nSarajevo\n8\n4\n7\n28\n22\nZeljeznicar\n13\n5\n2\n30\n16"
+            },
+            "expected": [
+                "Unesite broj timova: Unesite naziv 1. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova: \\nUnesite naziv 2. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 3. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nUnesite naziv 4. tima: Broj pobjeda: Broj nerijesenih: Broj poraza: Broj datih golova: Broj primljenih golova:\\nNajvecu gol razliku ima:\\nSloboda\\nTabela nakon izbacivanja:\\n1. Zeljeznicar\\n2. Celik\\n3. Sarajevo\\n4. Sloboda"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,97 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:35:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if(a!=1 || (n-(long int)n)!=0 ) {\n       ^~\nmain.c:35:29: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n   if(a!=1 || (n-(long int)n)!=0 ) {\n                             ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "35",
+                "col": "7",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_6913/main.c:35:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if(a!=1 || (n-(long int)n)!=0 ) {       ^~",
+                "code": "if(a!=1 || (n-(long int)n)!=0 ) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "35",
+                "col": "29",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_6913/main.c:35:29: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]   if(a!=1 || (n-(long int)n)!=0 ) {                             ^~",
+                "code": "if(a!=1 || (n-(long int)n)!=0 ) {"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1179": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite cijeli broj: Unos pogresan!\nUnesite cijeli broj: Unos pogresan!\nUnesite cijeli broj: Prosjek je: 3",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1180": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite cijeli broj: Unos pogresan!\nUnesite cijeli broj: Unos pogresan!\nUnesite cijeli broj: Prosjek je: 5",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1181": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite cijeli broj: Prosjek je: 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1182": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite cijeli broj: Prosjek je: 4",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580006498
+}

@@ -1,0 +1,63 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "6452": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite n: Unesite korak diskretizacije: Unesite pocetnu vrijednost x: x     y=f(x)\n------------\n0.0    14.00\n1.0    13.00\n2.0    28.00\n3.0    65.00\n4.0   130.00\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6453": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite n: Unesite korak diskretizacije: Unesite pocetnu vrijednost x: x     y=f(x)\n------------\n5.0   229.00\n7.0   553.00\n9.0  1085.00\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6454": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite n: Unesite korak diskretizacije: Unesite pocetnu vrijednost x: x     y=f(x)\n------------\n4.0   130.00\n6.0   368.00\n8.0   790.00\n10.0  1444.00\n12.0  2378.00\n14.0  3640.00\n16.0  5278.00\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1572875119
+}

@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z2/main.c: In function ‘pronadji_posljednji’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z2/main.c:30:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+             if(*s2=='\0'){vraceno= pok-pocetak;
+                                  ^
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z2/main.c:38:26: warning: return makes integer from pointer without a cast [-Wint-conversion]
+         if(br!=0) return vraceno;
+                          ^~~~~~~

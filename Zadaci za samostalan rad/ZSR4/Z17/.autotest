@@ -1,0 +1,119 @@
+{
+    "id": 4107,
+    "name": "Osnove ra\u010dunarstva (2017\/2018), ZSR4, zadatak 17",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n-3 3\n-1"
+            },
+            "expected": [
+                "Unesite dimenziju: Unesite (x y):          ^\\n         |\\n      x  |\\n         |\\n         |\\n<--------+-------->\\n         |\\n         |\\n         |\\n         |\\n         v\\n\\nUnesite dimenziju: Zavrsio!\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n8 4\n-1"
+            },
+            "expected": [
+                "Unesite dimenziju: Unesite (x y):          ^\\n         |       x\\n         |\\n         |\\n         |\\n<--------+-------->\\n         |\\n         |\\n         |\\n         |\\n         v\\n\\n\\nUnesite dimenziju: Zavrsio!\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n0 2\n4\n0 0\n-1"
+            },
+            "expected": [
+                "Unesite dimenziju: Unesite (x y):          ^\\n         |\\n         |\\n         x\\n         |\\n<--------+-------->\\n         |\\n         |\\n         |\\n         |\\n         v\\n\\nUnesite dimenziju: Unesite (x y):          ^\\n         |\\n         |\\n         |\\n         |\\n<--------x-------->\\n         |\\n         |\\n         |\\n         |\\n         v\\n\\nUnesite dimenziju: Zavrsio!\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4\n8 5"
+            },
+            "expected": [
+                "Unesite dimenziju: Unesite (x y): Koordinate tacke izvan opsega!\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,101 @@
+{
+    "id": 1172,
+    "name": "Osnove ra\u010dunarstva (2018\/2019), ZSR 8, zadatak 4",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1239,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1 [10] = {1,2,3,4,5,6,7,8,9,10};\nint niz2 [10];\nprekopiraj(niz1, niz2, 10);\nint i;\nfor(i=0; i<10; i++) printf(\"%d \",niz2[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 2 3 4 5 6 7 8 9 10 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1240,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[5]={0,0,0,0,5};\nint niz2[5];\nprekopiraj(niz1,niz2,5);\nint i;\nfor(i=0; i<5; i++) {\n    printf(\"%d \",niz2[i]);\n}",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 0 0 0 5"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1241,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[7]={-1,-5,0,-2,-19,-9,-1};\nint niz2[7];\nprekopiraj(niz1,niz2,7);\nint i;\nfor(i=0; i<7; i++) {\n\tprintf(\"%d \",niz2[i]);\n}\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "-1 -5 0 -2 -19 -9 -1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1242,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[8]={-13313123, 88888888, 99999999, 62626262, 63425364,-95867564,-98987777,11111111};\nint niz2[8];\nprekopiraj(niz1,niz2,8);\nint i;\nfor(i=0; i<8; i++) {\n\tprintf(\"%d \",niz2[i]);\n}\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "-13313123 88888888 99999999 62626262 63425364 -95867564 -98987777 11111111"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

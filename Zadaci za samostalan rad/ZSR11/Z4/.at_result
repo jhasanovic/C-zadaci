@@ -1,0 +1,153 @@
+{
+    "buildhost_description": {
+        "id": "lab002-c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n"
+    },
+    "tools": {
+        "compile": "gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+        "compile[debug]": "gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+        "debug": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-92.el6)",
+        "profile[memcheck]": "valgrind-3.8.1",
+        "profile[sgcheck]": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "test_results": {
+        "1388": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:34: error: storage size of ‘c’ isn’t known\nmain.c:43: error: storage size of ‘t1’ isn’t known",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1389": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:34: error: storage size of ‘c’ isn’t known\nmain.c:43: error: array type has incomplete element type",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1402": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:33: error: storage size of ‘c’ isn’t known\nmain.c:44: error: array type has incomplete element type",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1463": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:34: error: array type has incomplete element type",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1464": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:34: error: storage size of ‘c’ isn’t known",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1465": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:33: error: storage size of ‘c’ isn’t known",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1466": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:33: error: storage size of ‘c’ isn’t known",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1467": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "main.c: In function ‘main’:\nmain.c:33: error: storage size of ‘c’ isn’t known",
+                    "exit_code": 1,
+                    "success": false,
+                    "parsed_output": []
+                }
+            }
+        }
+    },
+    "time": 1580056924
+}

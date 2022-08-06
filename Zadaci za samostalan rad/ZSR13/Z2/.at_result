@@ -1,0 +1,190 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘ucitaj’:\nmain.c:19:28: warning: unknown conversion type character 0xa in format [-Wformat=]\n while (fscanf(ulaz,\"%30s%d%\\n\",gradovi[i].naziv,&gradovi[i].br_stanovnika)==2&& i<n)\n                            ^\nmain.c:19:1: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation]\n while (fscanf(ulaz,\"%30s%d%\\n\",gradovi[i].naziv,&gradovi[i].br_stanovnika)==2&& i<n)\n ^~~~~\nmain.c:22:9: note: ...this statement, but the latter is misleadingly indented as if it is guarded by the ‘while’\n         fclose(ulaz);\n         ^~~~~~\nmain.c:17:10: warning: unused variable ‘znak’ [-Wunused-variable]\n     char znak;\n          ^~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "19",
+                "col": "28",
+                "message": "unknown conversion type character 0xa in format",
+                "output": "/tmp/buildservice/bs_6727/main.c:19:28: warning: unknown conversion type character 0xa in format [-Wformat=] while (fscanf(ulaz,\"%30s%d%\\n\",gradovi[i].naziv,&gradovi[i].br_stanovnika)==2&& i<n)                            ^",
+                "code": "while (fscanf(ulaz,\"%30s%d%\\n\",gradovi[i].naziv,&gradovi[i].br_stanovnika)==2&& i<n)"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "19",
+                "col": "1",
+                "message": "this 'while' clause does not guard...",
+                "output": "/tmp/buildservice/bs_6727/main.c:19:1: warning: this ‘while’ clause does not guard... [-Wmisleading-indentation] while (fscanf(ulaz,\"%30s%d%\\n\",gradovi[i].naziv,&gradovi[i].br_stanovnika)==2&& i<n) ^~~~~",
+                "code": "while (fscanf(ulaz,\"%30s%d%\\n\",gradovi[i].naziv,&gradovi[i].br_stanovnika)==2&& i<n)"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "17",
+                "col": "10",
+                "message": "unused variable 'znak'",
+                "output": "/tmp/buildservice/bs_6727/main.c:17:10: warning: unused variable ‘znak’ [-Wunused-variable]     char znak;          ^~~~",
+                "code": "char znak;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1755": {
+            "status": 6,
+            "run_result": {
+                "output": "3\nSarajevo,345123\nTuzla,123456\nMostar,101010\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1756": {
+            "status": 1,
+            "run_result": {
+                "output": "New York                      \nLos Angeles                   \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1757": {
+            "status": 6,
+            "run_result": {
+                "output": "1\nZenica                        \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1758": {
+            "status": 1,
+            "run_result": {
+                "output": "Izlaz glasi:",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1759": {
+            "status": 6,
+            "run_result": {
+                "output": "0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2273": {
+            "status": 1,
+            "run_result": {
+                "output": "New York                      \n\nNew Jersey                    \n\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2274": {
+            "status": 1,
+            "run_result": {
+                "output": "Gradovi sa slovom N su:",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2325": {
+            "status": 6,
+            "run_result": {
+                "output": "0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2326": {
+            "status": 6,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2327": {
+            "status": 1,
+            "run_result": {
+                "output": "0\nIzlaz glasi:",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580248995
+}

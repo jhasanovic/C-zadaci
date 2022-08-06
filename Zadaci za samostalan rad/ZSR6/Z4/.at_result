@@ -1,0 +1,102 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:29:11: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n  if(niz[i]==-0)\n           ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "29",
+                "col": "11",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_9770/main.c:29:11: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]  if(niz[i]==-0)           ^~",
+                "code": "if(niz[i]==-0)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1223": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 3 brojeva: \nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {123.4570000, 123.4550000, 12.3510000}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1224": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unos neispravan!\nUnesite broj elemenata niza: Unesite 1 brojeva: \nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {-999.999000}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1225": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 3 brojeva: \nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {1.0, 2.0, 3.0}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1227": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 3 brojeva: \nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {55555.00000, 0.00000, 55555.00000}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1229": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 2 brojeva: \nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {111, 0}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1574082877
+}

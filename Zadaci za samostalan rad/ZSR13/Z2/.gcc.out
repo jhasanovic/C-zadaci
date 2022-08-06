@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR13/Z2/main.c: In function ‘pretvori’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR13/Z2/main.c:12:6: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     p=G[i].naziv[0];
+      ^

@@ -1,0 +1,164 @@
+{
+    "id": 7168,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR10, zadatak 7",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1348,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf (\"%d\", je_li_palindrom(\"Kapak\"));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1349,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf (\"%d\", je_li_palindrom(\"K   a p ak\"));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1350,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf (\"%d\", je_li_palindrom(\"k   a   pa   a k\"));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1351,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf (\"%d\", je_li_palindrom(\"  Ana voli... Milovana!\"));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1352,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/ U zadatku kaze \"ignorirati sve znakove koji nisu slova i brojevi\"\n\/\/ Dakle ovo nije palindrom jer se brojevi razlikuju\n\nprintf (\"%d\", je_li_palindrom(\"2ana1\")); ",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1353,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf (\"%d\", je_li_palindrom(\"    \")); \/\/ Da li vraca 0 kada je prazan string?\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1354,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/Testira paran broj slova u recenici(mnogo rijedak palindrom sa parnim brojem slova)\nprintf (\"%d\", je_li_palindrom(\"U  Rimu  umiru\")); \/\/ Vazni su viska spacebarovi\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

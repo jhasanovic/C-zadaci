@@ -1,0 +1,143 @@
+{
+    "id": 1260,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 8, zadatak 5",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1261,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[10]={1,1,2,3,5,6,1,2,4,10};\n    int niz2[3]={1,2,3};\n    int k = izbaci_podniz(niz1, niz1+10, niz2, niz2+3);\n    int i;\n    for(i=0; i<10-k; i++) printf(\"%d \",niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 5 6 1 2 4 10 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1262,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[10]={1,1,2,3,5,6,1,2,3,10};\n    int niz2[3]={1,2,3};\n    int k = izbaci_podniz(niz1, niz1+10, niz2, niz2+3);\n    int i;\n    for(i=0; i<10-k; i++) printf(\"%d \",niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 5 6 10 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1263,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[12]={1,1,2,3,2,1,2,3,3,1,2,3};\n    int niz2[3]={1,2,3};\n    int k = izbaci_podniz(niz1, niz1+12, niz2, niz2+3);\n    int i;\n    for(i=0; i<12-k; i++) printf(\"%d \",niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                " "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1264,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[12]={1,1,2,3,2,1,2,3,3,1,2,3};\n    int niz2[3]={7,2,3};\n    int k = izbaci_podniz(niz1, niz1+12, niz2, niz2+3);\n    int i;\n    for(i=0; i<12-k; i++) printf(\"%d \",niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 2 3 2 1 2 3 3 1 2 3 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1265,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[12]={1,1,2,3,2,1,2,3,3,1,2,3};\n    int niz2[1]={3};\n    int k = izbaci_podniz(niz1, niz1+12, niz2, niz2+1);\n    int i;\n    for(i=0; i<12-k; i++) printf(\"%d \",niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 2 2 1 2 1 2 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1266,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1[12]={1,1,2,3,2,1,2,3,3,1,2,9};\n    int niz2[1]={9};\n    int k = izbaci_podniz(niz1, niz1+12, niz2, niz2+1);\n    int i;\n    for(i=0; i<12-k; i++) printf(\"%d \",niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 2 3 2 1 2 3 3 1 2 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

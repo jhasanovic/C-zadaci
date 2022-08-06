@@ -1,0 +1,175 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2229": {
+            "status": 6,
+            "run_result": {
+                "output": "ZSR 10, Zadatak 15",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2230": {
+            "status": 6,
+            "run_result": {
+                "output": "ZSR 10, Zadatak 15",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2231": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2231.c: In function ‘main’:\nbs_test_2231.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration]\n cenzura(t,izbaci);\n ^~~~~~~\n/tmp/cch92b8O.o: In function `main':\nbs_test_2231.c:(.text+0x8e): undefined reference to `cenzura'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "1",
+                        "message": "implicit declaration of function 'cenzura'",
+                        "output": "/tmp/buildservice/bs_2725/bs_test_2231.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration] cenzura(t,izbaci); ^~~~~~~/tmp/cch92b8O.o: In function `main':bs_test_2231.c:(.text+0x8e): undefined reference to `cenzura'collect2: error: ld returned 1 exit status",
+                        "code": "cenzura(t,izbaci);"
+                    }
+                ]
+            }
+        },
+        "2232": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2232.c: In function ‘main’:\nbs_test_2232.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration]\n cenzura(_tekst,_cenzura);\n ^~~~~~~\n/tmp/cc8wvSzS.o: In function `main':\nbs_test_2232.c:(.text+0xae): undefined reference to `cenzura'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "1",
+                        "message": "implicit declaration of function 'cenzura'",
+                        "output": "/tmp/buildservice/bs_2725/bs_test_2232.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration] cenzura(_tekst,_cenzura); ^~~~~~~/tmp/cc8wvSzS.o: In function `main':bs_test_2232.c:(.text+0xae): undefined reference to `cenzura'collect2: error: ld returned 1 exit status",
+                        "code": "cenzura(_tekst,_cenzura);"
+                    }
+                ]
+            }
+        },
+        "2233": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2233.c: In function ‘main’:\nbs_test_2233.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration]\n cenzura(_tekst,_cenzura);\n ^~~~~~~\n/tmp/cc8JSRgQ.o: In function `main':\nbs_test_2233.c:(.text+0xa4): undefined reference to `cenzura'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "1",
+                        "message": "implicit declaration of function 'cenzura'",
+                        "output": "/tmp/buildservice/bs_2725/bs_test_2233.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration] cenzura(_tekst,_cenzura); ^~~~~~~/tmp/cc8JSRgQ.o: In function `main':bs_test_2233.c:(.text+0xa4): undefined reference to `cenzura'collect2: error: ld returned 1 exit status",
+                        "code": "cenzura(_tekst,_cenzura);"
+                    }
+                ]
+            }
+        },
+        "2252": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2252.c: In function ‘main’:\nbs_test_2252.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration]\n cenzura(__tekst,__cenzura);\n ^~~~~~~\n/tmp/ccsDRlfW.o: In function `main':\nbs_test_2252.c:(.text+0xe2): undefined reference to `cenzura'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "1",
+                        "message": "implicit declaration of function 'cenzura'",
+                        "output": "/tmp/buildservice/bs_2725/bs_test_2252.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration] cenzura(__tekst,__cenzura); ^~~~~~~/tmp/ccsDRlfW.o: In function `main':bs_test_2252.c:(.text+0xe2): undefined reference to `cenzura'collect2: error: ld returned 1 exit status",
+                        "code": "cenzura(__tekst,__cenzura);"
+                    }
+                ]
+            }
+        },
+        "2418": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2418.c: In function ‘main’:\nbs_test_2418.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration]\n cenzura(__tekst,__cenzura);\n ^~~~~~~\n/tmp/ccU3vZXZ.o: In function `main':\nbs_test_2418.c:(.text+0x91): undefined reference to `cenzura'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "1",
+                        "message": "implicit declaration of function 'cenzura'",
+                        "output": "/tmp/buildservice/bs_2725/bs_test_2418.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration] cenzura(__tekst,__cenzura); ^~~~~~~/tmp/ccU3vZXZ.o: In function `main':bs_test_2418.c:(.text+0x91): undefined reference to `cenzura'collect2: error: ld returned 1 exit status",
+                        "code": "cenzura(__tekst,__cenzura);"
+                    }
+                ]
+            }
+        },
+        "2419": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_2419.c: In function ‘main’:\nbs_test_2419.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration]\n cenzura(__tekst,__cenzura);\n ^~~~~~~\n/tmp/cc6BQGj5.o: In function `main':\nbs_test_2419.c:(.text+0x75): undefined reference to `cenzura'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 4,
+                        "col": "1",
+                        "message": "implicit declaration of function 'cenzura'",
+                        "output": "/tmp/buildservice/bs_2725/bs_test_2419.c:28:1: warning: implicit declaration of function ‘cenzura’ [-Wimplicit-function-declaration] cenzura(__tekst,__cenzura); ^~~~~~~/tmp/cc6BQGj5.o: In function `main':bs_test_2419.c:(.text+0x75): undefined reference to `cenzura'collect2: error: ld returned 1 exit status",
+                        "code": "cenzura(__tekst,__cenzura);"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1578317932
+}

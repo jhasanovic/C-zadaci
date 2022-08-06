@@ -1,0 +1,179 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘pronadji_posljednji’:\nmain.c:13:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=s1;\n                   ^~\nmain.c:30:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]\n             if(*s2=='\\0'){vraceno= pok-pocetak;\n                                  ^\nmain.c:38:26: warning: return makes integer from pointer without a cast [-Wint-conversion]\n         if(br!=0) return vraceno;\n                          ^~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "13",
+                "col": "19",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_9908/main.c:13:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=s1;                   ^~",
+                "code": "char *pok=s1;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "30",
+                "col": "34",
+                "message": "assignment makes pointer from integer without a cast",
+                "output": "/tmp/buildservice/bs_9908/main.c:30:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]             if(*s2=='\\0'){vraceno= pok-pocetak;                                  ^",
+                "code": "if(*s2=='\\0'){vraceno= pok-pocetak;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "38",
+                "col": "26",
+                "message": "return makes integer from pointer without a cast",
+                "output": "/tmp/buildservice/bs_9908/main.c:38:26: warning: return makes integer from pointer without a cast [-Wint-conversion]         if(br!=0) return vraceno;                          ^~~~~~~",
+                "code": "if(br!=0) return vraceno;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1388": {
+            "status": 1,
+            "run_result": {
+                "output": "8",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1388.c: In function ‘pronadji_posljednji’:\nbs_test_1388.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=s1;\n                   ^~\nbs_test_1388.c:32:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]\n             if(*s2=='\\0'){vraceno= pok-pocetak;\n                                  ^\nbs_test_1388.c:40:26: warning: return makes integer from pointer without a cast [-Wint-conversion]\n         if(br!=0) return vraceno;\n                          ^~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1388.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1388.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=s1;                   ^~",
+                        "code": "char *pok=s1;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1388.c",
+                        "line": "32",
+                        "col": "34",
+                        "message": "assignment makes pointer from integer without a cast",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1388.c:32:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]             if(*s2=='\\0'){vraceno= pok-pocetak;                                  ^",
+                        "code": "if(*s2=='\\0'){vraceno= pok-pocetak;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1388.c",
+                        "line": "40",
+                        "col": "26",
+                        "message": "return makes integer from pointer without a cast",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1388.c:40:26: warning: return makes integer from pointer without a cast [-Wint-conversion]         if(br!=0) return vraceno;                          ^~~~~~~",
+                        "code": "if(br!=0) return vraceno;"
+                    }
+                ]
+            }
+        },
+        "1389": {
+            "status": 1,
+            "run_result": {
+                "output": "15",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1389.c: In function ‘pronadji_posljednji’:\nbs_test_1389.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=s1;\n                   ^~\nbs_test_1389.c:32:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]\n             if(*s2=='\\0'){vraceno= pok-pocetak;\n                                  ^\nbs_test_1389.c:40:26: warning: return makes integer from pointer without a cast [-Wint-conversion]\n         if(br!=0) return vraceno;\n                          ^~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1389.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1389.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=s1;                   ^~",
+                        "code": "char *pok=s1;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1389.c",
+                        "line": "32",
+                        "col": "34",
+                        "message": "assignment makes pointer from integer without a cast",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1389.c:32:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]             if(*s2=='\\0'){vraceno= pok-pocetak;                                  ^",
+                        "code": "if(*s2=='\\0'){vraceno= pok-pocetak;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1389.c",
+                        "line": "40",
+                        "col": "26",
+                        "message": "return makes integer from pointer without a cast",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1389.c:40:26: warning: return makes integer from pointer without a cast [-Wint-conversion]         if(br!=0) return vraceno;                          ^~~~~~~",
+                        "code": "if(br!=0) return vraceno;"
+                    }
+                ]
+            }
+        },
+        "1390": {
+            "status": 1,
+            "run_result": {
+                "output": "15",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1390.c: In function ‘pronadji_posljednji’:\nbs_test_1390.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=s1;\n                   ^~\nbs_test_1390.c:32:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]\n             if(*s2=='\\0'){vraceno= pok-pocetak;\n                                  ^\nbs_test_1390.c:40:26: warning: return makes integer from pointer without a cast [-Wint-conversion]\n         if(br!=0) return vraceno;\n                          ^~~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1390.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1390.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=s1;                   ^~",
+                        "code": "char *pok=s1;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1390.c",
+                        "line": "32",
+                        "col": "34",
+                        "message": "assignment makes pointer from integer without a cast",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1390.c:32:34: warning: assignment makes pointer from integer without a cast [-Wint-conversion]             if(*s2=='\\0'){vraceno= pok-pocetak;                                  ^",
+                        "code": "if(*s2=='\\0'){vraceno= pok-pocetak;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1390.c",
+                        "line": "40",
+                        "col": "26",
+                        "message": "return makes integer from pointer without a cast",
+                        "output": "/tmp/buildservice/bs_9908/bs_test_1390.c:40:26: warning: return makes integer from pointer without a cast [-Wint-conversion]         if(br!=0) return vraceno;                          ^~~~~~~",
+                        "code": "if(br!=0) return vraceno;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580224101
+}

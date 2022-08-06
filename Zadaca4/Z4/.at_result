@@ -1,0 +1,210 @@
+{
+    "buildhost_description": {
+        "id": "lab002c02",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1074": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1074.c: In function ‘main’:\nbs_test_1074.c:14:9: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n int x = izracunaj (\"2+2\", &ok1);\n         ^~~~~~~~~\n/tmp/ccc87lU2.o: In function `main':\nbs_test_1074.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1074.c:(.text+0x5c): undefined reference to `izracunaj'\nbs_test_1074.c:(.text+0x75): undefined reference to `izracunaj'\nbs_test_1074.c:(.text+0x8e): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "9",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1074.c:14:9: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] int x = izracunaj (\"2+2\", &ok1);         ^~~~~~~~~/tmp/ccc87lU2.o: In function `main':bs_test_1074.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1074.c:(.text+0x5c): undefined reference to `izracunaj'bs_test_1074.c:(.text+0x75): undefined reference to `izracunaj'bs_test_1074.c:(.text+0x8e): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "int x = izracunaj (\"2+2\", &ok1);"
+                    }
+                ]
+            }
+        },
+        "1075": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1075.c: In function ‘main’:\nbs_test_1075.c:14:9: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n int x = izracunaj (\"2+2+6\", &ok1);\n         ^~~~~~~~~\n/tmp/ccB5fAm6.o: In function `main':\nbs_test_1075.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1075.c:(.text+0x5c): undefined reference to `izracunaj'\nbs_test_1075.c:(.text+0x75): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "9",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1075.c:14:9: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] int x = izracunaj (\"2+2+6\", &ok1);         ^~~~~~~~~/tmp/ccB5fAm6.o: In function `main':bs_test_1075.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1075.c:(.text+0x5c): undefined reference to `izracunaj'bs_test_1075.c:(.text+0x75): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "int x = izracunaj (\"2+2+6\", &ok1);"
+                    }
+                ]
+            }
+        },
+        "1076": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1076.c: In function ‘main’:\nbs_test_1076.c:14:11: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n int rez = izracunaj(\"^^33^^\", &ok);\n           ^~~~~~~~~\n/tmp/ccBTTNcb.o: In function `main':\nbs_test_1076.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1076.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1076.c:(.text+0xc3): undefined reference to `izracunaj'\nbs_test_1076.c:(.text+0x103): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "11",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1076.c:14:11: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] int rez = izracunaj(\"^^33^^\", &ok);           ^~~~~~~~~/tmp/ccBTTNcb.o: In function `main':bs_test_1076.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1076.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1076.c:(.text+0xc3): undefined reference to `izracunaj'bs_test_1076.c:(.text+0x103): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "int rez = izracunaj(\"^^33^^\", &ok);"
+                    }
+                ]
+            }
+        },
+        "1077": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1077.c: In function ‘main’:\nbs_test_1077.c:14:11: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n int rez = izracunaj(\"------2\", &ok);\n           ^~~~~~~~~\n/tmp/ccbtOCbh.o: In function `main':\nbs_test_1077.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1077.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1077.c:(.text+0xc3): undefined reference to `izracunaj'\nbs_test_1077.c:(.text+0x103): undefined reference to `izracunaj'\nbs_test_1077.c:(.text+0x143): undefined reference to `izracunaj'\n/tmp/ccbtOCbh.o:bs_test_1077.c:(.text+0x183): more undefined references to `izracunaj' follow\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "11",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1077.c:14:11: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] int rez = izracunaj(\"------2\", &ok);           ^~~~~~~~~/tmp/ccbtOCbh.o: In function `main':bs_test_1077.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1077.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1077.c:(.text+0xc3): undefined reference to `izracunaj'bs_test_1077.c:(.text+0x103): undefined reference to `izracunaj'bs_test_1077.c:(.text+0x143): undefined reference to `izracunaj'/tmp/ccbtOCbh.o:bs_test_1077.c:(.text+0x183): more undefined references to `izracunaj' followcollect2: error: ld returned 1 exit status",
+                        "code": "int rez = izracunaj(\"------2\", &ok);"
+                    }
+                ]
+            }
+        },
+        "1080": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1080.c: In function ‘main’:\nbs_test_1080.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n rez = izracunaj(\"1+10+100\", &ok);\n       ^~~~~~~~~\n/tmp/ccSQkOep.o: In function `main':\nbs_test_1080.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1080.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1080.c:(.text+0xc3): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1080.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] rez = izracunaj(\"1+10+100\", &ok);       ^~~~~~~~~/tmp/ccSQkOep.o: In function `main':bs_test_1080.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1080.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1080.c:(.text+0xc3): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "rez = izracunaj(\"1+10+100\", &ok);"
+                    }
+                ]
+            }
+        },
+        "1081": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1081.c: In function ‘main’:\nbs_test_1081.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n rez = izracunaj(\"1-10-100\", &ok);\n       ^~~~~~~~~\n/tmp/ccDZm9Uu.o: In function `main':\nbs_test_1081.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1081.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1081.c:(.text+0xc3): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1081.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] rez = izracunaj(\"1-10-100\", &ok);       ^~~~~~~~~/tmp/ccDZm9Uu.o: In function `main':bs_test_1081.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1081.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1081.c:(.text+0xc3): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "rez = izracunaj(\"1-10-100\", &ok);"
+                    }
+                ]
+            }
+        },
+        "1082": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1082.c: In function ‘main’:\nbs_test_1082.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n rez = izracunaj(\"1*10*100\", &ok);\n       ^~~~~~~~~\n/tmp/ccLHlnAy.o: In function `main':\nbs_test_1082.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1082.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1082.c:(.text+0xc3): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1082.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] rez = izracunaj(\"1*10*100\", &ok);       ^~~~~~~~~/tmp/ccLHlnAy.o: In function `main':bs_test_1082.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1082.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1082.c:(.text+0xc3): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "rez = izracunaj(\"1*10*100\", &ok);"
+                    }
+                ]
+            }
+        },
+        "1083": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1083.c: In function ‘main’:\nbs_test_1083.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n rez = izracunaj(\"100/10/1\", &ok);\n       ^~~~~~~~~\n/tmp/ccuOmprD.o: In function `main':\nbs_test_1083.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1083.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1083.c:(.text+0xc3): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1083.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] rez = izracunaj(\"100/10/1\", &ok);       ^~~~~~~~~/tmp/ccuOmprD.o: In function `main':bs_test_1083.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1083.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1083.c:(.text+0xc3): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "rez = izracunaj(\"100/10/1\", &ok);"
+                    }
+                ]
+            }
+        },
+        "1088": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1088.c: In function ‘main’:\nbs_test_1088.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration]\n rez = izracunaj(\"10+2*4-8/2+2^3+-2\", &ok);\n       ^~~~~~~~~\n/tmp/ccsgZQbB.o: In function `main':\nbs_test_1088.c:(.text+0x43): undefined reference to `izracunaj'\nbs_test_1088.c:(.text+0x83): undefined reference to `izracunaj'\nbs_test_1088.c:(.text+0xc3): undefined reference to `izracunaj'\nbs_test_1088.c:(.text+0x103): undefined reference to `izracunaj'\ncollect2: error: ld returned 1 exit status",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "TEST_CODE",
+                        "line": 2,
+                        "col": "7",
+                        "message": "implicit declaration of function 'izracunaj'",
+                        "output": "/tmp/buildservice/bs_4462/bs_test_1088.c:14:7: warning: implicit declaration of function ‘izracunaj’ [-Wimplicit-function-declaration] rez = izracunaj(\"10+2*4-8/2+2^3+-2\", &ok);       ^~~~~~~~~/tmp/ccsgZQbB.o: In function `main':bs_test_1088.c:(.text+0x43): undefined reference to `izracunaj'bs_test_1088.c:(.text+0x83): undefined reference to `izracunaj'bs_test_1088.c:(.text+0xc3): undefined reference to `izracunaj'bs_test_1088.c:(.text+0x103): undefined reference to `izracunaj'collect2: error: ld returned 1 exit status",
+                        "code": "rez = izracunaj(\"10+2*4-8/2+2^3+-2\", &ok);"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1577929194
+}

@@ -1,0 +1,161 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1170": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Ukupno evidentirano 11 vozila.\nNajpopularnija boja je crna (36.36%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1248": {
+            "status": 6,
+            "run_result": {
+                "output": "Unesite vozila: Ukupno evidentirano 6 vozila.\nNajpopularnija boja je crvena (33.33%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1249": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Neispravan unos\nUkupno evidentirano 1 vozila.\nNajpopularnija boja je plava (100.00%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1250": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Neispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nUkupno evidentirano 0 vozila.\nNajpopularnija boja je crna (0.00%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5044": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Ukupno evidentirano 50 vozila.\nNajpopularnija boja je crvena (28.00%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5045": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Neispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nUkupno evidentirano 31 vozila.\nNajpopularnija boja je bijela (22.58%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5046": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Ukupno evidentirano 42 vozila.\nNajpopularnija boja je crna (95.24%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5047": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Neispravan unos\nNeispravan unos\nUkupno evidentirano 9 vozila.\nNajpopularnija boja je siva (33.33%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5048": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Ukupno evidentirano 1001 vozila.\nNajpopularnija boja je bijela (65.33%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5049": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite vozila: Neispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nNeispravan unos\nUkupno evidentirano 3 vozila.\nNajpopularnija boja je siva (66.67%).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1573347334
+}

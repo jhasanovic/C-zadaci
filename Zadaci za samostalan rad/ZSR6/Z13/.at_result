@@ -1,0 +1,119 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1377": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nUnesite elemente 3. reda:\nUnesite elemente 4. reda:\nUnesite elemente 5. reda:\nMatrica nakon izbacivanja dijagonale: \n2    3    4    5    \n6    8    9    1    \n1    2    4    5    \n6    7    8    1    \n1    2    3    4    \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1378": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nUnesite elemente 3. reda:\nUnesite elemente 4. reda:\nUnesite elemente 5. reda:\nMatrica nakon izbacivanja dijagonale: \n0    0    0    0    \n0    0    0    0    \n0    0    0    0    \n0    0    0    0    \n0    0    0    0    \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1379": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nMatrica nakon izbacivanja dijagonale: \n\n\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1380": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nUnesite elemente 3. reda:\nUnesite elemente 4. reda:\nMatrica nakon izbacivanja dijagonale: \n-85  1    \n1    -44  \n-2   -11  \n-11  0    \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1381": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nUnesite elemente 3. reda:\nUnesite elemente 4. reda:\nUnesite elemente 5. reda:\nUnesite elemente 6. reda:\nMatrica nakon izbacivanja dijagonale: \n2    3    4    5    \n6    8    9    7    \n1    2    5    8    \n6    7    1    9    \n1    3    4    4    \n4    7    5    2    \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1382": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nUnesite elemente 3. reda:\nUnesite elemente 4. reda:\nMatrica nakon izbacivanja dijagonale: \n1    1    \n1    1    \n1    1    \n1    1    \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1383": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite dimenziju matrice:\nUnesite elemente 1. reda:\nUnesite elemente 2. reda:\nUnesite elemente 3. reda:\nUnesite elemente 4. reda:\nUnesite elemente 5. reda:\nUnesite elemente 6. reda:\nUnesite elemente 7. reda:\nUnesite elemente 8. reda:\nMatrica nakon izbacivanja dijagonale: \n3    5    7    9    11   14   \n3    6    4    11   95   127  \n5    3    8    7    13   145  \n94   6    9    14   15   16   \n11   2    1    7    17   95   \n77   15   32   64   45   40   \n8    58   59   55   44   22   \n11   13   34   66   77   88   \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580001986
+}

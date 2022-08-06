@@ -1,0 +1,382 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘izbaci_najcescu’:\nmain.c:73:4: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n    while(*p++ = *najcescar++);\n    ^~~~~\nmain.c:15:100: warning: variable ‘zadnje_max’ set but not used [-Wunused-but-set-variable]\n  char *p, *prvo_slovo, *zadnje_slovo, *prvo_slovo2, *zadnje_slovo2, *q, *prvi, *drugi, *prvo_max, *zadnje_max;\n                                                                                                    ^~~~~~~~~~\nmain.c:63:8: warning: ‘prvo_max’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n  while(*prvo_max >= 'A' && *prvo_max <= 'Z') {\n        ^~~~~~~~~\nmain.c:45:9: warning: ‘zadnje_slovo2’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n    while(drugi != zadnje_slovo2) {\n         ^\nmain.c:46:25: warning: ‘prvo_slovo2’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n     if(*prvi++ != *drugi++) isti=0;\n                    ~~~~~^~\nmain.c:46:13: warning: ‘prvo_slovo’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n     if(*prvi++ != *drugi++) isti=0;\n         ~~~~^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "73",
+                "col": "4",
+                "message": "suggest parentheses around assignment used as truth value",
+                "output": "/tmp/buildservice/bs_4249/main.c:73:4: warning: suggest parentheses around assignment used as truth value [-Wparentheses]    while(*p++ = *najcescar++);    ^~~~~",
+                "code": "while(*p++ = *najcescar++);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "15",
+                "col": "100",
+                "message": "variable 'zadnje_max' set but not used",
+                "output": "/tmp/buildservice/bs_4249/main.c:15:100: warning: variable ‘zadnje_max’ set but not used [-Wunused-but-set-variable]  char *p, *prvo_slovo, *zadnje_slovo, *prvo_slovo2, *zadnje_slovo2, *q, *prvi, *drugi, *prvo_max, *zadnje_max;                                                                                                    ^~~~~~~~~~",
+                "code": "char *p, *prvo_slovo, *zadnje_slovo, *prvo_slovo2, *zadnje_slovo2, *q, *prvi, *drugi, *prvo_max, *zadnje_max;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "63",
+                "col": "8",
+                "message": "'prvo_max' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_4249/main.c:63:8: warning: ‘prvo_max’ may be used uninitialized in this function [-Wmaybe-uninitialized]  while(*prvo_max >= 'A' && *prvo_max <= 'Z') {        ^~~~~~~~~",
+                "code": "while(*prvo_max >= 'A' && *prvo_max <= 'Z') {"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "45",
+                "col": "9",
+                "message": "'zadnje_slovo2' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_4249/main.c:45:9: warning: ‘zadnje_slovo2’ may be used uninitialized in this function [-Wmaybe-uninitialized]    while(drugi != zadnje_slovo2) {         ^",
+                "code": "while(drugi != zadnje_slovo2) {"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "46",
+                "col": "25",
+                "message": "'prvo_slovo2' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_4249/main.c:46:25: warning: ‘prvo_slovo2’ may be used uninitialized in this function [-Wmaybe-uninitialized]     if(*prvi++ != *drugi++) isti=0;                    ~~~~~^~",
+                "code": "if(*prvi++ != *drugi++) isti=0;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "46",
+                "col": "13",
+                "message": "'prvo_slovo' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_4249/main.c:46:13: warning: ‘prvo_slovo’ may be used uninitialized in this function [-Wmaybe-uninitialized]     if(*prvi++ != *drugi++) isti=0;         ~~~~^~",
+                "code": "if(*prvi++ != *drugi++) isti=0;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1562": {
+            "status": 7,
+            "run_result": {
+                "output": "0 ''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==23844== Memcheck, a memory error detector\n==23844== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==23844== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23844== Command: bs_test_1562\n==23844== Parent PID: 23843\n==23844== \n==23844== Use of uninitialised value of size 8\n==23844==    at 0x4007B0: izbaci_najcescu (bs_test_1562.c:65)\n==23844==    by 0x400888: main (bs_test_1562.c:94)\n==23844== \n==23844== Use of uninitialised value of size 8\n==23844==    at 0x4007BB: izbaci_najcescu (bs_test_1562.c:65)\n==23844==    by 0x400888: main (bs_test_1562.c:94)\n==23844== \n==23844== Use of uninitialised value of size 8\n==23844==    at 0x4007A7: izbaci_najcescu (bs_test_1562.c:66)\n==23844==    by 0x400888: main (bs_test_1562.c:94)\n==23844== \n==23844== \n==23844== HEAP SUMMARY:\n==23844==     in use at exit: 0 bytes in 0 blocks\n==23844==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==23844== \n==23844== All heap blocks were freed -- no leaks are possible\n==23844== \n==23844== For counts of detected and suppressed errors, rerun with: -v\n==23844== Use --track-origins=yes to see where uninitialised values come from\n==23844== ERROR SUMMARY: 4 errors from 3 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4007B0: izbaci_najcescu (bs_test_1562.c:65)\n    by 0x400888: main (bs_test_1562.c:94)\n",
+                        "file": "main.c",
+                        "line": 63
+                    },
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4007A7: izbaci_najcescu (bs_test_1562.c:66)\n    by 0x400888: main (bs_test_1562.c:94)\n",
+                        "file": "main.c",
+                        "line": 64
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1563": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.23858"
+            },
+            "debug_result": {
+                "output": "[New LWP 23858]\nCore was generated by `bs_test_1563'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffef2f58ed0 \"12345 ./,4 !@#%^ \") at bs_test_1563.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffef2f58ed0 \"12345 ./,4 !@#%^ \") at bs_test_1563.c:48\n#1  0x000000000040089d in main () at bs_test_1563.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==23870== Memcheck, a memory error detector\n==23870== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==23870== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23870== Command: bs_test_1563\n==23870== Parent PID: 23869\n==23870== \n==23870== Conditional jump or move depends on uninitialised value(s)\n==23870==    at 0x400716: izbaci_najcescu (bs_test_1563.c:47)\n==23870==    by 0x40089C: main (bs_test_1563.c:94)\n==23870== \n==23870== Use of uninitialised value of size 8\n==23870==    at 0x4006E7: izbaci_najcescu (bs_test_1563.c:48)\n==23870==    by 0x40089C: main (bs_test_1563.c:94)\n==23870== \n==23870== Use of uninitialised value of size 8\n==23870==    at 0x4006F6: izbaci_najcescu (bs_test_1563.c:48)\n==23870==    by 0x40089C: main (bs_test_1563.c:94)\n==23870== \n==23870== Invalid read of size 1\n==23870==    at 0x4006F6: izbaci_najcescu (bs_test_1563.c:48)\n==23870==    by 0x40089C: main (bs_test_1563.c:94)\n==23870==  Address 0x401000 is not stack'd, malloc'd or (recently) free'd\n==23870== \n==23870== \n==23870== Process terminating with default action of signal 11 (SIGSEGV)\n==23870==  Access not within mapped region at address 0x401000\n==23870==    at 0x4006F6: izbaci_najcescu (bs_test_1563.c:48)\n==23870==    by 0x40089C: main (bs_test_1563.c:94)\n==23870==  If you believe this happened as a result of a stack\n==23870==  overflow in your program's main thread (unlikely but\n==23870==  possible), you can try to increase the size of the\n==23870==  main thread stack using the --main-stacksize= flag.\n==23870==  The main thread stack size used in this run was 10485760.\n==23870== \n==23870== HEAP SUMMARY:\n==23870==     in use at exit: 0 bytes in 0 blocks\n==23870==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==23870== \n==23870== All heap blocks were freed -- no leaks are possible\n==23870== \n==23870== For counts of detected and suppressed errors, rerun with: -v\n==23870== Use --track-origins=yes to see where uninitialised values come from\n==23870== ERROR SUMMARY: 4816 errors from 4 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x400716: izbaci_najcescu (bs_test_1563.c:47)\n    by 0x40089C: main (bs_test_1563.c:94)\n",
+                        "file": "main.c",
+                        "line": 45
+                    },
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4006E7: izbaci_najcescu (bs_test_1563.c:48)\n    by 0x40089C: main (bs_test_1563.c:94)\n",
+                        "file": "main.c",
+                        "line": 46
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006F6: izbaci_najcescu (bs_test_1563.c:48)\n    by 0x40089C: main (bs_test_1563.c:94)\n  Address 0x401000 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1564": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 1,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.23888"
+            },
+            "debug_result": {
+                "output": "[New LWP 23888]\nCore was generated by `bs_test_1564'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffe02c88ad0 \"JednaVeeeeeeeeeelikaRiiiiiiiiijec\") at bs_test_1564.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffe02c88ad0 \"JednaVeeeeeeeeeelikaRiiiiiiiiijec\") at bs_test_1564.c:48\n#1  0x00000000004008b9 in main () at bs_test_1564.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==23894== exp-sgcheck, a stack and global array overrun detector\n==23894== NOTE: This is an Experimental-Class Valgrind Tool\n==23894== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==23894== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23894== Command: bs_test_1564\n==23894== Parent PID: 23893\n==23894== \n==23894== Invalid read of size 1\n==23894==    at 0x4006E7: izbaci_najcescu (bs_test_1564.c:48)\n==23894==    by 0x4008B8: main (bs_test_1564.c:94)\n==23894==  Address 0xfff000c52 expected vs actual:\n==23894==  Expected: stack array \"t\" of size 34 in frame 1 back from here\n==23894==  Actual:   unknown\n==23894==  Actual:   is 0 after Expected\n==23894== \n==23894== \n==23894== Process terminating with default action of signal 11 (SIGSEGV)\n==23894==  Access not within mapped region at address 0xFFF001000\n==23894==    at 0x4006E7: izbaci_najcescu (bs_test_1564.c:48)\n==23894==    by 0x4008B8: main (bs_test_1564.c:94)\n==23894==  If you believe this happened as a result of a stack\n==23894==  overflow in your program's main thread (unlikely but\n==23894==  possible), you can try to increase the size of the\n==23894==  main thread stack using the --main-stacksize= flag.\n==23894==  The main thread stack size used in this run was 10485760.\n==23894== \n==23894== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006E7: izbaci_najcescu (bs_test_1564.c:48)\n    by 0x4008B8: main (bs_test_1564.c:94)\n  Address 0xfff000c52 expected vs actual:\n  Expected: stack array \"t\" of size 34 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1565": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.23913"
+            },
+            "debug_result": {
+                "output": "[New LWP 23913]\nCore was generated by `bs_test_1565'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffeb7cf9ed0 \"Ovo je neki bezvezni tekst\") at bs_test_1565.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffeb7cf9ed0 \"Ovo je neki bezvezni tekst\") at bs_test_1565.c:48\n#1  0x00000000004008af in main () at bs_test_1565.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==23919== exp-sgcheck, a stack and global array overrun detector\n==23919== NOTE: This is an Experimental-Class Valgrind Tool\n==23919== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==23919== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23919== Command: bs_test_1565\n==23919== Parent PID: 23918\n==23919== \n==23919== Invalid read of size 1\n==23919==    at 0x4006E7: izbaci_najcescu (bs_test_1565.c:48)\n==23919==    by 0x4008AE: main (bs_test_1565.c:94)\n==23919==  Address 0xfff000c5b expected vs actual:\n==23919==  Expected: stack array \"t\" of size 27 in frame 1 back from here\n==23919==  Actual:   unknown\n==23919==  Actual:   is 0 after Expected\n==23919== \n==23919== \n==23919== Process terminating with default action of signal 11 (SIGSEGV)\n==23919==  Access not within mapped region at address 0xFFF001000\n==23919==    at 0x4006E7: izbaci_najcescu (bs_test_1565.c:48)\n==23919==    by 0x4008AE: main (bs_test_1565.c:94)\n==23919==  If you believe this happened as a result of a stack\n==23919==  overflow in your program's main thread (unlikely but\n==23919==  possible), you can try to increase the size of the\n==23919==  main thread stack using the --main-stacksize= flag.\n==23919==  The main thread stack size used in this run was 10485760.\n==23919== \n==23919== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006E7: izbaci_najcescu (bs_test_1565.c:48)\n    by 0x4008AE: main (bs_test_1565.c:94)\n  Address 0xfff000c5b expected vs actual:\n  Expected: stack array \"t\" of size 27 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1566": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.23946"
+            },
+            "debug_result": {
+                "output": "[New LWP 23946]\nCore was generated by `bs_test_1566'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffe65cb40d0 \" Koristio sam auto-stop da dodjem do znaka stop ali prije stopa sam otvorio dekstop kompjutera stop\") at bs_test_1566.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffe65cb40d0 \" Koristio sam auto-stop da dodjem do znaka stop ali prije stopa sam otvorio dekstop kompjutera stop\") at bs_test_1566.c:48\n#1  0x000000000040092a in main () at bs_test_1566.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==23958== Memcheck, a memory error detector\n==23958== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==23958== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23958== Command: bs_test_1566\n==23958== Parent PID: 23957\n==23958== \n==23958== Conditional jump or move depends on uninitialised value(s)\n==23958==    at 0x400716: izbaci_najcescu (bs_test_1566.c:47)\n==23958==    by 0x400929: main (bs_test_1566.c:94)\n==23958== \n==23958== Use of uninitialised value of size 8\n==23958==    at 0x4006E7: izbaci_najcescu (bs_test_1566.c:48)\n==23958==    by 0x400929: main (bs_test_1566.c:94)\n==23958== \n==23958== Use of uninitialised value of size 8\n==23958==    at 0x4006F6: izbaci_najcescu (bs_test_1566.c:48)\n==23958==    by 0x400929: main (bs_test_1566.c:94)\n==23958== \n==23958== Invalid read of size 1\n==23958==    at 0x4006F6: izbaci_najcescu (bs_test_1566.c:48)\n==23958==    by 0x400929: main (bs_test_1566.c:94)\n==23958==  Address 0x401000 is not stack'd, malloc'd or (recently) free'd\n==23958== \n==23958== \n==23958== Process terminating with default action of signal 11 (SIGSEGV)\n==23958==  Access not within mapped region at address 0x401000\n==23958==    at 0x4006F6: izbaci_najcescu (bs_test_1566.c:48)\n==23958==    by 0x400929: main (bs_test_1566.c:94)\n==23958==  If you believe this happened as a result of a stack\n==23958==  overflow in your program's main thread (unlikely but\n==23958==  possible), you can try to increase the size of the\n==23958==  main thread stack using the --main-stacksize= flag.\n==23958==  The main thread stack size used in this run was 10485760.\n==23958== \n==23958== HEAP SUMMARY:\n==23958==     in use at exit: 0 bytes in 0 blocks\n==23958==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==23958== \n==23958== All heap blocks were freed -- no leaks are possible\n==23958== \n==23958== For counts of detected and suppressed errors, rerun with: -v\n==23958== Use --track-origins=yes to see where uninitialised values come from\n==23958== ERROR SUMMARY: 4384 errors from 4 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x400716: izbaci_najcescu (bs_test_1566.c:47)\n    by 0x400929: main (bs_test_1566.c:94)\n",
+                        "file": "main.c",
+                        "line": 45
+                    },
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4006E7: izbaci_najcescu (bs_test_1566.c:48)\n    by 0x400929: main (bs_test_1566.c:94)\n",
+                        "file": "main.c",
+                        "line": 46
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006F6: izbaci_najcescu (bs_test_1566.c:48)\n    by 0x400929: main (bs_test_1566.c:94)\n  Address 0x401000 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1567": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.23976"
+            },
+            "debug_result": {
+                "output": "[New LWP 23976]\nCore was generated by `bs_test_1567'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffc119fb780 \"1PsT1 psT2 3Pst pstpst pst\") at bs_test_1567.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffc119fb780 \"1PsT1 psT2 3Pst pstpst pst\") at bs_test_1567.c:48\n#1  0x00000000004008af in main () at bs_test_1567.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==23989== Memcheck, a memory error detector\n==23989== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==23989== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==23989== Command: bs_test_1567\n==23989== Parent PID: 23988\n==23989== \n==23989== Conditional jump or move depends on uninitialised value(s)\n==23989==    at 0x400716: izbaci_najcescu (bs_test_1567.c:47)\n==23989==    by 0x4008AE: main (bs_test_1567.c:94)\n==23989== \n==23989== Use of uninitialised value of size 8\n==23989==    at 0x4006E7: izbaci_najcescu (bs_test_1567.c:48)\n==23989==    by 0x4008AE: main (bs_test_1567.c:94)\n==23989== \n==23989== Use of uninitialised value of size 8\n==23989==    at 0x4006F6: izbaci_najcescu (bs_test_1567.c:48)\n==23989==    by 0x4008AE: main (bs_test_1567.c:94)\n==23989== \n==23989== Invalid read of size 1\n==23989==    at 0x4006F6: izbaci_najcescu (bs_test_1567.c:48)\n==23989==    by 0x4008AE: main (bs_test_1567.c:94)\n==23989==  Address 0x401000 is not stack'd, malloc'd or (recently) free'd\n==23989== \n==23989== \n==23989== Process terminating with default action of signal 11 (SIGSEGV)\n==23989==  Access not within mapped region at address 0x401000\n==23989==    at 0x4006F6: izbaci_najcescu (bs_test_1567.c:48)\n==23989==    by 0x4008AE: main (bs_test_1567.c:94)\n==23989==  If you believe this happened as a result of a stack\n==23989==  overflow in your program's main thread (unlikely but\n==23989==  possible), you can try to increase the size of the\n==23989==  main thread stack using the --main-stacksize= flag.\n==23989==  The main thread stack size used in this run was 10485760.\n==23989== \n==23989== HEAP SUMMARY:\n==23989==     in use at exit: 0 bytes in 0 blocks\n==23989==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==23989== \n==23989== All heap blocks were freed -- no leaks are possible\n==23989== \n==23989== For counts of detected and suppressed errors, rerun with: -v\n==23989== Use --track-origins=yes to see where uninitialised values come from\n==23989== ERROR SUMMARY: 4768 errors from 4 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x400716: izbaci_najcescu (bs_test_1567.c:47)\n    by 0x4008AE: main (bs_test_1567.c:94)\n",
+                        "file": "main.c",
+                        "line": 45
+                    },
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4006E7: izbaci_najcescu (bs_test_1567.c:48)\n    by 0x4008AE: main (bs_test_1567.c:94)\n",
+                        "file": "main.c",
+                        "line": 46
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006F6: izbaci_najcescu (bs_test_1567.c:48)\n    by 0x4008AE: main (bs_test_1567.c:94)\n  Address 0x401000 is not stack'd, malloc'd or (recently) free'd\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1638": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.24007"
+            },
+            "debug_result": {
+                "output": "[New LWP 24007]\nCore was generated by `bs_test_1638'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006e7 in izbaci_najcescu (s=0x7fffda2d1c50 \"A-a-a-a-a\") at bs_test_1638.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006e7 in izbaci_najcescu (s=0x7fffda2d1c50 \"A-a-a-a-a\") at bs_test_1638.c:48\n#1  0x000000000040088f in main () at bs_test_1638.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==24013== exp-sgcheck, a stack and global array overrun detector\n==24013== NOTE: This is an Experimental-Class Valgrind Tool\n==24013== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==24013== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==24013== Command: bs_test_1638\n==24013== Parent PID: 24012\n==24013== \n==24013== Invalid read of size 1\n==24013==    at 0x4006E7: izbaci_najcescu (bs_test_1638.c:48)\n==24013==    by 0x40088E: main (bs_test_1638.c:94)\n==24013==  Address 0xfff000c5a expected vs actual:\n==24013==  Expected: stack array \"t\" of size 10 in frame 1 back from here\n==24013==  Actual:   unknown\n==24013==  Actual:   is 0 after Expected\n==24013== \n==24013== \n==24013== Process terminating with default action of signal 11 (SIGSEGV)\n==24013==  Access not within mapped region at address 0xFFF001000\n==24013==    at 0x4006E7: izbaci_najcescu (bs_test_1638.c:48)\n==24013==    by 0x40088E: main (bs_test_1638.c:94)\n==24013==  If you believe this happened as a result of a stack\n==24013==  overflow in your program's main thread (unlikely but\n==24013==  possible), you can try to increase the size of the\n==24013==  main thread stack using the --main-stacksize= flag.\n==24013==  The main thread stack size used in this run was 10485760.\n==24013== \n==24013== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006E7: izbaci_najcescu (bs_test_1638.c:48)\n    by 0x40088E: main (bs_test_1638.c:94)\n  Address 0xfff000c5a expected vs actual:\n  Expected: stack array \"t\" of size 10 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1639": {
+            "status": 5,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 3,
+                "core": "/tmp/buildservice/bs_4249/core.24032"
+            },
+            "debug_result": {
+                "output": "[New LWP 24032]\nCore was generated by `bs_test_1639'.\nProgram terminated with signal SIGSEGV, Segmentation fault.\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffd8a391b00 \"Pet plus pet plus pet daje petnaest\") at bs_test_1639.c:48\n48\t\t\t\t\tif(*prvi++ != *drugi++) isti=0;\n#0  0x00000000004006f6 in izbaci_najcescu (s=0x7ffd8a391b00 \"Pet plus pet plus pet daje petnaest\") at bs_test_1639.c:48\n#1  0x00000000004008ba in main () at bs_test_1639.c:94",
+                "parsed_output": [
+                    {
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "profile_result": {
+                "output": "==24038== exp-sgcheck, a stack and global array overrun detector\n==24038== NOTE: This is an Experimental-Class Valgrind Tool\n==24038== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==24038== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==24038== Command: bs_test_1639\n==24038== Parent PID: 24037\n==24038== \n==24038== Invalid read of size 1\n==24038==    at 0x4006E7: izbaci_najcescu (bs_test_1639.c:48)\n==24038==    by 0x4008B9: main (bs_test_1639.c:94)\n==24038==  Address 0xfff000c54 expected vs actual:\n==24038==  Expected: stack array \"t\" of size 36 in frame 1 back from here\n==24038==  Actual:   unknown\n==24038==  Actual:   is 0 after Expected\n==24038== \n==24038== \n==24038== Process terminating with default action of signal 11 (SIGSEGV)\n==24038==  Access not within mapped region at address 0xFFF001000\n==24038==    at 0x4006E7: izbaci_najcescu (bs_test_1639.c:48)\n==24038==    by 0x4008B9: main (bs_test_1639.c:94)\n==24038==  If you believe this happened as a result of a stack\n==24038==  overflow in your program's main thread (unlikely but\n==24038==  possible), you can try to increase the size of the\n==24038==  main thread stack using the --main-stacksize= flag.\n==24038==  The main thread stack size used in this run was 10485760.\n==24038== \n==24038== ERROR SUMMARY: 1 errors from 1 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006E7: izbaci_najcescu (bs_test_1639.c:48)\n    by 0x4008B9: main (bs_test_1639.c:94)\n  Address 0xfff000c54 expected vs actual:\n  Expected: stack array \"t\" of size 36 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 46
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 1,
+    "time": 1580243514
+}

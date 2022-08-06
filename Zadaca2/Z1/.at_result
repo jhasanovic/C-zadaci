@@ -1,0 +1,161 @@
+{
+    "buildhost_description": {
+        "id": "lab002c27",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Neispravan interval!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Nedozvoljena vrijednost! ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Neispravan interval!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Neispravan eksponent! ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\n----------------------------------\n    1. 1.000000         1.00000\n    2. 1.001000         1.00100\n    3. 1.002000         1.00200\n    4. 1.003000         1.00300\n(...)\n 4000. 4.999000         4.99900\n----------------------------------\nP(x^1)[1,5]= 11.998000 (dx=0.001)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Nedozvoljena vrijednost! ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "7": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\n----------------------------------\n    1. 1.000000         1.00000\n    2. 1.001000         1.00501\n    3. 1.002000         1.01004\n    4. 1.003000         1.01509\n(...)\n 8000. 8.999000     59016.20229\n----------------------------------\nP(x^5)[1,9]= 88543.812067 (dx=0.001)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "9": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\n----------------------------------\n    1. 1.000000         1.00000\n\n----------------------------------\nP(x^9)[1,2]= 1.000000 (dx=1)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "10": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\n----------------------------------\n    1. 1.000000         1.00000\n    2. 1.500000        38.44336\n\n----------------------------------\nP(x^9)[1,2]= 19.721680 (dx=0.5)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "11": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\n----------------------------------\n    1. 1.000000         1.00000\n    2. 2.000000        32.00000\n    3. 3.000000       243.00000\n    4. 4.000000      1024.00000\n\n----------------------------------\nP(x^5)[1,5]= 1300.000000 (dx=1)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1574609552
+}

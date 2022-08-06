@@ -1,0 +1,119 @@
+{
+    "buildhost_description": {
+        "id": "lab002c02",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1247": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unos neispravan!\nUnesite broj elemenata niza: Unos neispravan!\nUnesite broj elemenata niza: Unesite 5 brojeva: \n 5, 4, 3, 2, 1,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1248": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unos neispravan!\nUnesite broj elemenata niza: Unesite 1 brojeva: \n 9,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1249": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 1 brojeva: \n 9.875,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1250": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 3 brojeva: \n -98.7, 1, 0.987,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1251": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 10 brojeva: \n 33, 77, 4569, 0, -7, 4, 7, 8, 5, -9,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1252": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 10 brojeva: \n 0.01, 12.13, 99.7854, 7, -8, 0.1249, 0, -7.9875, 5, 1.24,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1253": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 10 brojeva: \n 0, 1, 2, 1, 46, 2, 7, -3, 7, 10,",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1574081195
+}

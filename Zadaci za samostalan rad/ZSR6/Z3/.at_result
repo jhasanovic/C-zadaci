@@ -1,0 +1,77 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1215": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unos neispravan!\nUnesite broj elemenata niza: Unesite 3 brojeva: \n{1.0000, 5.0000, 9.0000}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1216": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 7 brojeva: \n{0.0000, 1.1100, 7.0000, 9.0000, 4.0000, -5.1100, 100.0000}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1217": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unesite 7 brojeva: \n{12.1200, 12.1300, 0.4700, 5.0000, 9.5500, 9.1200, 3.5100}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1218": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj elemenata niza: Unos neispravan!\nUnesite broj elemenata niza: Unesite 1 brojeva: \n{-0.4500}",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1574082174
+}

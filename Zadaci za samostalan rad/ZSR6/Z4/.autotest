@@ -1,0 +1,122 @@
+{
+    "id": 7051,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR6, zadatak 5",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1223,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "3 123.45678 123.45477 12.3512 3 7"
+            },
+            "expected": [
+                "Unesite broj elemenata niza: Unesite 3 brojeva: \\nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {123.4570000, 123.4550000, 12.3510000}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1224,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0 1 -999.999 3 6"
+            },
+            "expected": [
+                "Unesite broj elemenata niza: Unos neispravan!\\nUnesite broj elemenata niza: Unesite 1 brojeva: \\nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {-999.999000}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1225,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "3 1 2 3 1 1"
+            },
+            "expected": [
+                "Unesite broj elemenata niza: Unesite 3 brojeva: \\nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {1.0, 2.0, 3.0}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1227,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "3 55555 0 55555 0 5"
+            },
+            "expected": [
+                "Unesite broj elemenata niza: Unesite 3 brojeva: \\nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {55555.00000, 0.00000, 55555.00000}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1229,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "2 111 -0.01 1 0"
+            },
+            "expected": [
+                "Unesite broj elemenata niza: Unesite 2 brojeva: \\nUnesite broj decimala za zaokruzivanje: Unesite broj decimala za ispis: {111, 0}"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

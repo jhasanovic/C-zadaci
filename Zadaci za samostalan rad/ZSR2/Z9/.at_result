@@ -1,0 +1,169 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:11:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(a%2==0) printf(\"%015d\\n\",a); else printf(\"%-015d\\n\",a);\n                                              ^~~~~~~~~~\nmain.c:12:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(b%2==0) printf(\"%015d\\n\",b); else printf(\"%-015d\\n\",b);\n                                              ^~~~~~~~~~\nmain.c:13:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(c%2==0) printf(\"%015d\\n\",c); else printf(\"%-015d\\n\",c);\n                                              ^~~~~~~~~~\nmain.c:14:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(d%2==0) printf(\"%015d\\n\",d); else printf(\"%-015d\\n\",d);\n                                              ^~~~~~~~~~\nmain.c:15:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(e%2==0) printf(\"%015d\\n\",e); else printf(\"%-015d\\n\",e);\n                                              ^~~~~~~~~~\nmain.c:16:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(f%2==0) printf(\"%015d\\n\",f); else printf(\"%-015d\\n\",f);\n                                              ^~~~~~~~~~\nmain.c:17:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(g%2==0) printf(\"%015d\\n\",g); else printf(\"%-015d\\n\",g);\n                                              ^~~~~~~~~~\nmain.c:18:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(h%2==0) printf(\"%015d\\n\",h); else printf(\"%-015d\\n\",h);\n                                              ^~~~~~~~~~\nmain.c:19:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(i%2==0) printf(\"%015d\\n\",i); else printf(\"%-015d\\n\",i);\n                                              ^~~~~~~~~~\nmain.c:20:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]\n  if(j%2==0) printf(\"%015d\\n\",j); else printf(\"%-015d\\n\",j);\n                                              ^~~~~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "11",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:11:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(a%2==0) printf(\"%015d\\n\",a); else printf(\"%-015d\\n\",a);                                              ^~~~~~~~~~",
+                "code": "if(a%2==0) printf(\"%015d\\n\",a); else printf(\"%-015d\\n\",a);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "12",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:12:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(b%2==0) printf(\"%015d\\n\",b); else printf(\"%-015d\\n\",b);                                              ^~~~~~~~~~",
+                "code": "if(b%2==0) printf(\"%015d\\n\",b); else printf(\"%-015d\\n\",b);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "13",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:13:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(c%2==0) printf(\"%015d\\n\",c); else printf(\"%-015d\\n\",c);                                              ^~~~~~~~~~",
+                "code": "if(c%2==0) printf(\"%015d\\n\",c); else printf(\"%-015d\\n\",c);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "14",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:14:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(d%2==0) printf(\"%015d\\n\",d); else printf(\"%-015d\\n\",d);                                              ^~~~~~~~~~",
+                "code": "if(d%2==0) printf(\"%015d\\n\",d); else printf(\"%-015d\\n\",d);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "15",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:15:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(e%2==0) printf(\"%015d\\n\",e); else printf(\"%-015d\\n\",e);                                              ^~~~~~~~~~",
+                "code": "if(e%2==0) printf(\"%015d\\n\",e); else printf(\"%-015d\\n\",e);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "16",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:16:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(f%2==0) printf(\"%015d\\n\",f); else printf(\"%-015d\\n\",f);                                              ^~~~~~~~~~",
+                "code": "if(f%2==0) printf(\"%015d\\n\",f); else printf(\"%-015d\\n\",f);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "17",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:17:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(g%2==0) printf(\"%015d\\n\",g); else printf(\"%-015d\\n\",g);                                              ^~~~~~~~~~",
+                "code": "if(g%2==0) printf(\"%015d\\n\",g); else printf(\"%-015d\\n\",g);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "18",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:18:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(h%2==0) printf(\"%015d\\n\",h); else printf(\"%-015d\\n\",h);                                              ^~~~~~~~~~",
+                "code": "if(h%2==0) printf(\"%015d\\n\",h); else printf(\"%-015d\\n\",h);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "19",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:19:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(i%2==0) printf(\"%015d\\n\",i); else printf(\"%-015d\\n\",i);                                              ^~~~~~~~~~",
+                "code": "if(i%2==0) printf(\"%015d\\n\",i); else printf(\"%-015d\\n\",i);"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "20",
+                "col": "46",
+                "message": "'0' flag ignored with '-' flag in gnu_printf format",
+                "output": "/tmp/buildservice/bs_4027/main.c:20:46: warning: '0' flag ignored with '-' flag in gnu_printf format [-Wformat=]  if(j%2==0) printf(\"%015d\\n\",j); else printf(\"%-015d\\n\",j);                                              ^~~~~~~~~~",
+                "code": "if(j%2==0) printf(\"%015d\\n\",j); else printf(\"%-015d\\n\",j);"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "5264": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 10 prirodnih brojeva: 000000000000102\n000000000007374\n000000000000000\n123            \n727            \n000000007349272\n73             \n111            \n000000000082824\n1              \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5265": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 10 prirodnih brojeva: 000000000000000\n000000000000000\n000000000000000\n000000000000000\n000000000000000\n000000000000000\n000000000000000\n000000000000000\n000000000000000\n000000000000000\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5266": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 10 prirodnih brojeva: 1              \n3              \n5              \n7              \n9              \n11             \n13             \n15             \n17             \n19             \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5267": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 10 prirodnih brojeva: 000000000561156\n32115          \n186213         \n000000021345486\n1221315        \n1235453        \n000000002133556\n1231457        \n000000000115646\n321155         \n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1571849400
+}

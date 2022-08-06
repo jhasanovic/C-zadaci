@@ -1,0 +1,39 @@
+==25416== Memcheck, a memory error detector
+==25416== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==25416== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==25416== Command: /rhome/j/jhasanovic1/workspace/OR/Z5/Z2/.runme
+==25416== Parent PID: 25403
+==25416== 
+==25416== Conditional jump or move depends on uninitialised value(s)
+==25416==    at 0x1090A5: ispis (main.c:106)
+==25416==    by 0x1092C6: main (main.c:141)
+==25416== 
+==25416== Syscall param write(buf) points to uninitialised byte(s)
+==25416==    at 0x514E154: write (write.c:27)
+==25416==    by 0x50C91BC: _IO_file_write@@GLIBC_2.2.5 (fileops.c:1203)
+==25416==    by 0x50CAF50: new_do_write (fileops.c:457)
+==25416==    by 0x50CAF50: _IO_do_write@@GLIBC_2.2.5 (fileops.c:433)
+==25416==    by 0x50CA30F: _IO_file_close_it@@GLIBC_2.2.5 (fileops.c:136)
+==25416==    by 0x50BC386: fclose@@GLIBC_2.2.5 (iofclose.c:53)
+==25416==    by 0x109049: zapisi (main.c:94)
+==25416==    by 0x1092DA: main (main.c:142)
+==25416==  Address 0x543156b is 11 bytes inside a block of size 8,192 alloc'd
+==25416==    at 0x4C2FB0F: malloc (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==25416==    by 0x50BC18B: _IO_file_doallocate (filedoalloc.c:101)
+==25416==    by 0x50CC378: _IO_doallocbuf (genops.c:365)
+==25416==    by 0x50CB497: _IO_file_overflow@@GLIBC_2.2.5 (fileops.c:759)
+==25416==    by 0x50C99EC: _IO_file_xsputn@@GLIBC_2.2.5 (fileops.c:1266)
+==25416==    by 0x50BD976: fwrite (iofwrite.c:39)
+==25416==    by 0x10901C: zapisi (main.c:91)
+==25416==    by 0x1092DA: main (main.c:142)
+==25416== 
+==25416== 
+==25416== HEAP SUMMARY:
+==25416==     in use at exit: 0 bytes in 0 blocks
+==25416==   total heap usage: 4 allocs, 4 frees, 17,488 bytes allocated
+==25416== 
+==25416== All heap blocks were freed -- no leaks are possible
+==25416== 
+==25416== For counts of detected and suppressed errors, rerun with: -v
+==25416== Use --track-origins=yes to see where uninitialised values come from
+==25416== ERROR SUMMARY: 5 errors from 2 contexts (suppressed: 0 from 0)

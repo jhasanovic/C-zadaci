@@ -1,0 +1,63 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1583": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1583.c: In function ‘main’:\nbs_test_1583.c:29:8: error: too many arguments to function ‘random’\n broj = random(1,100);\n        ^~~~~~\nIn file included from bs_test_1583.c:10:0:\n/usr/include/stdlib.h:327:17: note: declared here\n extern long int random (void) __THROW;\n                 ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "8",
+                        "message": "too many arguments to function 'random'",
+                        "output": "/tmp/buildservice/bs_6475/bs_test_1583.c:29:8: error: too many arguments to function ‘random’ broj = random(1,100);        ^~~~~~In file included from /tmp/buildservice/bs_6475/bs_test_1583.c:10:0:",
+                        "code": "broj = random(1,100);"
+                    }
+                ]
+            }
+        },
+        "1584": {
+            "status": 3,
+            "run_result": [],
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 2,
+                "output": "bs_test_1584.c: In function ‘main’:\nbs_test_1584.c:29:8: error: too many arguments to function ‘random’\n broj = random(150,250);\n        ^~~~~~\nIn file included from bs_test_1584.c:10:0:\n/usr/include/stdlib.h:327:17: note: declared here\n extern long int random (void) __THROW;\n                 ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "error",
+                        "file": "TEST_CODE",
+                        "line": 3,
+                        "col": "8",
+                        "message": "too many arguments to function 'random'",
+                        "output": "/tmp/buildservice/bs_6475/bs_test_1584.c:29:8: error: too many arguments to function ‘random’ broj = random(150,250);        ^~~~~~In file included from /tmp/buildservice/bs_6475/bs_test_1584.c:10:0:",
+                        "code": "broj = random(150,250);"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580050796
+}

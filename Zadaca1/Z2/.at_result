@@ -1,0 +1,133 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se ne sijeku.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Jedna kruznica je sadrzana u drugoj.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice su identicne.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (5.03,2.43) i (4.43,0.63).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se dodiruju u tacki (0.00,1.00).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se dodiruju u tacki (6.00,12.00).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "7": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (5.50,5.94) i (5.50,2.06).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "8": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (4.12,2.44) i (4.12,1.85).",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1572710225
+}

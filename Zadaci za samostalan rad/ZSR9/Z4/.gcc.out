@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR9/Z4/main.c: In function ‘izbaci_viska_razmake’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR9/Z4/main.c:41:9: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+   while(*p1++=*p2++);
+         ^

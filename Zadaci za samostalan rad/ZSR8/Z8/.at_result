@@ -1,0 +1,116 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘izbaci_podniz’:\nmain.c:13:10: warning: unused variable ‘poc’ [-Wunused-variable]\n     int* poc=p1;\n          ^~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "13",
+                "col": "10",
+                "message": "unused variable 'poc'",
+                "output": "/tmp/buildservice/bs_2853/main.c:13:10: warning: unused variable ‘poc’ [-Wunused-variable]     int* poc=p1;          ^~~",
+                "code": "int* poc=p1;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1261": {
+            "status": 1,
+            "run_result": {
+                "output": "1 5 6 1 2 4 10 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1262": {
+            "status": 1,
+            "run_result": {
+                "output": "1 5 6 10 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1263": {
+            "status": 1,
+            "run_result": {
+                "output": "",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1264": {
+            "status": 1,
+            "run_result": {
+                "output": "1 1 2 3 2 1 2 3 3 1 2 3 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1265": {
+            "status": 6,
+            "run_result": {
+                "output": "1 1 2 2 1 2 3 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1266": {
+            "status": 1,
+            "run_result": {
+                "output": "1 1 2 3 2 1 2 3 3 1 2 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580153361
+}

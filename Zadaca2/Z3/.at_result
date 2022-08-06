@@ -1,0 +1,133 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n1 1.5 2 3 4 5\nCifra 0 se ponavlja 5 puta.\nCifra 5 se ponavlja 1 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite broj clanova niza: Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n1.1 1.65 2.2 3.3 4.4\nCifra 1 se ponavlja 1 puta.\nCifra 2 se ponavlja 1 puta.\nCifra 3 se ponavlja 1 puta.\nCifra 4 se ponavlja 1 puta.\nCifra 6 se ponavlja 1 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2 1 1.5 2\nCifra 0 se ponavlja 100 puta.\nCifra 5 se ponavlja 50 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n3.14159\nCifra 1 se ponavlja 1 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n0.0001 0.00015 0.0002 0.0003 0.0004 0.0006 0.0008 0.0012 0.0016 0.002355 0.00311 0.006 -0.012 -0.018 -0.024\nCifra 0 se ponavlja 15 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n0.001 0.0015 0.002 0.003 0.004 0.006 0.008 0.012 0.016 0.024 0.032 0.048 0.064 0.096 0.128 0.192 0.256 0.384 0.512 0.768 1.024 1.536 2.048 3.072 4.096 6.144 8.192 12.288 16.384 24.576 32.768 49.152 65.536 98.304 131.072 196.608 262.144 393.216 524.288 786.432 1048.58 1572.86 2097.15 3145.73 4194.3 6291.46 8388.61 12582.9 16777.2 25165.8 33554.4 50331.6 67108.9 100663 134218 201327 268435 402653 536871 805306 1.07374e+06 1.61061e+06 2.14748e+06 3.22123e+06 4.29497e+06 0.001 0.0015 0.002 0.003 0.004 0.006 0.008 0.012 0.016 0.024 0.032 0.048 0.064 0.096 0.128 0.192 0.256 0.384 0.512 0.768 1.024 1.536 2.048 3.072 4.096 6.144 8.192 12.288 16.384 24.576 32.768 49.152 65.536 98.304 131.072 196.608 262.144 393.216 524.288 786.432 1048.58 1572.86 2097.15 3145.73 4194.3 6291.46 8388.61 12582.9 16777.2 25165.8 33554.4 50331.6 67108.9 100663 134218 201327 268435 402653 536871 805306 1.07374e+06 1.61061e+06 2.14748e+06 3.22123e+06 4.29497e+06 0.001 0.0015 0.002 0.003 0.004 0.006 0.008 0.012 0.016 0.024 0.032 0.048 0.064 0.096 0.128 0.192 0.256 0.384 0.512 0.768 1.024 1.536 2.048 3.072 4.096 6.144 8.192 12.288 16.384 24.576 32.768 49.152 65.536 98.304 131.072 196.608 262.144 393.216 524.288 786.432 1048.58 1572.86 2097.15 3145.73 4194.3 6291.46 8388.61 12582.9 16777.2 25165.8 33554.4 50331.6 67108.9 100663 134218 201327 268435 402653 536871 805306 1.07374e+06 1.61061e+06 2.14748e+06 3.22123e+06 4.29497e+06 6.44245e+06 8.58993e+06\nCifra 0 se ponavlja 57 puta.\nCifra 1 se ponavlja 24 puta.\nCifra 2 se ponavlja 21 puta.\nCifra 3 se ponavlja 15 puta.\nCifra 4 se ponavlja 15 puta.\nCifra 5 se ponavlja 19 puta.\nCifra 6 se ponavlja 12 puta.\nCifra 7 se ponavlja 15 puta.\nCifra 8 se ponavlja 12 puta.\nCifra 9 se ponavlja 7 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "7": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n15 22.5 30\nCifra 0 se ponavlja 2 puta.\nCifra 5 se ponavlja 1 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "8": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite broj clanova niza: Unesite niz: Nakon ubacivanja niz glasi: \n0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0\nCifra 0 se ponavlja 199 puta.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1574609577
+}

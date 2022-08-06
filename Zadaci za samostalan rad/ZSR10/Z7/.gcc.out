@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z7/main.c: In function ‘zamijeni_rijec’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z7/main.c:120:28: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+                     while (*poc1++=*poc++);
+                            ^

@@ -1,0 +1,119 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "5328": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj 3 ne pripada niti jednom intervalu\nBroj 1 pripada intervalu [-1, 1]\nBroj -14 pripada intervalu [-20, -8]\nSvi brojevi ne pripadaju jednom te istom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5329": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj 51 ne pripada niti jednom intervalu\nBroj 52 ne pripada niti jednom intervalu\nBroj 53 ne pripada niti jednom intervalu\nSvi brojevi ne pripadaju jednom te istom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5330": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj 41 pripada intervalu [40, 50]\nBroj 0 pripada intervalu [-1, 1]\nBroj 200 ne pripada niti jednom intervalu\nSvi brojevi ne pripadaju jednom te istom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5331": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj -10 pripada intervalu [-20, -8]\nBroj -2 ne pripada niti jednom intervalu\nBroj 1 pripada intervalu [-1, 1]\nSvi brojevi ne pripadaju jednom te istom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5332": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj 38 ne pripada niti jednom intervalu\nBroj 39 ne pripada niti jednom intervalu\nBroj 40 pripada intervalu [40, 50]\nSvi brojevi ne pripadaju jednom te istom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5333": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj 100 pripada intervalu [77, 101]\nBroj 102 ne pripada niti jednom intervalu\nBroj 104 ne pripada niti jednom intervalu\nSvi brojevi ne pripadaju jednom te istom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5334": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite tri cijela broja: Broj 80 pripada intervalu [77, 101]\nBroj 77 pripada intervalu [77, 101]\nBroj 90 pripada intervalu [77, 101]\nSvi brojevi pripadaju jednom intervalu.",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1571860971
+}

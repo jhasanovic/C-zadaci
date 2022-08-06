@@ -1,0 +1,133 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1261": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nNajmanji broj je: 0\nDrugi najmanji broj je: 0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1262": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nNajmanji broj je: -5\nDrugi najmanji broj je: -5\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1263": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nUnesite 3. element (-1 za kraj unosa): \nUnesite 4. element (-1 za kraj unosa): \nUnesite 5. element (-1 za kraj unosa): \nNajmanji broj je: -88888\nDrugi najmanji broj je: 1\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1264": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nUnesite 3. element (-1 za kraj unosa): \nUnesite 4. element (-1 za kraj unosa): \nNajmanji broj je: 0\nDrugi najmanji broj je: 0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1265": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nUnesite 3. element (-1 za kraj unosa): \nUnesite 4. element (-1 za kraj unosa): \nNajmanji broj je: -987.989\nDrugi najmanji broj je: -987.98\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1266": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nUnesite 3. element (-1 za kraj unosa): \nUnesite 4. element (-1 za kraj unosa): \nNajmanji broj je: -2.0001\nDrugi najmanji broj je: -2.00001\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1267": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nUnesite 3. element (-1 za kraj unosa): \nUnesite 4. element (-1 za kraj unosa): \nUnesite 5. element (-1 za kraj unosa): \nUnesite 6. element (-1 za kraj unosa): \nUnesite 7. element (-1 za kraj unosa): \nNajmanji broj je: 1\nDrugi najmanji broj je: 3\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1268": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite 1. element (-1 za kraj unosa): \nUnesite 2. element (-1 za kraj unosa): \nUnesite 3. element (-1 za kraj unosa): \nUnesite 4. element (-1 za kraj unosa): \nNajmanji broj je: 1\nDrugi najmanji broj je: 1\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580146600
+}

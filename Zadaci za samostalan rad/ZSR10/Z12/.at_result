@@ -1,0 +1,1159 @@
+{
+    "buildhost_description": {
+        "id": "lab002c28",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘podstring’:\nmain.c:13:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nmain.c:14:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nmain.c:15:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nmain.c:19:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nmain.c: In function ‘UbaciTekst’:\nmain.c:45:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nmain.c:58:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nmain.c: In function ‘ZamijeniTekst’:\nmain.c:75:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~\nmain.c: In function ‘zamjena_rijeci’:\nmain.c:97:13: warning: unused variable ‘j’ [-Wunused-variable]\n     int i=0,j=0;\n             ^",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "13",
+                "col": "19",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:13:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                "code": "char *pocetak=str;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "14",
+                "col": "14",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:14:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                "code": "char *s2=trazi;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "15",
+                "col": "14",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:15:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                "code": "char *s1=str;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "19",
+                "col": "11",
+                "message": "assignment discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:19:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                "code": "s2=trazi;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "45",
+                "col": "16",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:45:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                "code": "char *kraj=tekst;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "58",
+                "col": "14",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:58:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                "code": "char *s2=tekst;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "75",
+                "col": "15",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_848/main.c:75:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                "code": "char*kraj=sta;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "97",
+                "col": "13",
+                "message": "unused variable 'j'",
+                "output": "/tmp/buildservice/bs_848/main.c:97:13: warning: unused variable ‘j’ [-Wunused-variable]     int i=0,j=0;             ^",
+                "code": "int i=0,j=0;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1761": {
+            "status": 1,
+            "run_result": {
+                "output": "bijeli snijeg je pokrio bijeli breg\nbijeli snijeg je pokrio bijeli breg",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1761.c: In function ‘podstring’:\nbs_test_1761.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1761.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1761.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1761.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1761.c: In function ‘UbaciTekst’:\nbs_test_1761.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1761.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1761.c: In function ‘ZamijeniTekst’:\nbs_test_1761.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1761.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1761.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1762": {
+            "status": 1,
+            "run_result": {
+                "output": "zamjena protest testiranje protestiranje zamjena",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1762.c: In function ‘podstring’:\nbs_test_1762.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1762.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1762.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1762.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1762.c: In function ‘UbaciTekst’:\nbs_test_1762.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1762.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1762.c: In function ‘ZamijeniTekst’:\nbs_test_1762.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1762.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1762.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1763": {
+            "status": 1,
+            "run_result": {
+                "output": "'' ''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1763.c: In function ‘podstring’:\nbs_test_1763.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1763.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1763.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1763.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1763.c: In function ‘UbaciTekst’:\nbs_test_1763.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1763.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1763.c: In function ‘ZamijeniTekst’:\nbs_test_1763.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1763.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1763.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1764": {
+            "status": 1,
+            "run_result": {
+                "output": "aaa aa z1 aaa aaaa",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1764.c: In function ‘podstring’:\nbs_test_1764.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1764.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1764.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1764.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1764.c: In function ‘UbaciTekst’:\nbs_test_1764.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1764.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1764.c: In function ‘ZamijeniTekst’:\nbs_test_1764.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1764.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1764.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1765": {
+            "status": 1,
+            "run_result": {
+                "output": "auto-stop auto. start vozilo kj start",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1765.c: In function ‘podstring’:\nbs_test_1765.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1765.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1765.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1765.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1765.c: In function ‘UbaciTekst’:\nbs_test_1765.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1765.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1765.c: In function ‘ZamijeniTekst’:\nbs_test_1765.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1765.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1765.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1766": {
+            "status": 1,
+            "run_result": {
+                "output": "'  '",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1766.c: In function ‘podstring’:\nbs_test_1766.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1766.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1766.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1766.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1766.c: In function ‘UbaciTekst’:\nbs_test_1766.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1766.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1766.c: In function ‘ZamijeniTekst’:\nbs_test_1766.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1766.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1766.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1767": {
+            "status": 1,
+            "run_result": {
+                "output": "AAA je ovo je OVO",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1767.c: In function ‘podstring’:\nbs_test_1767.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1767.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1767.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1767.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1767.c: In function ‘UbaciTekst’:\nbs_test_1767.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1767.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1767.c: In function ‘ZamijeniTekst’:\nbs_test_1767.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1767.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1767.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1768": {
+            "status": 1,
+            "run_result": {
+                "output": "Ovo je neka proba sa praznim nizom zamjena",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1768.c: In function ‘podstring’:\nbs_test_1768.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1768.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1768.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1768.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1768.c: In function ‘UbaciTekst’:\nbs_test_1768.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1768.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1768.c: In function ‘ZamijeniTekst’:\nbs_test_1768.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1768.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1768.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1769": {
+            "status": 1,
+            "run_result": {
+                "output": "c",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1769.c: In function ‘podstring’:\nbs_test_1769.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1769.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1769.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1769.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1769.c: In function ‘UbaciTekst’:\nbs_test_1769.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1769.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1769.c: In function ‘ZamijeniTekst’:\nbs_test_1769.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1769.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1769.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1770": {
+            "status": 1,
+            "run_result": {
+                "output": "OK",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1770.c: In function ‘podstring’:\nbs_test_1770.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1770.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1770.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1770.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1770.c: In function ‘UbaciTekst’:\nbs_test_1770.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1770.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1770.c: In function ‘ZamijeniTekst’:\nbs_test_1770.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~\nbs_test_1770.c: In function ‘main’:\nbs_test_1770.c:141:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]\n strcpy(tekst2,tekst);\n ^~~~~~\nbs_test_1770.c:141:1: warning: incompatible implicit declaration of built-in function ‘strcpy’\nbs_test_1770.c:141:1: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’\nbs_test_1770.c:149:5: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration]\n if (strcmp(tekst,tekst2)==0)\n     ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "141",
+                        "col": "1",
+                        "message": "implicit declaration of function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:141:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration] strcpy(tekst2,tekst); ^~~~~~",
+                        "code": "strcpy(tekst2,tekst);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "141",
+                        "col": "1",
+                        "message": "incompatible implicit declaration of built-in function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:141:1: warning: incompatible implicit declaration of built-in function ‘strcpy’"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1770.c",
+                        "line": "149",
+                        "col": "5",
+                        "message": "implicit declaration of function 'strcmp'",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1770.c:149:5: warning: implicit declaration of function ‘strcmp’ [-Wimplicit-function-declaration] if (strcmp(tekst,tekst2)==0)     ^~~~~~",
+                        "code": "if (strcmp(tekst,tekst2)==0)"
+                    }
+                ]
+            }
+        },
+        "1771": {
+            "status": 1,
+            "run_result": {
+                "output": "'Prijestolonasljednikovica Prijestolonasljednikovica'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1771.c: In function ‘podstring’:\nbs_test_1771.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1771.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1771.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1771.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1771.c: In function ‘UbaciTekst’:\nbs_test_1771.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1771.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1771.c: In function ‘ZamijeniTekst’:\nbs_test_1771.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1771.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1771.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1830": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1830.c: In function ‘podstring’:\nbs_test_1830.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1830.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1830.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1830.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1830.c: In function ‘UbaciTekst’:\nbs_test_1830.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1830.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1830.c: In function ‘ZamijeniTekst’:\nbs_test_1830.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1830.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1830.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        },
+        "1836": {
+            "status": 7,
+            "run_result": {
+                "output": "'swap zamjena swap'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==26665== exp-sgcheck, a stack and global array overrun detector\n==26665== NOTE: This is an Experimental-Class Valgrind Tool\n==26665== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==26665== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==26665== Command: bs_test_1836\n==26665== Parent PID: 26664\n==26665== \n==26665== Invalid read of size 1\n==26665==    at 0x40060F: podstring (bs_test_1836.c:18)\n==26665==    by 0x400763: ZamijeniTekst (bs_test_1836.c:84)\n==26665==    by 0x40084D: zamjena_rijeci (bs_test_1836.c:107)\n==26665==    by 0x4008F3: main (bs_test_1836.c:128)\n==26665==  Address 0xfff000c35 expected vs actual:\n==26665==  Expected: stack array \"tekst\" of size 21 in frame 3 back from here\n==26665==  Actual:   unknown\n==26665==  Actual:   is 0 after Expected\n==26665== \n==26665== Invalid read of size 1\n==26665==    at 0x40060F: podstring (bs_test_1836.c:18)\n==26665==    by 0x400807: zamjena_rijeci (bs_test_1836.c:105)\n==26665==    by 0x4008F3: main (bs_test_1836.c:128)\n==26665==  Address 0xfff000c35 expected vs actual:\n==26665==  Expected: stack array \"tekst\" of size 21 in frame 2 back from here\n==26665==  Actual:   unknown\n==26665==  Actual:   is 0 after Expected\n==26665== \n==26665== \n==26665== ERROR SUMMARY: 2 errors from 2 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x40060F: podstring (bs_test_1836.c:18)\n    by 0x400763: ZamijeniTekst (bs_test_1836.c:84)\n    by 0x40084D: zamjena_rijeci (bs_test_1836.c:107)\n    by 0x4008F3: main (bs_test_1836.c:128)\n  Address 0xfff000c35 expected vs actual:\n  Expected: stack array \"tekst\" of size 21 in frame 3 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 16
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1836.c: In function ‘podstring’:\nbs_test_1836.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *pocetak=str;\n                   ^~~\nbs_test_1836.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=trazi;\n              ^~~~~\nbs_test_1836.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s1=str;\n              ^~~\nbs_test_1836.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         s2=trazi;\n           ^\nbs_test_1836.c: In function ‘UbaciTekst’:\nbs_test_1836.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=tekst;\n                ^~~~~\nbs_test_1836.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *s2=tekst;\n              ^~~~~\nbs_test_1836.c: In function ‘ZamijeniTekst’:\nbs_test_1836.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char*kraj=sta;\n               ^~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "15",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:15:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *pocetak=str;                   ^~~",
+                        "code": "char *pocetak=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "16",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:16:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=trazi;              ^~~~~",
+                        "code": "char *s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "17",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:17:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s1=str;              ^~~",
+                        "code": "char *s1=str;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "21",
+                        "col": "11",
+                        "message": "assignment discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:21:11: warning: assignment discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         s2=trazi;           ^",
+                        "code": "s2=trazi;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "47",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:47:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=tekst;                ^~~~~",
+                        "code": "char *kraj=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "60",
+                        "col": "14",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:60:14: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *s2=tekst;              ^~~~~",
+                        "code": "char *s2=tekst;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1836.c",
+                        "line": "77",
+                        "col": "15",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_848/bs_test_1836.c:77:15: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char*kraj=sta;               ^~~",
+                        "code": "char*kraj=sta;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580243293
+}

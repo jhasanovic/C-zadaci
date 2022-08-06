@@ -1,0 +1,116 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:20:15: warning: ‘idealna’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n     if(idealna-trenutna<3 && idealna-trenutna>-3)\n        ~~~~~~~^~~~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "20",
+                "col": "15",
+                "message": "'idealna' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_872/main.c:20:15: warning: ‘idealna’ may be used uninitialized in this function [-Wmaybe-uninitialized]     if(idealna-trenutna<3 && idealna-trenutna>-3)        ~~~~~~~^~~~~~~~~",
+                "code": "if(idealna-trenutna<3 && idealna-trenutna>-3)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "5379": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite pol (M/Z): Unesite visinu (u cm): Unesite trenutnu tezinu: Vasa tezina je uredu",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5380": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite pol (M/Z): Unesite visinu (u cm): Unesite trenutnu tezinu: Potrebno je da se ugojite 24.9921 kilograma",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5381": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite pol (M/Z): Unesite visinu (u cm): Unesite trenutnu tezinu: Potrebno je da smrsate 37.8425 kilograma",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5382": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite pol (M/Z): Unesite visinu (u cm): Unesite trenutnu tezinu: Vasa tezina je uredu",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5383": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite pol (M/Z): Unesite visinu (u cm): Unesite trenutnu tezinu: Potrebno je da smrsate 18.0906 kilograma",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5384": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite pol (M/Z): Unesite visinu (u cm): Unesite trenutnu tezinu: Potrebno je da se ugojite 10.0984 kilograma",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1571945525
+}

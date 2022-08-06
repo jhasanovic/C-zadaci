@@ -1,0 +1,101 @@
+{
+    "id": 1217,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 7, zadatak 5",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1218,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/primjer iz teksta zadatka\nint n;\nn=prva_cifra(7392);\nprintf(\"%d\", n);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "7"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1219,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/negativni broj\nint n;\nn=prva_cifra(-58768);\nprintf(\"%d\", n);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "5"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1220,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int n;\nn=prva_cifra(0);\nprintf(\"%d\", n);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1221,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int broj=23456,suma=0, proizvod=1;\nwhile(broj>0) {\n    suma += prva_cifra(broj);\n    proizvod *= prva_cifra(broj);\n    broj\/=10;\n}\nprintf(\"%d %d\", suma, proizvod);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "10 32"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

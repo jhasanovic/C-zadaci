@@ -1,0 +1,80 @@
+{
+    "id": 1241,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 7, zadatak 7",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1242,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double niz[10]={5,6,3,4,10,8,9,1,2,7};\nint i;\nsortiraj(niz,10);\nfor(i=0;i<10;i++) printf(\"%g \", niz[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "10 9 8 7 6 5 4 3 2 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1243,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double niz[5]={0.000003, 0.000005, 0.000001, 0.000007, 0.000006};\nint i;\nsortiraj(niz,5);\nfor(i=0;i<5;i++) printf(\"%f \", niz[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0.000007 0.000006 0.000005 0.000003 0.000001 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1244,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int i;\ndouble niz[10]={0.003, -1, 0.003, 5.13, 6.999998, 6.999999, -1.000001, 4, 7.000001, 6.999998};\nsortiraj(niz, 10);\nfor(i=0;i<10;i++) printf(\"%f \", niz[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "7.000001 6.999999 6.999998 6.999998 5.130000 4.000000 0.003000 0.003000 -1.000000 -1.000001 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

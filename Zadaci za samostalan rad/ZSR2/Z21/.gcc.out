@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z21/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z21/main.c:28:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(d==4)
+       ^~

@@ -1,0 +1,80 @@
+{
+    "id": 1241,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 8, zadatak 2",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1242,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1 [9] = {1,2,3,4,5,6,7,8,9};\nobrni_cifre(niz1, 9);\nint i;\nfor(i=0; i<9; i++) printf(\"%d \", niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 2 3 4 5 6 7 8 9 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1243,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz1 [5] = {1,23,321,918,33};\nobrni_cifre(niz1, 5);\nint i;\nfor(i=0; i<5; i++) printf(\"%d \", niz1[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 32 123 819 33 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1244,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* Test za slucajeve sa negativnim brojevima, sto se ne govori eksplicitno u \nzadatku ali je korisno za vjezbu *\/\n\nint niz1 [5] = {1,-23,-15,918,33};\nobrni_cifre(niz1, 5);\nint i;\nfor(i=0; i<5; i++) printf(\"%d \", niz1[i]); \n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 -32 -51 819 33"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

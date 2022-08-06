@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR11/Z10/main.c: In function ‘funkcija’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR11/Z10/main.c:17:33: warning: unused variable ‘br’ [-Wunused-variable]
+     int i=0,j=0,brojac=0,flag=0,br;
+                                 ^~

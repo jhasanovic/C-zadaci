@@ -1,0 +1,77 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "6324": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite n: Broj nije prirodan!\nUnesite n: Broj nije prirodan!\nUnesite n: 1\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6326": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite n: 1\n5\n7\n11\n17\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6327": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite n: 1\n5\n7\n11\n17\n19\n23\n25\n29\n31\n35\n37\n41\n43\n47\n49\n53\n55\n59\n61\n67\n71\n73\n77\n79\n83\n85\n89\n95\n97\n101\n103\n107\n109\n113\n115\n119\n121\n125\n127\n131\n133\n137\n139\n145\n149\n151\n155\n157\n161\n163\n167\n173\n175\n179\n181\n185\n187\n191\n193\n197\n199\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "6328": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite n: 1\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1572870127
+}

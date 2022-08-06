@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z3/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z3/main.c:23:9: error: implicit declaration of function ‘round’ [-Werror=implicit-function-declaration]
+  niz[i]=round(niz[i]);
+         ^~~~~
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z3/main.c:23:9: warning: incompatible implicit declaration of built-in function ‘round’
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z3/main.c:23:9: note: include ‘<math.h>’ or provide a declaration of ‘round’
+cc1: some warnings being treated as errors

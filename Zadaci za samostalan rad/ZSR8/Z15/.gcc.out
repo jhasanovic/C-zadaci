@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR8/Z15/main.c: In function ‘pravougaonik’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR8/Z15/main.c:43:30: warning: unused variable ‘visina’ [-Wunused-variable]
+  int velicina=4,i=0,sirina=a,visina=b,razmak;
+                              ^~~~~~
+/rhome/j/jhasanovic1/workspace/OR/ZSR8/Z15/main.c:43:6: warning: unused variable ‘velicina’ [-Wunused-variable]
+  int velicina=4,i=0,sirina=a,visina=b,razmak;
+      ^~~~~~~~

@@ -1,0 +1,164 @@
+{
+    "id": 7220,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 11, zadatak 13",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 2172,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Tacka3d t1 = {1,1,1}, t2 = {2,2,2}, t3 = {3,3,3}, t4 = {4,4,4};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\nt1.x = 1000;\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 -1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2173,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Tacka3d t1 = {1,1,1}, t2 = {1,1,1}, t3 = {1,1,1}, t4 = {1,1,1};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\nt3.x = t3.y = t3.z = 2;\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\nt1.x = 1000;\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 1 -1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2174,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Tacka3d t1 = {1,1,1}, t2 = {1,1,2}, t3 = {1,1,3}, t4 = {1,2,1};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\nt4.y = 1;\nt4.z = 4;\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "-1 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2175,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT4 Provjra za tacke cije koordinate nisu cjelobrojne.\nstruct Tacka3d t1 = {7.5,1.7,5.244}, t2 = {4.1,1.8,7.854}, t3 = {122211,10000,4522}, t4 = {1.6544,85.321,4};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "-1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2176,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT5 Provjra za tacke cije su koordinate negativne.\nstruct Tacka3d t1 = {-11111,-11111,-11111}, t2 = {2,2,2}, t3 = {-333,-333,-333}, t4 = {1000,1000,1000};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2177,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT6 Provjra preciznosti. (Nisu kolinearne)\nstruct Tacka3d t1 = {-1,-1,-1}, t2 = {10000000,10000000,9999999}, t3 = {1,1,1}, t4 = {10000000,10000000,10000001};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\n\nstruct Tacka3d t5 = {99.0000001,99.0000001,99.0000002}, t6 = {2,2,2}, t7 = {1,1,1}, t8 = {3,3,3};\nprintf(\"%d \", kolinearne_tacke(t5, t6, t7, t8));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "-1 -1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2178,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT7 Dvije tacke su uvijek kolinearne \nstruct Tacka3d t1 = {2,2,2}, t2 = {2,2,2}, t3 = {1,1,1}, t4 = {1,1,1};\nprintf(\"%d \", kolinearne_tacke(t1, t2, t3, t4));\n        \nprintf(\"%d \", kolinearne_tacke(t1, t2, t2, t4));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

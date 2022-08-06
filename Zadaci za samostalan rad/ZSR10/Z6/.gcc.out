@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z6/main.c: In function ‘ZamijeniTekst’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z6/main.c:77:28: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+                     while (*poc++=*pom++);
+                            ^
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z6/main.c:132:28: warning: suggest parentheses around assignment used as truth value [-Wparentheses]
+                     while (*poc++=*pom++);
+                            ^

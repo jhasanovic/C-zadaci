@@ -1,0 +1,164 @@
+{
+    "id": 5432,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 5, zadatak 3",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Student niz[5] = {\n\t{\"Mujo\", \"Mujic\", {1, 1, 2000}},\n\t{\"Pero\", \"Peric\", {30, 1, 2000}},\n\t{\"Fata\", \"Fatic\", {3, 12, 1999}},\n\t{\"Sara\", \"Sarac\", {1, 2, 2000}},\n\t{\"Dzana\", \"Dzanic\", {1, 3, 2000}}\n};\n\nperiod(niz, 5, 29);\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Mujo Mujic - Pero Peric\\nMujo Mujic - Fata Fatic\\nSara Sarac - Dzana Dzanic"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Student niz[10] = {\n\t{\"Mujo\", \"Mujic\", {3, 1, 2000}},\n\t{\"Pero\", \"Peric\", {2, 1, 2000}},\n\t{\"Fata\", \"Fatic\", {3, 1, 2000}},\n\t{\"Sara\", \"Sarac\", {2, 1, 2000}},\n\t{\"Dzana\", \"Dzanic\", {3, 1, 2000}},\n};\n\nperiod(niz, 5, 1);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Mujo Mujic - Pero Peric\\nMujo Mujic - Sara Sarac\\nPero Peric - Fata Fatic\\nPero Peric - Dzana Dzanic\\nFata Fatic - Sara Sarac\\nSara Sarac - Dzana Dzanic"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Student niz[10] = {\n\t{\"Mujo\", \"Mujic\", {1, 1, 2000}},\n\t{\"Pero\", \"Peric\", {1, 1, 2001}},\n\t{\"Fata\", \"Fatic\", {1, 1, 2002}},\n\t{\"Sara\", \"Sarac\", {1, 1, 1999}},\n\t{\"Dzana\", \"Dzanic\", {1, 1, 1998}},\n};\n\nperiod(niz, 5, 365);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Mujo Mujic - Sara Sarac\\nPero Peric - Fata Fatic\\nSara Sarac - Dzana Dzanic"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Student niz[10] = {\n\t{\"Mujo\", \"Mujic\", {30, 1, 2000}},\n\t{\"Pero\", \"Peric\", {31, 3, 2002}},\n\t{\"Fata\", \"Fatic\", {30, 5, 2004}},\n\t{\"Sara\", \"Sarac\", {18, 7, 2000}},\n\t{\"Dzana\", \"Dzanic\", {17, 9, 2002}},\n};\n\nperiod(niz, 5, 365*2+30+31);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Mujo Mujic - Pero Peric\\nPero Peric - Fata Fatic\\nSara Sarac - Dzana Dzanic"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "struct Student niz[10] = {\n\t{\"Mujo\", \"Mujic\", {30, 1, 1900}},\n\t{\"Pero\", \"Peric\", {31, 3, 1902}},\n\t{\"Fata\", \"Fatic\", {30, 5, 1904}},\n\t{\"Sara\", \"Sarac\", {18, 7, 1900}},\n\t{\"Dzana\", \"Dzanic\", {17, 9, 1902}},\n};\n\nperiod(niz, 5, 365*2+30+31);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Pero Peric - Fata Fatic\\nSara Sarac - Dzana Dzanic"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT1: Osnovni test datoteke *\/\nstruct Student nizz[] = {\n\t{ \"Sara\", \"Sarac\", { 18, 2, 1998} },\n\t{ \"Pero\", \"Peric\", { 31, 11, 1999} },\n\t{ \"Aleksandar\", \"Sasic\", { 31, 12, 1997} },\n\t{ \"Ana-Marija\", \"Anic-Marijic\", { 1, 1, 1999} }\n};\nzapisi(nizz, 4);\n\n\/* Za razliku od studenata, ja smijem promijeniti definiciju strukture >:) *\/\nstruct nStudent {\n\tchar ime[20], prezime[20];\n\tunsigned char dan, mjesec;\n\tunsigned short godina;\n} niz[100];\nFILE* ulaz = fopen(\"studenti.dat\", \"rb\");\nint vel = fread(niz, sizeof(struct nStudent), 100, ulaz);\nfclose(ulaz);\n\nint i;\nfor (i=0; i<vel; i++)\n\tprintf(\"%d. '%s' '%s' - %d. %d. %d.\\n\", i+1, niz[i].ime, niz[i].prezime, niz[i].dan, niz[i].mjesec, niz[i].godina);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1. 'Sara' 'Sarac' - 18. 2. 1998.\\n2. 'Pero' 'Peric' - 31. 11. 1999.\\n3. 'Aleksandar' 'Sasic' - 31. 12. 1997.\\n4. 'Ana-Marija' 'Anic-Marijic' - 1. 1. 1999."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 10,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT3: Radi li izmjena? *\/\nstruct Student nizz[] = {\n\t{ \"Sara\", \"Sarac\", { 18, 2, 1998} },\n\t{ \"Pero\", \"Peric\", { 31, 11, 1999} },\n\t{ \"Aleksandar\", \"Sasic\", { 31, 12, 1997} },\n\t{ \"Ana-Marija\", \"Anic-Marijic\", { 1, 1, 1999} }\n};\nzapisi(nizz, 4);\n\nstruct Student izmjena = { \"Meho\", \"Mehic\", { 1, 1, 1998} };\npromijeni(izmjena, 2);\n\nstruct nStudent {\n\tchar ime[20], prezime[20];\n\tunsigned char dan, mjesec;\n\tunsigned short godina;\n} niz[100];\nFILE* ulaz = fopen(\"studenti.dat\", \"rb\");\nint vel = fread(niz, sizeof(struct nStudent), 100, ulaz);\nfclose(ulaz);\n\nint i;\nfor (i=0; i<vel; i++)\n\tprintf(\"%d. '%s' '%s' - %d. %d. %d.\\n\", i+1, niz[i].ime, niz[i].prezime, niz[i].dan, niz[i].mjesec, niz[i].godina);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1. 'Sara' 'Sarac' - 18. 2. 1998.\\n2. 'Pero' 'Peric' - 31. 11. 1999.\\n3. 'Meho' 'Mehic' - 1. 1. 1998.\\n4. 'Ana-Marija' 'Anic-Marijic' - 1. 1. 1999."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

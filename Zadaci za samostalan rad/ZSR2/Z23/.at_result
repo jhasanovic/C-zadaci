@@ -1,0 +1,190 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:7:10: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     if(a1==a2 && b1==b2)\n          ^~\nmain.c:7:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     if(a1==a2 && b1==b2)\n                    ^~\nmain.c:9:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n     else if(a1==a2)\n               ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "7",
+                "col": "10",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_1709/main.c:7:10: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     if(a1==a2 && b1==b2)          ^~",
+                "code": "if(a1==a2 && b1==b2)"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "7",
+                "col": "20",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_1709/main.c:7:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     if(a1==a2 && b1==b2)                    ^~",
+                "code": "if(a1==a2 && b1==b2)"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "9",
+                "col": "15",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_1709/main.c:9:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]     else if(a1==a2)               ^~",
+                "code": "else if(a1==a2)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1170": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Prave se sijeku u tacci (-4.2,-7.8)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1242": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Paralelne su",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1243": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Prave se sijeku u tacci (1.5,8.0)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1244": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Paralelne su",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1245": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Poklapaju se",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1246": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Poklapaju se",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1255": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Prave se sijeku u tacci (0.3,87.4)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1256": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Paralelne su",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1257": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Poklapaju se",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1258": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite a1,b1,a2,b2: Prave se sijeku u tacci (0.9,895.9)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1572270091
+}

@@ -1,0 +1,101 @@
+{
+    "id": 5597,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 4, zadatak 2",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"Vatra vata vraTa tava Vrat VARTA\";\nprintf(\"'%s'\", izbaci_anagrame(tekst, \"trava\"));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'vata tava Vrat'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "true",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"Ovo je neki primjer malo duzeg teksta\";\nchar anagrami[] = \"Ana gram oloma vo oov jejeje\";\nprintf(\"'%s'\", izbaci_anagrame(tekst, anagrami));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'je neki primjer malo duzeg teksta'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "true",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"dvije rijeci\", tekst2[] = \"dvije rijeci\", tekst3[] = \"dvije rijeci\";\nprintf(\"'%s'\\n\", izbaci_anagrame(tekst, \"dvije\"));\nprintf(\"'%s'\\n\", izbaci_anagrame(tekst2, \"rijeci\"));\nprintf(\"'%s'\\n\", izbaci_anagrame(tekst3, \"rijeci dvije\"));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'rijeci'\\n'dvije'\\n''\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "true",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"aaaaaaaaaaaaaaaaaaaaaaa\";\nprintf(\"'%s'\\n\", izbaci_anagrame(tekst, \"a\"));\nprintf(\"'%s'\\n\", izbaci_anagrame(tekst, \"aaaa\"));\nprintf(\"'%s'\", izbaci_anagrame(tekst, \"b aaaaaaaaaaaaaaaaaaaaaaa\"));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'aaaaaaaaaaaaaaaaaaaaaaa'\\n'aaaaaaaaaaaaaaaaaaaaaaa'\\n''"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "true",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

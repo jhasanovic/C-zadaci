@@ -1,0 +1,799 @@
+{
+    "buildhost_description": {
+        "id": "magi",
+        "os": "Linux 4.15.0-70-generic x86_64\nUbuntu 18.04.3 LTS\n"
+    },
+    "tools": {
+        "compile": "gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0",
+        "compile[debug]": "gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0",
+        "debug": "GNU gdb (Ubuntu 8.1-0ubuntu3.2) 8.1.0.20180409-git",
+        "profile[memcheck]": "valgrind-3.13.0",
+        "profile[sgcheck]": "valgrind-3.13.0"
+    },
+    "status": 4,
+    "test_results": {
+        "1": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_8107/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "2.000 0",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "2": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_2272/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "0 1",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "3": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_8953/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "main.c: In function ‘f’:\nmain.c:1:29: warning: implicit declaration of function ‘sin’ [-Wimplicit-function-declaration]\n double f(double x) { return sin(x); }\n                             ^~~\nmain.c:1:29: warning: incompatible implicit declaration of built-in function ‘sin’\nmain.c:1:29: note: include ‘<math.h>’ or provide a declaration of ‘sin’\nmain.c: In function ‘g’:\nmain.c:2:29: warning: incompatible implicit declaration of built-in function ‘sin’\n double g(double x) { return sin(x); }\n                             ^~~\nmain.c:2:29: note: include ‘<math.h>’ or provide a declaration of ‘sin’",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "1",
+                            "col": "29",
+                            "message": "implicit declaration of function 'sin'",
+                            "output": "/tmp/buildservice/bs_8953/main.c:1:29: warning: implicit declaration of function ‘sin’ [-Wimplicit-function-declaration] double f(double x) { return sin(x); }                             ^~~",
+                            "code": "double f(double x) { return sin(x); }"
+                        },
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "1",
+                            "col": "29",
+                            "message": "incompatible implicit declaration of built-in function 'sin'",
+                            "output": "/tmp/buildservice/bs_8953/main.c:1:29: warning: incompatible implicit declaration of built-in function ‘sin’"
+                        },
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "2",
+                            "col": "29",
+                            "message": "incompatible implicit declaration of built-in function 'sin'",
+                            "output": "/tmp/buildservice/bs_8953/main.c:2:29: warning: incompatible implicit declaration of built-in function ‘sin’ double g(double x) { return sin(x); }                             ^~~",
+                            "code": "double g(double x) { return sin(x); }"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "0 1",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "4": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_2961/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "main.c: In function ‘f’:\nmain.c:1:29: warning: implicit declaration of function ‘sin’ [-Wimplicit-function-declaration]\n double f(double x) { return sin(x); }\n                             ^~~\nmain.c:1:29: warning: incompatible implicit declaration of built-in function ‘sin’\nmain.c:1:29: note: include ‘<math.h>’ or provide a declaration of ‘sin’\nmain.c: In function ‘g’:\nmain.c:2:29: warning: implicit declaration of function ‘cos’ [-Wimplicit-function-declaration]\n double g(double x) { return cos(x); }\n                             ^~~\nmain.c:2:29: warning: incompatible implicit declaration of built-in function ‘cos’\nmain.c:2:29: note: include ‘<math.h>’ or provide a declaration of ‘cos’",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "1",
+                            "col": "29",
+                            "message": "implicit declaration of function 'sin'",
+                            "output": "/tmp/buildservice/bs_2961/main.c:1:29: warning: implicit declaration of function ‘sin’ [-Wimplicit-function-declaration] double f(double x) { return sin(x); }                             ^~~",
+                            "code": "double f(double x) { return sin(x); }"
+                        },
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "1",
+                            "col": "29",
+                            "message": "incompatible implicit declaration of built-in function 'sin'",
+                            "output": "/tmp/buildservice/bs_2961/main.c:1:29: warning: incompatible implicit declaration of built-in function ‘sin’"
+                        },
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "2",
+                            "col": "29",
+                            "message": "implicit declaration of function 'cos'",
+                            "output": "/tmp/buildservice/bs_2961/main.c:2:29: warning: implicit declaration of function ‘cos’ [-Wimplicit-function-declaration] double g(double x) { return cos(x); }                             ^~~",
+                            "code": "double g(double x) { return cos(x); }"
+                        },
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "2",
+                            "col": "29",
+                            "message": "incompatible implicit declaration of built-in function 'cos'",
+                            "output": "/tmp/buildservice/bs_2961/main.c:2:29: warning: incompatible implicit declaration of built-in function ‘cos’"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "0.000 1\n2 0",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "5": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_9183/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "2.00 0",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "6": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_9615/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "main.c: In function ‘f’:\nmain.c:1:29: warning: implicit declaration of function ‘tan’ [-Wimplicit-function-declaration]\n double f(double x) { return tan(x); }\n                             ^~~\nmain.c:1:29: warning: incompatible implicit declaration of built-in function ‘tan’\nmain.c:1:29: note: include ‘<math.h>’ or provide a declaration of ‘tan’",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": [
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "1",
+                            "col": "29",
+                            "message": "implicit declaration of function 'tan'",
+                            "output": "/tmp/buildservice/bs_9615/main.c:1:29: warning: implicit declaration of function ‘tan’ [-Wimplicit-function-declaration] double f(double x) { return tan(x); }                             ^~~",
+                            "code": "double f(double x) { return tan(x); }"
+                        },
+                        {
+                            "type": "warning",
+                            "file": "main.c",
+                            "line": "1",
+                            "col": "29",
+                            "message": "incompatible implicit declaration of built-in function 'tan'",
+                            "output": "/tmp/buildservice/bs_9615/main.c:1:29: warning: incompatible implicit declaration of built-in function ‘tan’"
+                        }
+                    ]
+                },
+                "execute": {
+                    "output": "0.000 1\n2.000 0",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "7": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_3474/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "2 0",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "8": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_8097/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "2.000 0",
+                    "duration": 0,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "9": {
+            "success": false,
+            "status": 6,
+            "tools": {
+                "parse": {
+                    "success": true,
+                    "symbols": {
+                        "/tmp/buildservice/bs_6465/main.c": [
+                            {
+                                "name": "EPSILON",
+                                "pos": 45
+                            },
+                            {
+                                "name": "delta",
+                                "pos": 68
+                            },
+                            {
+                                "name": "f1",
+                                "pos": 88
+                            },
+                            {
+                                "name": "g1",
+                                "pos": 128
+                            },
+                            {
+                                "name": "h1",
+                                "pos": 168
+                            },
+                            {
+                                "name": "presjek",
+                                "pos": 218
+                            },
+                            {
+                                "name": "main",
+                                "pos": 1054
+                            }
+                        ]
+                    }
+                },
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "0.000 1\n0.000 1\n2.000 0",
+                    "duration": 1,
+                    "status": false,
+                    "exit_code": 0,
+                    "success": 6
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": -1,
+                    "output": "",
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        }
+    },
+    "time": 1576795209
+}

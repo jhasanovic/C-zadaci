@@ -1,0 +1,269 @@
+{
+    "id": 4105,
+    "name": "Osnove ra\u010dunarstva (2017\/2018), ZSR1, zadatak 22",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [
+
+    ],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1170,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "18 15 9 5 30 18 15 9 5 30 18 15 9 5 30"
+            },
+            "expected": [
+                "Sva tri studenta su polozila.\\nSva tri studenta imaju istu ocjenu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "true"
+        },
+        {
+            "id": 1235,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT2: \n\n\/* Testira unos van opsega, kod treceg studenta, usput provjeri ispravnost\nispisa te provjere da prisustvo mora biti u intervalu [0,10], unosi se 13 i\ntrazi poruka o gresci i prekidanje izvrsavanja programa *\/\n\n\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1 2 3 4 5 6 7 8 9 10 11 12 13"
+            },
+            "expected": [
+                "Unesite bodove za Tarika: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Neispravan broj bodova"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1236,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT3: \n\n\/\/Testira situaciju kada dva studenta poloze razlicitim ocjenama, granicni slucaj 55\n\n\/\/kod:\n\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "20 20 0 0 40 0 0 10 10 40 20 0 5 5 20"
+            },
+            "expected": [
+                "Unesite bodove za Tarika: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Dva studenta su polozila."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1237,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT4: \n\/\/Malo negativnih brojeva, uz sve to i decimalnih, blizu granice intervala prisustva i zada\u0107e\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "9.9 9.9 10 0.1 9.9 -0.1"
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana:\\nI parcijalni ispit: Neispravan broj bodova"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1238,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT5: \n\/\/Svi polozili razlicitom ocjenom\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10.1 10.1 9.9 9.9 20 10.1 10.1 9.9 9.9 30 10.1 10.1 9.9 9.9 40"
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Sva tri studenta su polozila.\\nSvaki student ima razlicitu ocjenu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1239,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT6: \n\/\/Svi pali\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0 0 0 0 0 0 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Nijedan student nije polozio."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1240,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT7: \n\/\/Svi prosli, dva imaju istu ocjenu\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "7.1 7.2 7.3 7.4 29.1 7.5 7.6 7.7 7.8 31.7 7.9 8 8.1 8.2 37.4"
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Sva tri studenta su polozila.\\nDva od tri studenta imaju istu ocjenu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1241,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT8: \n\/\/Samo jedan student polozio\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0.1 1.2 2.3 3.4 4.5 5.6 6.7 7.8 8.9 9.1 10 11.1 9.7 7.9 32.1 "
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu: \\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Jedan student je polozio."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1247,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/AT9: \n\/\/pore\u0111enje floatova, zbir je 55\t\t\t\t\t\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "20 20 10 4.99 0.01 0 0 0 0 0 0 0 0 0 0"
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Jedan student je polozio."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1270,
+            "require_symbols": [
+
+            ],
+            "replace_symbols": [
+
+            ],
+            "code": "\/\/neki grani\u010dni slu\u010dajevi\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "20 15 5 4 10 15.5 20 5 4 10 15.98 20 5 4 10"
+            },
+            "expected": [
+                "Unesite bodove za Tarika:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Bojana:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Unesite bodove za Mirzu:\\nI parcijalni ispit: II parcijalni ispit: Prisustvo: Zadace: Zavrsni ispit: Nijedan student nije polozio."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,215 @@
+{
+    "id": 5637,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 1, Zadatak 1",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "8"
+            },
+            "expected": [
+                "Unesite broj n: ++++++++++++++++\\n++            ++\\n+ +          + +\\n+  ++++++++++  +\\n+              +\\n+              +\\n+              +\\n++++++++++++++++",
+                "Unesite broj n: \\n++++++++++++++++\\n++            ++\\n+ +          + +\\n+  ++++++++++  +\\n+              +\\n+              +\\n+              +\\n++++++++++++++++"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "4"
+            },
+            "expected": [
+                "Unesite broj n: ++++++++\\n++++++++\\n+      +\\n++++++++",
+                "Unesite broj n: \\n++++++++\\n++++++++\\n+      +\\n++++++++"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "11"
+            },
+            "expected": [
+                "Unesite broj n: Broj je van trazenog opsega.",
+                "Unesite broj n: \\nBroj je van trazenog opsega."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-5"
+            },
+            "expected": [
+                "Unesite broj n: Broj je van trazenog opsega.",
+                "Unesite broj n: \\nBroj je van trazenog opsega."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "101"
+            },
+            "expected": [
+                "Unesite broj n: Broj je van trazenog opsega.",
+                "Unesite broj n: \\nBroj je van trazenog opsega."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "14"
+            },
+            "expected": [
+                "Unesite broj n: ++++++++++++++++++++++++++++\\n++                        ++\\n+ +                      + +\\n+  +                    +  +\\n+   +                  +   +\\n+    +                +    +\\n+     ++++++++++++++++     +\\n+                          +\\n+                          +\\n+                          +\\n+                          +\\n+                          +\\n+                          +\\n++++++++++++++++++++++++++++",
+                "Unesite broj n: \\n++++++++++++++++++++++++++++\\n++                        ++\\n+ +                      + +\\n+  +                    +  +\\n+   +                  +   +\\n+    +                +    +\\n+     ++++++++++++++++     +\\n+                          +\\n+                          +\\n+                          +\\n+                          +\\n+                          +\\n+                          +\\n++++++++++++++++++++++++++++"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "24"
+            },
+            "expected": [
+                "Unesite broj n: ++++++++++++++++++++++++++++++++++++++++++++++++\\n++                                            ++\\n+ +                                          + +\\n+  +                                        +  +\\n+   +                                      +   +\\n+    +                                    +    +\\n+     +                                  +     +\\n+      +                                +      +\\n+       +                              +       +\\n+        +                            +        +\\n+         +                          +         +\\n+          ++++++++++++++++++++++++++          +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n++++++++++++++++++++++++++++++++++++++++++++++++",
+                "Unesite broj n: \\n++++++++++++++++++++++++++++++++++++++++++++++++\\n++                                            ++\\n+ +                                          + +\\n+  +                                        +  +\\n+   +                                      +   +\\n+    +                                    +    +\\n+     +                                  +     +\\n+      +                                +      +\\n+       +                              +       +\\n+        +                            +        +\\n+         +                          +         +\\n+          ++++++++++++++++++++++++++          +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n+                                              +\\n++++++++++++++++++++++++++++++++++++++++++++++++"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "6"
+            },
+            "expected": [
+                "Unesite broj n: ++++++++++++\\n++        ++\\n+ ++++++++ +\\n+          +\\n+          +\\n++++++++++++",
+                "Unesite broj n: \\n++++++++++++\\n++        ++\\n+ ++++++++ +\\n+          +\\n+          +\\n++++++++++++"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 9,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "12"
+            },
+            "expected": [
+                "Unesite broj n: ++++++++++++++++++++++++\\n++                    ++\\n+ +                  + +\\n+  +                +  +\\n+   +              +   +\\n+    ++++++++++++++    +\\n+                      +\\n+                      +\\n+                      +\\n+                      +\\n+                      +\\n++++++++++++++++++++++++",
+                "Unesite broj n: \\n++++++++++++++++++++++++\\n++                    ++\\n+ +                  + +\\n+  +                +  +\\n+   +              +   +\\n+    ++++++++++++++    +\\n+                      +\\n+                      +\\n+                      +\\n+                      +\\n+                      +\\n++++++++++++++++++++++++"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

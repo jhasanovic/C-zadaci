@@ -1,0 +1,122 @@
+{
+    "id": 7054,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR6, zadatak 8",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1297,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n5\n3\n7\n3\n7\n9\n-1\n7\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa):\\nUnesite 4. element (-1 za kraj unosa): \\nUnesite 5. element (-1 za kraj unosa): \\nUnesite 6. element (-1 za kraj unosa): \\nUnesite 7. element (-1 za kraj unosa): \\nUnesite 8. element (-1 za kraj unosa): \\nUnesite broj za pretragu: \\nBroj 7 je unesen kao 4. broj po redu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1298,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n2\n3\n-1\n5\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nUnesite broj za pretragu: \\nBroj 5 se ne nalazi medju unesenim brojevima!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1299,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0\n0\n0\n-1\n0\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nUnesite broj za pretragu: \\nBroj 0 je unesen kao 1. broj po redu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1300,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n1.11\n1.111\n1.1111\n-1\n1.111\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nUnesite 5. element (-1 za kraj unosa): \\nUnesite broj za pretragu: \\nBroj 1.111 je unesen kao 3. broj po redu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1301,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-987.987\n-987.98699\n-987.986999\n-1\n-987.98699\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nUnesite broj za pretragu: \\nBroj -987.987 je unesen kao 2. broj po redu."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

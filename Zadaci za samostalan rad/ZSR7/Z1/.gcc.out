@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR7/Z1/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR7/Z1/main.c:36:7: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(a!=1 || (n-(long long int)n)!=0 ) {
+       ^~
+/rhome/j/jhasanovic1/workspace/OR/ZSR7/Z1/main.c:36:34: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+   if(a!=1 || (n-(long long int)n)!=0 ) {
+                                  ^~

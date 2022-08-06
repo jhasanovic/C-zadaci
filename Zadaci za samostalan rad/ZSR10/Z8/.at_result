@@ -1,0 +1,211 @@
+{
+    "buildhost_description": {
+        "id": "lab002c26",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘periodican’:\nmain.c:16:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=string;\n                ^~~~~~\nmain.c:23:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=string;\n                   ^~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "16",
+                "col": "16",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_7754/main.c:16:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=string;                ^~~~~~",
+                "code": "char *kraj=string;"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "23",
+                "col": "19",
+                "message": "initialization discards 'const' qualifier from pointer target type",
+                "output": "/tmp/buildservice/bs_7754/main.c:23:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=string;                   ^~~~~~",
+                "code": "char *pok=string;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "2207": {
+            "status": 1,
+            "run_result": {
+                "output": "2 3 5",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2207.c: In function ‘periodican’:\nbs_test_2207.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=string;\n                ^~~~~~\nbs_test_2207.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=string;\n                   ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2207.c",
+                        "line": "18",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2207.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=string;                ^~~~~~",
+                        "code": "char *kraj=string;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2207.c",
+                        "line": "25",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2207.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=string;                   ^~~~~~",
+                        "code": "char *pok=string;"
+                    }
+                ]
+            }
+        },
+        "2208": {
+            "status": 1,
+            "run_result": {
+                "output": "0 0 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2208.c: In function ‘periodican’:\nbs_test_2208.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=string;\n                ^~~~~~\nbs_test_2208.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=string;\n                   ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2208.c",
+                        "line": "18",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2208.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=string;                ^~~~~~",
+                        "code": "char *kraj=string;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2208.c",
+                        "line": "25",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2208.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=string;                   ^~~~~~",
+                        "code": "char *pok=string;"
+                    }
+                ]
+            }
+        },
+        "2209": {
+            "status": 1,
+            "run_result": {
+                "output": "4 4 5",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2209.c: In function ‘periodican’:\nbs_test_2209.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=string;\n                ^~~~~~\nbs_test_2209.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=string;\n                   ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2209.c",
+                        "line": "18",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2209.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=string;                ^~~~~~",
+                        "code": "char *kraj=string;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2209.c",
+                        "line": "25",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2209.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=string;                   ^~~~~~",
+                        "code": "char *pok=string;"
+                    }
+                ]
+            }
+        },
+        "2210": {
+            "status": 1,
+            "run_result": {
+                "output": "5 0 0",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2210.c: In function ‘periodican’:\nbs_test_2210.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=string;\n                ^~~~~~\nbs_test_2210.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=string;\n                   ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2210.c",
+                        "line": "18",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2210.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=string;                ^~~~~~",
+                        "code": "char *kraj=string;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2210.c",
+                        "line": "25",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2210.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=string;                   ^~~~~~",
+                        "code": "char *pok=string;"
+                    }
+                ]
+            }
+        },
+        "2211": {
+            "status": 1,
+            "run_result": {
+                "output": "5 5 10",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_2211.c: In function ‘periodican’:\nbs_test_2211.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n     char *kraj=string;\n                ^~~~~~\nbs_test_2211.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]\n         char *pok=string;\n                   ^~~~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2211.c",
+                        "line": "18",
+                        "col": "16",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2211.c:18:16: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]     char *kraj=string;                ^~~~~~",
+                        "code": "char *kraj=string;"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_2211.c",
+                        "line": "25",
+                        "col": "19",
+                        "message": "initialization discards 'const' qualifier from pointer target type",
+                        "output": "/tmp/buildservice/bs_7754/bs_test_2211.c:25:19: warning: initialization discards ‘const’ qualifier from pointer target type [-Wdiscarded-qualifiers]         char *pok=string;                   ^~~~~~",
+                        "code": "char *pok=string;"
+                    }
+                ]
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580232975
+}

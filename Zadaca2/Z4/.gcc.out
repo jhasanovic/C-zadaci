@@ -1,0 +1,16 @@
+/rhome/j/jhasanovic1/workspace/OR/Z2/Z4/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/Z2/Z4/main.c:52:22: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+ else if(niz[racun[i]]==0){
+                      ^~
+/rhome/j/jhasanovic1/workspace/OR/Z2/Z4/main.c:62:10: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+ if(ukupno!=0){
+          ^~
+/rhome/j/jhasanovic1/workspace/OR/Z2/Z4/main.c:5:30: warning: variable ‘prekini’ set but not used [-Wunused-but-set-variable]
+  int i,j,n=0,racun[100],prvi,prekini=0,drugi,nema=0;
+                              ^~~~~~~
+/rhome/j/jhasanovic1/workspace/OR/Z2/Z4/main.c:5:8: warning: unused variable ‘j’ [-Wunused-variable]
+  int i,j,n=0,racun[100],prvi,prekini=0,drugi,nema=0;
+        ^
+/rhome/j/jhasanovic1/workspace/OR/Z2/Z4/main.c:4:30: warning: unused variable ‘kombinacija’ [-Wunused-variable]
+  double niz[25]={0},ukupno=0,kombinacija,mat[100][3];
+                              ^~~~~~~~~~~

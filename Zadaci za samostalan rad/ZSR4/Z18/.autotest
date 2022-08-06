@@ -1,0 +1,227 @@
+{
+    "id": 4107,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), Zada\u0107a 1, zadatak 3",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1170,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "CCbcsVSsCsPk"
+            },
+            "expected": [
+                "Unesite vozila: Ukupno evidentirano 11 vozila.\\nNajpopularnija boja je crna (36.36%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1248,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT2: \n\/\/Provjerava da li se postuje prioritet, iako su svi zastupljeni po dva puta, S ima prednost po postavci\n\/\/ takodjer miks velikih i malih slova\n\/\/kod:\n\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "SSvvPPk"
+            },
+            "expected": [
+                "Unesite vozila: Ukupno evidentirano 6 vozila.\\nNajpopularnija boja je siva (33.33%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1249,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/Provjerava da li se zanemaruje sve nakon oznake kraja, dakle ne racunamo v i c\n\/\/ u procenat niti ispisujemo poruku o gresci :)\n\/\/kod:\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "pokazivac"
+            },
+            "expected": [
+                "Unesite vozila: Neispravan unos\\nUkupno evidentirano 1 vozila.\\nNajpopularnija boja je plava (100.00%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1250,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT4: \n\/\/Provjerava da li se procenat ra\u010duna ispravno, odnosno ne smije se desiti NaN ako nema vozila\n\t\t\t\t\t\t\t  \/\/kod:\n_main();\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "notOK"
+            },
+            "expected": [
+                "Unesite vozila: Neispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nUkupno evidentirano 0 vozila.\\nNajpopularnija boja je crna (0.00%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5044,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "scbbcvsvcsvbcvsbcvsvbcsbvcvbsvbcsvbcvbsvbcsvbcvbsck"
+            },
+            "expected": [
+                "Unesite vozila: Ukupno evidentirano 50 vozila.\\nNajpopularnija boja je crvena (28.00%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5045,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT6: All in one\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "SSS,sss,BBB,bbbb,CCC,ccc,VVV,vvv,ppp,PPP,k"
+            },
+            "expected": [
+                "Unesite vozila: Neispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nUkupno evidentirano 31 vozila.\\nNajpopularnija boja je bijela (22.58%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5046,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT7: Poklon AT, sve velika slova\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "CPCCCCCCCCCCCCCCCCCCCCCCCCCSCCCCCCCCCCCCCCK"
+            },
+            "expected": [
+                "Unesite vozila: Ukupno evidentirano 42 vozila.\\nNajpopularnija boja je crna (95.24%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5047,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT8: Razmak na pocetku i prije k, potrebno je prepoznati i SPACE kao karakter\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": " vpVbScBss k"
+            },
+            "expected": [
+                "Unesite vozila: Neispravan unos\\nNeispravan unos\\nUkupno evidentirano 9 vozila.\\nNajpopularnija boja je siva (33.33%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5048,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT9 Unos se ne smije prekinuti cak ni nakon 1001 karaktera sve dok nema k\/K!\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "VVbVbbVbVBBbbVVVBBBbbVBbVBbVVVBbBBbVVVbVbbBVVBVVbVVVVBBBVBbBBVBVVbBBVBBBbVVVBbbbbVBbbbVbbBBbVbBBVbVBVBBBVBbBVbVVBBBVBbbVBBbBbbVbBBBBBbVVVBBVVBbbVBbBbVVBBVBVbBBBbbbBbVbbBBBVVbBbbBVVVbBbBbVbBbBbbVVVbbbVBVbVBbVbbbBbVbbbbBbbVBVbbBVbBVVbBBVVVVVVbVBVVbBBBbVVbBVVbBbBVbbVbBbbbVbVBVBBBVBbVBVBbbbBBVVbVbbBVVBBBVBBbbVVBbVVbBbbbBbVVbVbVBVVVbBbBbbVVVBVBBVVBbVbVBbVBbbbVVVBbbbVBBbbbBVVbbVbVbBbbbbbbbVbbbVbVBBVVVVVbVVVbVBBBBBbBVVbbbVVVBVVVbVbBBbVbBVBbBVbBVBVBbbbVVBBbVVVVVVVVVVBBVBBbVBbbbbbBbBVVBBbVBVBVbVVBVbVVbVbVBbVbVVVBVbBbBVBBbVBbVBBVbbVBBbVBBVBbbbVVbBVVbBbbVbbBBVBVVBVVVVVbVVVVbbBBBbVbVbBVBVVBBbBBbVbVbbbVVbVVBBBVVVbBVVBbVbBbbBVbBVBVbbVBBbbBBBbVBVBBVbVVVVVbbVBBbbVBbVbBBBVBbVVbVBBbVVVBVbBBBVBbbBBbbBBbBBbVVBbbbVbbBVVBbbBbBbVVBbVBbVBbVVVbVbbVVbBBVVbbBVBBBBbbbVVVbVBbbVVbBBbVbVVVbVBbVbBbVbBbVBbVVbBbbbBbBVbVbBbbVbVbbbVBVbVbBbbVVBbVVbbVBVbbVBBBbVBVbVbbVBbbbVVbBVVBBbbbVBVbbbbBbVbVBBVBbbbBVVBVbBbVVBVbBVBVbBbbBBbBBBbbbVVbbBbbBBBbVVbBBVBbVBBBBVVbBBVVbbBbbBbBBBBBVVbbVbbBBBbBBbbbBbBBbVVVVbVbbBbVbVBVBVBbBBVVBbVBBbbbk"
+            },
+            "expected": [
+                "Unesite vozila: Ukupno evidentirano 1001 vozila.\\nNajpopularnija boja je bijela (65.33%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5049,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/AT10 Test sa brojevima\n_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "001100p01s00110000sk"
+            },
+            "expected": [
+                "Unesite vozila: Neispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nNeispravan unos\\nUkupno evidentirano 3 vozila.\\nNajpopularnija boja je siva (66.67%)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

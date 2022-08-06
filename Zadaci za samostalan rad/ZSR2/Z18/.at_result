@@ -1,0 +1,172 @@
+{
+    "buildhost_description": {
+        "id": "lab002c18",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘main’:\nmain.c:38:11: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]\n      if(n2!=0)\n           ^~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "38",
+                "col": "11",
+                "message": "comparing floating point with == or != is unsafe",
+                "output": "/tmp/buildservice/bs_4477/main.c:38:11: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]      if(n2!=0)           ^~",
+                "code": "if(n2!=0)"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "5204": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 11 * 15.5 = 170.5",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5205": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite broj: Rezultat: 23^2 = 529",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5206": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: GRESKA: Nepostojeca operacija!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5207": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 2311 - 6002 = -3691",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5208": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: GRESKA: Dijeljenje sa nulom!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5209": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: GRESKA: Nepostojeca operacija!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5210": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite broj: Rezultat: 144^(1/2) = 12",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5211": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: GRESKA: Nepostojeca operacija!",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5212": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: -154.3 + 159.87 = 5.57",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5213": {
+            "status": 1,
+            "run_result": {
+                "output": "--- Moj mini kalkulator ---\nSabiranje: +\nOduzimanje: -\nMnozenje: *\nDijeljenje: /\nKvadriranje: #\nKorjenovanje: &\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 9.76562e+06 / 625 = 15625",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1571863778
+}

@@ -1,0 +1,14 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z13/main.c: In function ‘izbaci_najcescu’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z13/main.c:16:10: error: implicit declaration of function ‘imaLiRijeci’ [-Werror=implicit-function-declaration]
+     if (!imaLiRijeci(s)) return s;
+          ^~~~~~~~~~~
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z13/main.c:19:17: error: implicit declaration of function ‘dajNajcescuRijec’ [-Werror=implicit-function-declaration]
+     pocRijeci = dajNajcescuRijec(s);
+                 ^~~~~~~~~~~~~~~~
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z13/main.c:19:15: warning: assignment makes pointer from integer without a cast [-Wint-conversion]
+     pocRijeci = dajNajcescuRijec(s);
+               ^
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z13/main.c:21:12: error: implicit declaration of function ‘daLiJeSlovo’ [-Werror=implicit-function-declaration]
+     while (daLiJeSlovo(*pom))
+            ^~~~~~~~~~~
+cc1: some warnings being treated as errors

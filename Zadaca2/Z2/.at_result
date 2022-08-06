@@ -1,0 +1,408 @@
+{
+    "buildhost_description": {
+        "id": "magi",
+        "os": "Linux 4.15.0-65-generic x86_64\nUbuntu 18.04.3 LTS\n"
+    },
+    "tools": {
+        "compile": "gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0",
+        "compile[debug]": "gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0",
+        "debug": "GNU gdb (Ubuntu 8.1-0ubuntu3.2) 8.1.0.20180409-git",
+        "profile[memcheck]": "valgrind-3.13.0",
+        "profile[sgcheck]": "valgrind-3.13.0"
+    },
+    "status": 4,
+    "test_results": {
+        "1": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true
+                },
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "2": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *****\n*   *           *\n*   *       *****\n*   *           *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *****\n*   *           *\n*   *       *****\n*   *           *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *****\n*   *           *\n*   *       *****\n*   *           *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "3": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****            \n*                \n*****       *****\n*           *    \n*****       *    \n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "4": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****            \n*                \n*****       *****\n*           *    \n*****       *    \n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "5": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[2] Oduzimanje\nUnesite operande: *****            \n*                \n*****       *****\n*           *    \n*****       *    \n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[2] Oduzimanje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[2] Oduzimanje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "6": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[3] Mnozenje\nUnesite operande: *****            \n*                \n*****       *****\n*           *    \n*****       *    \n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[3] Mnozenje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[3] Mnozenje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "7": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *****\n    *       *   *\n*****       *****\n*               *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *****\n    *       *   *\n*****       *****\n*               *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *****\n    *       *   *\n*****       *****\n*               *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "8": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[2] Oduzimanje\nUnesite operande:     *       *****\n    *       *   *\n    *       *   *\n    *       *   *\n    *       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[2] Oduzimanje\nUnesite operande:     *       *****\n    *       *   *\n    *       *   *\n    *       *   *\n    *       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[2] Oduzimanje\nUnesite operande:     *       *****\n    *       *   *\n    *       *   *\n    *       *   *\n    *       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "9": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****       *****\n*   *       *    \n*   *       *****\n*   *           *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****       *****\n*   *       *\n*   *       *****\n*   *           *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****       *****\n*   *       *\n*   *       *****\n*   *           *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "10": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[3] Mnozenje\nUnesite operande: *****       *****\n*   *       *   *\n*****       *****\n*   *       *   *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[3] Mnozenje\nUnesite operande: *****       *****\n*   *       *   *\n*****       *****\n*   *       *   *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[3] Mnozenje\nUnesite operande: *****       *****\n*   *       *   *\n*****       *****\n*   *       *   *\n*****       *****\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "11": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *   *\n*   *       *   *\n*   *       *****\n*   *           *\n*****           *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *   *\n*   *       *   *\n*   *       *****\n*   *           *\n*****           *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[1] Sabiranje\nUnesite operande: *****       *   *\n*   *       *   *\n*   *       *****\n*   *           *\n*****           *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "12": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "execute": {
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****            \n*                \n*****       *****\n*           *    \n*****       *    \n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "Odaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>\n[4] Dijeljenje\nUnesite operande: *****\n*\n*****       *****\n*           *\n*****       *\n\nOdaberite cjelobrojnu operaciju:\n[1] Sabiranje\n[2] Oduzimanje\n[3] Mnozenje\n[4] Dijeljenje\n[5] Izlaz iz programa\n>>",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        }
+    },
+    "time": 1575233280
+}

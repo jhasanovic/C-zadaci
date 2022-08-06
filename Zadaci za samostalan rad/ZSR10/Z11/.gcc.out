@@ -1,0 +1,6 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z11/main.c:1:1: error: unterminated comment
+ /*
+ ^
+/rhome/j/jhasanovic1/workspace/OR/ZSR10/Z11/main.c:7:0: warning: ISO C forbids an empty translation unit [-Wpedantic]
+ }
+ 

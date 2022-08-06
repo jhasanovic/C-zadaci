@@ -1,0 +1,74 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘izbaci_viska_razmake’:\nmain.c:41:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   while(*p1++=*p2++);\n   ^~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "41",
+                "col": "3",
+                "message": "suggest parentheses around assignment used as truth value",
+                "output": "/tmp/buildservice/bs_7623/main.c:41:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]   while(*p1++=*p2++);   ^~~~~",
+                "code": "while(*p1++=*p2++);"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1322": {
+            "status": 1,
+            "run_result": {
+                "output": "'volim OR'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1323": {
+            "status": 1,
+            "run_result": {
+                "output": "'ovo je neki test'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1324": {
+            "status": 1,
+            "run_result": {
+                "output": "'' '' 'Zdravo'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1577378200
+}

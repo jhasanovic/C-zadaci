@@ -1,0 +1,206 @@
+{
+    "id": 5652,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 3, Zadatak 2",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf(\"%g \", stepen(2));\nprintf(\"%g \", stepen(2));\nprintf(\"%g \", stepen(2));\nprintf(\"%g \", stepen(3));\nprintf(\"%g \", stepen(3));\nprintf(\"%g \", stepen(2));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2 4 8 3 9 2 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "printf(\"%g \", stepen(1.1));\nprintf(\"%g \", stepen(1.1));\nprintf(\"%g \", stepen(1.1));\nprintf(\"%g \", stepen(1.1));\nprintf(\"%g \", stepen(0.1));\nprintf(\"%g \", stepen(0.1));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1.1 1.21 1.331 1.4641 0.1 0.01"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double A[] = { 1, 2, 3, 4, 5 };\nint s[] = {1, 2, 3, 4, 5};\nstepenuj_niz(A, s, 5);\nint i;\nfor (i=0; i<5; i++)\n    printf(\"%g \", A[i], s[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 4 27 256 3125 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double A[] = { 2, 3, 2, 3, 2, 3 };\nint s[] = {3, 3, 3, 3, 3, 3};\nstepenuj_niz(A, s, 6);\nint i;\nfor (i=0; i<6; i++)\n    printf(\"%g \", A[i], s[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "8 27 8 27 8 27 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double A[] = { 0.1, 0.2, 0.3, 0.4, 0.5 };\nint s[] = {10, 10, 10, 10, 10};\nstepenuj_niz(A, s, 5);\nint i;\nfor (i=0; i<5; i++)\n    printf(\"%g \", A[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1e-10 1.024e-07 5.9049e-06 0.000104858 0.000976562"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double A[] = { 1, 2, 3, 4, 5 };\nint s[] = {100, 100, 100, 100, 100};\nstepenuj_niz(A, s, 5);\nint i;\nfor (i=0; i<5; i++)\n    printf(\"%g \", A[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1.26765e+30 5.15378e+47 1.60694e+60 7.88861e+69"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double A[] = { 5, 5, 5, 5, 5 };\nint s[] = {2, 2, 2, 2, 2};\nint i;\nstepenuj_niz(A, s, 5);\nfor (i=0; i<5; i++)\n    printf(\"%g \", A[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "25 25 25 25 25 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "double A[1000];\nint s[1000];\nint i;\nfor (i=0; i<1000; i++) {\n    A[i] = 2.1;\n    s[i] = i % 15 + 1;\n}\nstepenuj_niz(A, s, 1000);\nprintf(\"%g \", A[999]);\nprintf(\"%g \", A[499]);\nprintf(\"%g \", A[123]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1667.99 40.841 19.4481 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 9,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int i, broj=5;\nfor (i=0; i<100000; i++) {\n   stepen(broj);\n   if (i==3) printf(\"%g \", stepen(broj));\n   if (i%1000 == 0) broj++;\n}\nprintf(\"%g\", stepen(2));\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1296 2"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,80 @@
+{
+    "id": 5579,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 5, zadatak 4",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT1: Test funkcije zapisi_txt *\/\nstruct Broj imenik[] = {\n\t{ \"Jana\", \"Janic\", \"012\/345-678\" },\n\t{ \"Bela\", \"Belic\", \"024\/680-246\" },\n\t{ \"Hamo\", \"Hamic\", \"013\/579-135\" },\n\t{ \"Simo\", \"Simic\", \"098\/765-432\" }\n};\nzapisi_txt(imenik, 4);\n\n\/* Ispisujemo datoteku na ekran *\/\nFILE* ulaz = fopen(\"imenik.txt\", \"r\");\nint c;\nwhile ((c = fgetc(ulaz)) != EOF)\n   printf(\"%c\", c);\nfclose(ulaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Jana Janic 012\/345-678\\nBela Belic 024\/680-246\\nHamo Hamic 013\/579-135\\nSimo Simic 098\/765-432"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT2: Da li main radi ono sto treba sa standardnom datotekom *\/\n_main();\n\n\/* Ispisujemo datoteku na ekran *\/\nFILE* ulaz = fopen(\"imenik.txt\", \"r\");\nint c;\nwhile ((c = fgetc(ulaz)) != EOF)\n   printf(\"%c\", c);\nfclose(ulaz);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Jana Janic 012\/345-678\\nMarina Marinkovic +385-1-987-6543\\nIsmar Ismarovic 013\/579-1357\\nSimo Simic 098\/765-432"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/* AT3: Da li funkcija radi ono sto treba sa standardnom datotekom *\/\nstruct Broj imenik[1000];\nint vel = ucitaj_pascal(imenik);\nint i;\nfor (i=0; i<vel; i++) {\n   printf(\"'%s' '%s' '%s'\\n\", imenik[i].ime, imenik[i].prezime, imenik[i].broj);\n}",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "'Jana' 'Janic' '012\/345-678'\\n'Marina' 'Marinkovic' '+385-1-987-6543'\\n'Ismar' 'Ismarovic' '013\/579-1357'\\n'Simo' 'Simic' '098\/765-432'"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

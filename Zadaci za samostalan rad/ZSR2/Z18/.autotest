@@ -1,0 +1,229 @@
+{
+    "id": 5203,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR1, zadatak 18",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 5204,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "* 11 15.5"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\n\\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 11 * 15.5 = 170.5\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5205,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "# 23"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\nOdaberite operaciju: Unesite broj: Rezultat: 23^2 = 529"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5206,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "%"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\nOdaberite operaciju: GRESKA: Nepostojeca operacija!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5207,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "- 2311 6002"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\n\\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 2311 - 6002 = -3691"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5208,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "\/ 51 0"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\n\\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: GRESKA: Dijeljenje sa nulom!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5209,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "^"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\nOdaberite operaciju: GRESKA: Nepostojeca operacija!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5210,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "& 144"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\nOdaberite operaciju: Unesite broj: Rezultat: 144^(1\/2) = 12"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5211,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "% -1"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\nOdaberite operaciju: Unesite broj: GRESKA: Korjenovanje negativnog broja nema smisla!",
+                "GRESKA"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "true"
+        },
+        {
+            "id": 5212,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "+ -154.3 159.87"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\n\\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: -154.3 + 159.87 = 5.57"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5213,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "\/ 9765625 625"
+            },
+            "expected": [
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\n\\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 9765625 \/ 625 = 15625",
+                "--- Moj mini kalkulator ---\\nSabiranje: +\\nOduzimanje: -\\nMnozenje: *\\nDijeljenje: \/\\nKvadriranje: #\\nKorjenovanje: &\\n\\nOdaberite operaciju: Unesite prvi broj: Unesite drugi broj: Rezultat: 9.76562e+06 \/ 625 = 15625"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

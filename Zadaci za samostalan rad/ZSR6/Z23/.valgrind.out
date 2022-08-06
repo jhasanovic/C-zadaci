@@ -1,0 +1,23 @@
+==22754== Memcheck, a memory error detector
+==22754== Copyright (C) 2002-2017, and GNU GPL'd, by Julian Seward et al.
+==22754== Using Valgrind-3.13.0 and LibVEX; rerun with -h for copyright info
+==22754== Command: /rhome/j/jhasanovic1/workspace/OR/ZSR6/Z23/.runme
+==22754== Parent PID: 22739
+==22754== 
+==22754== 
+==22754== Process terminating with default action of signal 1 (SIGHUP)
+==22754==    at 0x514E081: read (read.c:27)
+==22754==    by 0x50CB147: _IO_file_underflow@@GLIBC_2.2.5 (fileops.c:531)
+==22754==    by 0x50CC3F1: _IO_default_uflow (genops.c:380)
+==22754==    by 0x50A9BE9: _IO_vfscanf (vfscanf.c:630)
+==22754==    by 0x50B9FD7: __isoc99_scanf (isoc99_scanf.c:37)
+==22754==    by 0x1087F2: main (main.c:16)
+==22754== 
+==22754== HEAP SUMMARY:
+==22754==     in use at exit: 0 bytes in 0 blocks
+==22754==   total heap usage: 1 allocs, 1 frees, 1,024 bytes allocated
+==22754== 
+==22754== All heap blocks were freed -- no leaks are possible
+==22754== 
+==22754== For counts of detected and suppressed errors, rerun with: -v
+==22754== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)

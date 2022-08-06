@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z2/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z2/main.c:13:10: error: expected expression before ‘float’
+  prosjek=float(zbir)/5;
+          ^~~~~

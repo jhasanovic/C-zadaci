@@ -1,0 +1,185 @@
+{
+    "id": 7053,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR6, zadatak 7",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1261,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nNajmanji broj je: 0\\nDrugi najmanji broj je: 0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1262,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-5\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nNajmanji broj je: -5\\nDrugi najmanji broj je: -5"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1263,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n5\n9\n-88888\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nUnesite 5. element (-1 za kraj unosa): \\nNajmanji broj je: -88888\\nDrugi najmanji broj je: 1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1264,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0\n0\n0\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nNajmanji broj je: 0\\nDrugi najmanji broj je: 0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1265,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1.22\n-987.98\n-987.989\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nNajmanji broj je: -987.989\\nDrugi najmanji broj je: -987.98"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1266,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-2\n-2.00001\n-2.0001\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nNajmanji broj je: -2.0001\\nDrugi najmanji broj je: -2.00001"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1267,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "10\n5\n8\n1\n3\n8\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nUnesite 5. element (-1 za kraj unosa): \\nUnesite 6. element (-1 za kraj unosa): \\nUnesite 7. element (-1 za kraj unosa): \\nNajmanji broj je: 1\\nDrugi najmanji broj je: 3"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1268,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n1\n1\n-1\n"
+            },
+            "expected": [
+                "Unesite 1. element (-1 za kraj unosa): \\nUnesite 2. element (-1 za kraj unosa): \\nUnesite 3. element (-1 za kraj unosa): \\nUnesite 4. element (-1 za kraj unosa): \\nNajmanji broj je: 1\\nDrugi najmanji broj je: 1"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

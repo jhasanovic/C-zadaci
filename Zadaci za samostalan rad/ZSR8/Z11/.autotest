@@ -1,0 +1,59 @@
+{
+    "id": 1275,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 8, zadatak 8",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1276,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz[7] = {1, 2, 9, 8, 4, 0, 1};\n    int *p = max_el(niz, niz + 7);\n    int *q = min_el(niz, niz + 7);\n    printf(\"Maksimalni element niza je %d, a minimalni %d.\",*p,*q);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "Maksimalni element niza je 9, a minimalni 0."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1277,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int niz[7] = {1, 2, 9, 8, 4, 0, 1};\n    *max_el(niz, niz + 7) = 100;\n    *min_el(niz, niz + 7) = -100;\n    int i;\n    for(i=0; i<7; i++) printf(\"%d \",niz[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 2 100 8 4 -100 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

@@ -1,0 +1,188 @@
+{
+    "id": 5638,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 1, Zadatak 2",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5 5\n5\n20 4\n2"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se ne sijeku."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0 0\n10\n3 3\n2"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Jedna kruznica je sadrzana u drugoj."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5 5\n4.23456\n5.000001 5.000001\n4.23456"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice su identicne."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "2.034 2.432\n3\n5.034 1.432\n1"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (5.03,2.43) i (4.43,0.63).",
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (4.43,0.63) i (5.03,2.43)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0 0\n1\n0 3\n2\n"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se dodiruju u tacki (0.00,1.00)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "6 6\n6\n6 9\n3"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se dodiruju u tacki (6.00,12.00)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5 4\n2\n6 4\n2"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (5.50,5.94) i (5.50,2.06).",
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (5.50,2.06) i (5.50,5.94)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "2.1443 2.1443\n2\n4.2443 2.1443\n0.31622"
+            },
+            "expected": [
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (4.12,2.44) i (4.12,1.85).",
+                "Unesite koordinate centra kruznice A: Unesite poluprecnik kruznice A: Unesite koordinate centra kruznice B: Unesite poluprecnik kruznice B: Kruznice se sijeku u tackama (4.12,1.85) i (4.12,2.44)."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

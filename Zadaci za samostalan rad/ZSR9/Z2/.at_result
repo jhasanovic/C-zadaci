@@ -1,0 +1,125 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘posljednja_rijec’:\nmain.c:22:9: warning: ‘pok’ may be used uninitialized in this function [-Wmaybe-uninitialized]\n   while(*novi!=' ')\n         ^~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "22",
+                "col": "9",
+                "message": "'pok' may be used uninitialized in this function",
+                "output": "/tmp/buildservice/bs_1864/main.c:22:9: warning: ‘pok’ may be used uninitialized in this function [-Wmaybe-uninitialized]   while(*novi!=' ')         ^~~~~",
+                "code": "while(*novi!=' ')"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1309": {
+            "status": 1,
+            "run_result": {
+                "output": "'dan'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1310": {
+            "status": 1,
+            "run_result": {
+                "output": "'troll'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1311": {
+            "status": 7,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==6069== Memcheck, a memory error detector\n==6069== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==6069== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==6069== Command: bs_test_1311\n==6069== Parent PID: 6068\n==6069== \n==6069== Use of uninitialised value of size 8\n==6069==    at 0x4005E2: posljednja_rijec (bs_test_1311.c:24)\n==6069==    by 0x400650: main (bs_test_1311.c:41)\n==6069== \n==6069== Use of uninitialised value of size 8\n==6069==    at 0x4005ED: posljednja_rijec (bs_test_1311.c:26)\n==6069==    by 0x400650: main (bs_test_1311.c:41)\n==6069== \n==6069== Conditional jump or move depends on uninitialised value(s)\n==6069==    at 0x37154450E0: vfprintf (in /lib64/libc-2.12.so)\n==6069==    by 0x371544F069: printf (in /lib64/libc-2.12.so)\n==6069==    by 0x400662: main (bs_test_1311.c:41)\n==6069== \n==6069== Use of uninitialised value of size 8\n==6069==    at 0x3715447D0C: vfprintf (in /lib64/libc-2.12.so)\n==6069==    by 0x371544F069: printf (in /lib64/libc-2.12.so)\n==6069==    by 0x400662: main (bs_test_1311.c:41)\n==6069== \n==6069== \n==6069== HEAP SUMMARY:\n==6069==     in use at exit: 0 bytes in 0 blocks\n==6069==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==6069== \n==6069== All heap blocks were freed -- no leaks are possible\n==6069== \n==6069== For counts of detected and suppressed errors, rerun with: -v\n==6069== Use --track-origins=yes to see where uninitialised values come from\n==6069== ERROR SUMMARY: 108 errors from 4 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4005E2: posljednja_rijec (bs_test_1311.c:24)\n    by 0x400650: main (bs_test_1311.c:41)\n",
+                        "file": "main.c",
+                        "line": 22
+                    },
+                    {
+                        "type": 3,
+                        "output": " Use of uninitialised value of size 8\n    at 0x4005ED: posljednja_rijec (bs_test_1311.c:26)\n    by 0x400650: main (bs_test_1311.c:41)\n",
+                        "file": "main.c",
+                        "line": 24
+                    },
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x37154450E0: vfprintf (in /lib64/libc-2.12.so)\n    by 0x371544F069: printf (in /lib64/libc-2.12.so)\n    by 0x400662: main (bs_test_1311.c:41)\n",
+                        "file": "TEST_CODE",
+                        "line": 2
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1312": {
+            "status": 1,
+            "run_result": {
+                "output": "'proba!?@#()*%'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1313": {
+            "status": 1,
+            "run_result": {
+                "output": "'OR'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1577374284
+}

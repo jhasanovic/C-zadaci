@@ -1,0 +1,30 @@
+{
+    "buildhost_description": {
+        "id": "magi",
+        "os": "Linux 4.15.0-65-generic x86_64\nUbuntu 18.04.3 LTS\n"
+    },
+    "tools": {
+        "compile": "gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0",
+        "compile[debug]": "gcc (Ubuntu 7.4.0-1ubuntu1~18.04.1) 7.4.0",
+        "debug": "GNU gdb (Ubuntu 8.1-0ubuntu3.2) 8.1.0.20180409-git",
+        "profile[memcheck]": "valgrind-3.13.0",
+        "profile[sgcheck]": "valgrind-3.13.0"
+    },
+    "status": 4,
+    "test_results": {
+        "1": {
+            "success": false,
+            "status": 3,
+            "tools": {
+                "compile": {
+                    "status": 5,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 1,
+                    "success": false
+                }
+            }
+        }
+    },
+    "time": 1575239797
+}

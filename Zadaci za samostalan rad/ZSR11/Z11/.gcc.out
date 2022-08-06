@@ -1,0 +1,8 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR11/Z11/main.c: In function ‘genijalci’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR11/Z11/main.c:14:20: warning: unused variable ‘temp’ [-Wunused-variable]
+     struct Student temp;
+                    ^~~~
+/rhome/j/jhasanovic1/workspace/OR/ZSR11/Z11/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR11/Z11/main.c:59:16: warning: unused variable ‘studenti’ [-Wunused-variable]
+ struct Student studenti[5] = {
+                ^~~~~~~~

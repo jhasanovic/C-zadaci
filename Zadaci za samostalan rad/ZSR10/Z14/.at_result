@@ -1,0 +1,620 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": "main.c: In function ‘obuhvat’:\nmain.c:39:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]\n   if(*s='(') {\n   ^~\nmain.c:29:7: warning: variable ‘krajprosle’ set but not used [-Wunused-but-set-variable]\n  char*krajprosle;\n       ^~~~~~~~~~",
+        "parsed_output": [
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "39",
+                "col": "3",
+                "message": "suggest parentheses around assignment used as truth value",
+                "output": "/tmp/buildservice/bs_9762/main.c:39:3: warning: suggest parentheses around assignment used as truth value [-Wparentheses]   if(*s='(') {   ^~",
+                "code": "if(*s='(') {"
+            },
+            {
+                "type": "warning",
+                "file": "main.c",
+                "line": "29",
+                "col": "7",
+                "message": "variable 'krajprosle' set but not used",
+                "output": "/tmp/buildservice/bs_9762/main.c:29:7: warning: variable ‘krajprosle’ set but not used [-Wunused-but-set-variable]  char*krajprosle;       ^~~~~~~~~~",
+                "code": "char*krajprosle;"
+            }
+        ]
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1790": {
+            "status": 1,
+            "run_result": {
+                "output": "''",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1791": {
+            "status": 6,
+            "run_result": {
+                "output": "(1,7),(2,5),(1,6),(3,3) '(3,3)' '(3,3)' (2,5),(1,6) '(3,3)' '(3,3)' ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==31154== exp-sgcheck, a stack and global array overrun detector\n==31154== NOTE: This is an Experimental-Class Valgrind Tool\n==31154== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==31154== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==31154== Command: bs_test_1791\n==31154== Parent PID: 31153\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4007EA: obuhvat (bs_test_1791.c:77)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400742: obuhvat (bs_test_1791.c:79)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400759: obuhvat (bs_test_1791.c:83)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400787: obuhvat (bs_test_1791.c:88)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4007EA: obuhvat (bs_test_1791.c:77)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400742: obuhvat (bs_test_1791.c:79)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400759: obuhvat (bs_test_1791.c:83)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400787: obuhvat (bs_test_1791.c:88)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4007EA: obuhvat (bs_test_1791.c:77)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000beb expected vs actual:\n==31154==  Expected: stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   is 85 before Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400742: obuhvat (bs_test_1791.c:79)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000beb expected vs actual:\n==31154==  Expected: stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   is 85 before Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400759: obuhvat (bs_test_1791.c:83)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000beb expected vs actual:\n==31154==  Expected: stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   is 85 before Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400787: obuhvat (bs_test_1791.c:88)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000beb expected vs actual:\n==31154==  Expected: stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   is 85 before Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4006EB: obuhvat (bs_test_1791.c:47)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400634: obuhvat (bs_test_1791.c:50)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x40064B: obuhvat (bs_test_1791.c:54)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400662: obuhvat (bs_test_1791.c:58)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400688: obuhvat (bs_test_1791.c:62)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c34 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   unknown\n==31154==  Actual:   is 0 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4006EB: obuhvat (bs_test_1791.c:47)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400634: obuhvat (bs_test_1791.c:50)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x40064B: obuhvat (bs_test_1791.c:54)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400662: obuhvat (bs_test_1791.c:58)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400688: obuhvat (bs_test_1791.c:62)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c40 expected vs actual:\n==31154==  Expected: unknown\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4007EA: obuhvat (bs_test_1791.c:77)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c43 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   is 15 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400742: obuhvat (bs_test_1791.c:79)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c43 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   is 15 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400759: obuhvat (bs_test_1791.c:83)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c43 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   is 15 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400787: obuhvat (bs_test_1791.c:88)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c43 expected vs actual:\n==31154==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   is 15 after Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x4006EB: obuhvat (bs_test_1791.c:47)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c0d expected vs actual:\n==31154==  Expected: stack array \"s\" of size 24 in frame 1 back from here\n==31154==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31154==  Actual:   is 51 before Expected\n==31154== \n==31154== Invalid read of size 1\n==31154==    at 0x400634: obuhvat (bs_test_1791.c:50)\n==31154==    by 0x4009F5: main (bs_test_1791.c:148)\n==31154==  Address 0xfff000c0d expected vs actual:\n==31154==  Expecte",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4007EA: obuhvat (bs_test_1791.c:77)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 75
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400742: obuhvat (bs_test_1791.c:79)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 77
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400759: obuhvat (bs_test_1791.c:83)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 81
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400787: obuhvat (bs_test_1791.c:88)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 86
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4006EB: obuhvat (bs_test_1791.c:47)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 45
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400634: obuhvat (bs_test_1791.c:50)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 48
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x40064B: obuhvat (bs_test_1791.c:54)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 52
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400662: obuhvat (bs_test_1791.c:58)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 56
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400688: obuhvat (bs_test_1791.c:62)\n    by 0x4009F5: main (bs_test_1791.c:148)\n  Address 0xfff000c34 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 60
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1791.c: In function ‘main’:\nbs_test_1791.c:147:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]\n strcpy(pom,s);\n ^~~~~~\nbs_test_1791.c:147:1: warning: incompatible implicit declaration of built-in function ‘strcpy’\nbs_test_1791.c:147:1: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1791.c",
+                        "line": "147",
+                        "col": "1",
+                        "message": "implicit declaration of function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1791.c:147:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration] strcpy(pom,s); ^~~~~~",
+                        "code": "strcpy(pom,s);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1791.c",
+                        "line": "147",
+                        "col": "1",
+                        "message": "incompatible implicit declaration of built-in function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1791.c:147:1: warning: incompatible implicit declaration of built-in function ‘strcpy’"
+                    }
+                ]
+            }
+        },
+        "1792": {
+            "status": 6,
+            "run_result": {
+                "output": "'(15,30)' '(15,30)' '(15,30)' '(15,30)' '(15,30)'",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==31170== exp-sgcheck, a stack and global array overrun detector\n==31170== NOTE: This is an Experimental-Class Valgrind Tool\n==31170== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==31170== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==31170== Command: bs_test_1792\n==31170== Parent PID: 31169\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x4009E1: main (bs_test_1792.c:148)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x400A50: main (bs_test_1792.c:152)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x400B2E: main (bs_test_1792.c:160)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x400B9D: main (bs_test_1792.c:164)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x400B9D: main (bs_test_1792.c:164)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400759: obuhvat (bs_test_1792.c:83)\n==31170==    by 0x400B9D: main (bs_test_1792.c:164)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400787: obuhvat (bs_test_1792.c:88)\n==31170==    by 0x400B9D: main (bs_test_1792.c:164)\n==31170==  Address 0xfff000c44 expected vs actual:\n==31170==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31170==  Actual:   unknown\n==31170==  Actual:   is 0 after Expected\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n==31170==    by 0x400B9D: main (bs_test_1792.c:164)\n==31170==  Address 0xfff000c50 expected vs actual:\n==31170==  Expected: unknown\n==31170==  Actual:   stack array \"s\" of size 8 in frame 1 back from here\n==31170== \n==31170== Invalid read of size 1\n==31170==    at 0x400742: obuhvat (bs_test_1792.c:79)\n==31170==    by 0x400B9D: main (b",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4007EA: obuhvat (bs_test_1792.c:77)\n    by 0x4009E1: main (bs_test_1792.c:148)\n  Address 0xfff000c44 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 75
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400742: obuhvat (bs_test_1792.c:79)\n    by 0x4009E1: main (bs_test_1792.c:148)\n  Address 0xfff000c44 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 77
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400759: obuhvat (bs_test_1792.c:83)\n    by 0x4009E1: main (bs_test_1792.c:148)\n  Address 0xfff000c44 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 81
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400787: obuhvat (bs_test_1792.c:88)\n    by 0x4009E1: main (bs_test_1792.c:148)\n  Address 0xfff000c44 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 86
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1792.c: In function ‘main’:\nbs_test_1792.c:147:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]\n strcpy(pom,s);\n ^~~~~~\nbs_test_1792.c:147:1: warning: incompatible implicit declaration of built-in function ‘strcpy’\nbs_test_1792.c:147:1: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1792.c",
+                        "line": "147",
+                        "col": "1",
+                        "message": "implicit declaration of function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1792.c:147:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration] strcpy(pom,s); ^~~~~~",
+                        "code": "strcpy(pom,s);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1792.c",
+                        "line": "147",
+                        "col": "1",
+                        "message": "incompatible implicit declaration of built-in function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1792.c:147:1: warning: incompatible implicit declaration of built-in function ‘strcpy’"
+                    }
+                ]
+            }
+        },
+        "1793": {
+            "status": 6,
+            "run_result": {
+                "output": "'(-15,-30)' '(-15,-30)' '(-15,-30)' '(-15,-30)' '(-15,-30)' ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==31188== Memcheck, a memory error detector\n==31188== Copyright (C) 2002-2015, and GNU GPL'd, by Julian Seward et al.\n==31188== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==31188== Command: bs_test_1793\n==31188== Parent PID: 31187\n==31188== \n==31188== Conditional jump or move depends on uninitialised value(s)\n==31188==    at 0x4008D7: obuhvat (bs_test_1793.c:36)\n==31188==    by 0x4009E7: main (bs_test_1793.c:148)\n==31188== \n==31188== Conditional jump or move depends on uninitialised value(s)\n==31188==    at 0x4008D7: obuhvat (bs_test_1793.c:36)\n==31188==    by 0x400A56: main (bs_test_1793.c:152)\n==31188== \n==31188== Conditional jump or move depends on uninitialised value(s)\n==31188==    at 0x4008D7: obuhvat (bs_test_1793.c:36)\n==31188==    by 0x400B34: main (bs_test_1793.c:160)\n==31188== \n==31188== \n==31188== HEAP SUMMARY:\n==31188==     in use at exit: 0 bytes in 0 blocks\n==31188==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==31188== \n==31188== All heap blocks were freed -- no leaks are possible\n==31188== \n==31188== For counts of detected and suppressed errors, rerun with: -v\n==31188== Use --track-origins=yes to see where uninitialised values come from\n==31188== ERROR SUMMARY: 3 errors from 3 contexts (suppressed: 4 from 4)\n",
+                "status": 3,
+                "parsed_output": [
+                    {
+                        "type": 3,
+                        "output": " Conditional jump or move depends on uninitialised value(s)\n    at 0x4008D7: obuhvat (bs_test_1793.c:36)\n    by 0x4009E7: main (bs_test_1793.c:148)\n",
+                        "file": "main.c",
+                        "line": 34
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1793.c: In function ‘main’:\nbs_test_1793.c:147:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration]\n strcpy(pom,s);\n ^~~~~~\nbs_test_1793.c:147:1: warning: incompatible implicit declaration of built-in function ‘strcpy’\nbs_test_1793.c:147:1: note: include ‘<string.h>’ or provide a declaration of ‘strcpy’",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1793.c",
+                        "line": "147",
+                        "col": "1",
+                        "message": "implicit declaration of function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1793.c:147:1: warning: implicit declaration of function ‘strcpy’ [-Wimplicit-function-declaration] strcpy(pom,s); ^~~~~~",
+                        "code": "strcpy(pom,s);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1793.c",
+                        "line": "147",
+                        "col": "1",
+                        "message": "incompatible implicit declaration of built-in function 'strcpy'",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1793.c:147:1: warning: incompatible implicit declaration of built-in function ‘strcpy’"
+                    }
+                ]
+            }
+        },
+        "1794": {
+            "status": 6,
+            "run_result": {
+                "output": "1652701168 1652701136 1652701088 1652701040 1652700992 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1794.c: In function ‘main’:\nbs_test_1794.c:157:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1794.c:159:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1794.c:161:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1794.c:163:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1794.c:165:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1794.c",
+                        "line": "157",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1794.c:157:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1794.c",
+                        "line": "159",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1794.c:159:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1794.c",
+                        "line": "161",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1794.c:161:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1794.c",
+                        "line": "163",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1794.c:163:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1794.c",
+                        "line": "165",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1794.c:165:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    }
+                ]
+            }
+        },
+        "1795": {
+            "status": 6,
+            "run_result": {
+                "output": "-1483849680 -1483849712 -1483849744 -1483849776 -1483849808 -1483849840 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1795.c: In function ‘main’:\nbs_test_1795.c:158:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1795.c:160:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1795.c:162:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1795.c:164:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1795.c:166:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1795.c:168:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1795.c",
+                        "line": "158",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1795.c:158:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1795.c",
+                        "line": "160",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1795.c:160:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1795.c",
+                        "line": "162",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1795.c:162:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1795.c",
+                        "line": "164",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1795.c:164:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1795.c",
+                        "line": "166",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1795.c:166:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1795.c",
+                        "line": "168",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1795.c:168:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    }
+                ]
+            }
+        },
+        "1796": {
+            "status": 6,
+            "run_result": {
+                "output": "584325696 584325664 584325632 584325600 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1796.c: In function ‘main’:\nbs_test_1796.c:155:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1796.c:157:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1796.c:159:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1796.c:161:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1796.c",
+                        "line": "155",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1796.c:155:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1796.c",
+                        "line": "157",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1796.c:157:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1796.c",
+                        "line": "159",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1796.c:159:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1796.c",
+                        "line": "161",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1796.c:161:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    }
+                ]
+            }
+        },
+        "1797": {
+            "status": 6,
+            "run_result": {
+                "output": "1852663728 1852663696 1852663664 1852663632 1852663600 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1797.c: In function ‘main’:\nbs_test_1797.c:156:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1797.c:158:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1797.c:160:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1797.c:162:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1797.c:164:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1797.c",
+                        "line": "156",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1797.c:156:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1797.c",
+                        "line": "158",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1797.c:158:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1797.c",
+                        "line": "160",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1797.c:160:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1797.c",
+                        "line": "162",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1797.c:162:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1797.c",
+                        "line": "164",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1797.c:164:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    }
+                ]
+            }
+        },
+        "1798": {
+            "status": 1,
+            "run_result": {
+                "output": "(1.2,5.5),(1.3,5.5),(1.4,5.5)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1948": {
+            "status": 1,
+            "run_result": {
+                "output": "(2.,2) (2.,2)",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "1949": {
+            "status": 4,
+            "run_result": {
+                "output": "",
+                "duration": 10,
+                "status": 2
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_1949.c: In function ‘main’:\nbs_test_1949.c:150:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1949.c:152:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1949.c:154:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^\nbs_test_1949.c:156:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast]\n printf(\"%d \", (int)rez);\n               ^",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1949.c",
+                        "line": "150",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1949.c:150:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1949.c",
+                        "line": "152",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1949.c:152:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1949.c",
+                        "line": "154",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1949.c:154:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_1949.c",
+                        "line": "156",
+                        "col": "15",
+                        "message": "cast from pointer to integer of different size",
+                        "output": "/tmp/buildservice/bs_9762/bs_test_1949.c:156:15: warning: cast from pointer to integer of different size [-Wpointer-to-int-cast] printf(\"%d \", (int)rez);               ^",
+                        "code": "printf(\"%d \", (int)rez);"
+                    }
+                ]
+            }
+        },
+        "1950": {
+            "status": 7,
+            "run_result": {
+                "output": "(100,-100),(50,50),(70,20),(-1,-1)\n(100,-100),(50,50),(70,20)\n(50,50),(70,20)\n(50,50),(-1,-1)\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": {
+                "output": "==31120== exp-sgcheck, a stack and global array overrun detector\n==31120== NOTE: This is an Experimental-Class Valgrind Tool\n==31120== Copyright (C) 2003-2015, and GNU GPL'd, by OpenWorks Ltd et al.\n==31120== Using Valgrind-3.12.0 and LibVEX; rerun with -h for copyright info\n==31120== Command: bs_test_1950\n==31120== Parent PID: 31119\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x40082A: obuhvat (bs_test_1950.c:77)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c24 expected vs actual:\n==31120==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   unknown\n==31120==  Actual:   is 0 after Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x400782: obuhvat (bs_test_1950.c:79)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c24 expected vs actual:\n==31120==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   unknown\n==31120==  Actual:   is 0 after Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x400799: obuhvat (bs_test_1950.c:83)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c24 expected vs actual:\n==31120==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   unknown\n==31120==  Actual:   is 0 after Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x4007C7: obuhvat (bs_test_1950.c:88)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c24 expected vs actual:\n==31120==  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   unknown\n==31120==  Actual:   is 0 after Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x40082A: obuhvat (bs_test_1950.c:77)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c30 expected vs actual:\n==31120==  Expected: unknown\n==31120==  Actual:   stack array \"s\" of size 35 in frame 1 back from here\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x400782: obuhvat (bs_test_1950.c:79)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c30 expected vs actual:\n==31120==  Expected: unknown\n==31120==  Actual:   stack array \"s\" of size 35 in frame 1 back from here\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x400799: obuhvat (bs_test_1950.c:83)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c30 expected vs actual:\n==31120==  Expected: unknown\n==31120==  Actual:   stack array \"s\" of size 35 in frame 1 back from here\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x4007C7: obuhvat (bs_test_1950.c:88)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000c30 expected vs actual:\n==31120==  Expected: unknown\n==31120==  Actual:   stack array \"s\" of size 35 in frame 1 back from here\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x40082A: obuhvat (bs_test_1950.c:77)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000be7 expected vs actual:\n==31120==  Expected: stack array \"s\" of size 35 in frame 1 back from here\n==31120==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   is 73 before Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x400782: obuhvat (bs_test_1950.c:79)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000be7 expected vs actual:\n==31120==  Expected: stack array \"s\" of size 35 in frame 1 back from here\n==31120==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   is 73 before Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x400799: obuhvat (bs_test_1950.c:83)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000be7 expected vs actual:\n==31120==  Expected: stack array \"s\" of size 35 in frame 1 back from here\n==31120==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   is 73 before Expected\n==31120== \n==31120== Invalid read of size 1\n==31120==    at 0x4007C7: obuhvat (bs_test_1950.c:88)\n==31120==    by 0x400A4D: main (bs_test_1950.c:148)\n==31120==  Address 0xfff000be7 expected vs actual:\n==31120==  Expected: stack array \"s\" of size 35 in frame 1 back from here\n==31120==  Actual:   stack array \"pom\" of size 100 in frame 1 back from here\n==31120==  Actual:   is 73 before Expected\n==31120== \n==31120== \n==31120== ERROR SUMMARY: 24 errors from 12 contexts (suppressed: 0 from 0)\n",
+                "status": 2,
+                "parsed_output": [
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x40082A: obuhvat (bs_test_1950.c:77)\n    by 0x400A4D: main (bs_test_1950.c:148)\n  Address 0xfff000c24 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 75
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400782: obuhvat (bs_test_1950.c:79)\n    by 0x400A4D: main (bs_test_1950.c:148)\n  Address 0xfff000c24 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 77
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x400799: obuhvat (bs_test_1950.c:83)\n    by 0x400A4D: main (bs_test_1950.c:148)\n  Address 0xfff000c24 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 81
+                    },
+                    {
+                        "type": 2,
+                        "output": " Invalid read of size 1\n    at 0x4007C7: obuhvat (bs_test_1950.c:88)\n    by 0x400A4D: main (bs_test_1950.c:148)\n  Address 0xfff000c24 expected vs actual:\n  Expected: stack array \"pom\" of size 100 in frame 1 back from here\n  Actual:   unknown\n  Actual:   is 0 after Expected\n",
+                        "file": "main.c",
+                        "line": 86
+                    }
+                ]
+            },
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1580243952
+}

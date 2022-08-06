@@ -1,0 +1,119 @@
+{
+    "buildhost_description": {
+        "id": "lab002c03",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "5294": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Unesite spol osobe (m/M ili z/Z): Osoba ima 22 godine, klasificirana je u kategoriju: 'fakultet', musko je. ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5295": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Unesite spol osobe (m/M ili z/Z): Osoba ima 18 godina, klasificirana je u kategoriju: 'fakultet', musko je. ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5296": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Unesite spol osobe (m/M ili z/Z): Osoba ima 1 godinu, klasificirana je u kategoriju: 'prije skole', zensko je. ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5297": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Unesite spol osobe (m/M ili z/Z): Osoba ima 8 godina, klasificirana je u kategoriju: 'osnovna skola', zensko je. ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5298": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Unesite spol osobe (m/M ili z/Z): Osoba ima 45 godina, klasificirana je u kategoriju: 'ostalo', musko je. ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5299": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Unesite spol osobe (m/M ili z/Z): Pogresan unos spola osobe! ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "5300": {
+            "status": 1,
+            "run_result": {
+                "output": "Unesite godinu rodjenja osobe: Neispravna godina rodjenja! ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1571858780
+}

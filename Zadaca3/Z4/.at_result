@@ -1,0 +1,120 @@
+{
+    "buildhost_description": {
+        "id": "lab002c01",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n",
+        "compiler_version": "gcc (GCC) 6.2.0",
+        "debugger_version": "GNU gdb (GDB) 7.12",
+        "profiler_version": "valgrind-3.12.0"
+    },
+    "status": 4,
+    "compile_result": {
+        "status": 1,
+        "output": ""
+    },
+    "run_result": [],
+    "debug_result": [],
+    "profile_result": [],
+    "test_results": {
+        "1": {
+            "status": 1,
+            "run_result": {
+                "output": "1 0 1 0 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "2": {
+            "status": 1,
+            "run_result": {
+                "output": "0 1 1 1 ",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "3": {
+            "status": 1,
+            "run_result": {
+                "output": "1\n1 2 3 \n3 2 1 \n3 1 2 \n1\n1 2 3 \n1 3 2 \n3 1 2 \n0\n",
+                "duration": 0,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        },
+        "4": {
+            "status": 1,
+            "run_result": {
+                "output": "1 0 0 1 0 ",
+                "duration": 2,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": "bs_test_4.c: In function ‘main’:\nbs_test_4.c:104:1: warning: implicit declaration of function ‘srand’ [-Wimplicit-function-declaration]\n srand(time(NULL));\n ^~~~~\nbs_test_4.c:104:7: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration]\n srand(time(NULL));\n       ^~~~\nbs_test_4.c:105:3: warning: implicit declaration of function ‘rand’ [-Wimplicit-function-declaration]\n A[rand()%100][rand()%100] = 15;\n   ^~~~",
+                "parsed_output": [
+                    {
+                        "type": "warning",
+                        "file": "bs_test_4.c",
+                        "line": "104",
+                        "col": "1",
+                        "message": "implicit declaration of function 'srand'",
+                        "output": "/tmp/buildservice/bs_9814/bs_test_4.c:104:1: warning: implicit declaration of function ‘srand’ [-Wimplicit-function-declaration] srand(time(NULL)); ^~~~~",
+                        "code": "srand(time(NULL));"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_4.c",
+                        "line": "104",
+                        "col": "7",
+                        "message": "implicit declaration of function 'time'",
+                        "output": "/tmp/buildservice/bs_9814/bs_test_4.c:104:7: warning: implicit declaration of function ‘time’ [-Wimplicit-function-declaration] srand(time(NULL));       ^~~~",
+                        "code": "srand(time(NULL));"
+                    },
+                    {
+                        "type": "warning",
+                        "file": "bs_test_4.c",
+                        "line": "105",
+                        "col": "3",
+                        "message": "implicit declaration of function 'rand'",
+                        "output": "/tmp/buildservice/bs_9814/bs_test_4.c:105:3: warning: implicit declaration of function ‘rand’ [-Wimplicit-function-declaration] A[rand()%100][rand()%100] = 15;   ^~~~",
+                        "code": "A[rand()%100][rand()%100] = 15;"
+                    }
+                ]
+            }
+        },
+        "5": {
+            "status": 1,
+            "run_result": {
+                "output": "1 0 0 1 0 ",
+                "duration": 3,
+                "status": 1
+            },
+            "debug_result": [],
+            "profile_result": [],
+            "compile_result": {
+                "status": 1,
+                "output": ""
+            }
+        }
+    },
+    "queue_items": 0,
+    "time": 1576331607
+}

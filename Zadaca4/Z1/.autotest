@@ -1,0 +1,185 @@
+{
+    "id": 5655,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 4, Zadatak 1",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"Od 3 broja u stringu, zbir -0.2 i 1.55 daje 1.35 ili 2.9?\";\nchar *p = nadji_zbir(tekst);\nif (p)\n    printf(\"%d\", p-tekst);\nelse\n    printf(\"NULL\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "27"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "razlike(\"Od 3 broja u stringu, zbir -0.2 i 1.55 daje 1.35 ili 2.9?\");\nprintf(\"Sljedeci test:\\n\");\nrazlike(\"Od 3 broja u stringu, zbir -0.1 i 1.55 daje 1.25 ili 2.8?\");\n",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "-0.2 - 1.55 = -1.75\\n1.55 - 1.35 = 0.2\\nSljedeci test:\\n1.55 - 1.25 = 0.3"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"Od 3 broja u stringu, zbir -0.2 i 1.55 daje 1.25 ili 2.9?\";\nchar *p = nadji_zbir(tekst);\nif (p)\n    printf(\"%d\", p-tekst);\nelse\n    printf(\"NULL\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "NULL"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"Od 3 broja u stringu, zbir -0.3 i 1.55 daje 1.35 ili 2.9?\";\nchar *p = nadji_zbir(tekst);\nif (p)\n    printf(\"%d\", p-tekst);\nelse\n    printf(\"NULL\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "34"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "char tekst[] = \"Od 33 broja u stringu, zbir 5 i 8 daje 13 ili 21?\";\nchar *p = nadji_zbir(tekst);\nif (p)\n    printf(\"%d\", p-tekst);\nelse\n    printf(\"NULL\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "28"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "razlike(\"Od 33 broja u stringu, zbir 5 i 8 daje 13 ili 21?\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "5 - 8 = -3\\n8 - 13 = -5\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "razlike(\"Zbir 2 i 1 je 3 a ne 4 medjutim 9 i 5 je 14\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2 - 1 = 1\\n1 - 3 = -2\\n9 - 5 = 4"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 11,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "razlike(\"0.0001 -0.0001 0 42.9989 42.9989 85.9978\");",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0.0001 - -0.0001 = 0.0002\\n0 - 42.9989 = -42.9989\\n42.9989 - 42.9989 = 0"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

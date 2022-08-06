@@ -1,0 +1,206 @@
+{
+    "id": 5639,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 1, Zadatak 3",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "T9T8D2XD4XOIX.\nT8T8T8D9XXD7T3I."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Sabit je ostvario 138 poena, Fadila je ostvarila 163 poena. Pobjednik je Fadila, kojoj je ostalo jos 138 poena do pobjede."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "IIIOOOXXX.\nIIIOOOXXX."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Sabit je ostvario 225 poena, Fadila je ostvarila 225 poena. Rezultat je nerijesen."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "IIIOOOXOR.\nIIIXXXXXX.\nXXXXXXXXX."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Neispravni ulazni podaci.\\nUnesite pogotke za Sabita: Unesite pogotke za Fadilu: Sabit je ostvario 150 poena, Fadila je ostvarila 0 poena. Pobjednik je Sabit, kojem je ostalo jos 151 poena do pobjede."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "IIIXXXXXX.\nXXXXXXXXP.\nXXXXXXXXS1."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Neispravni ulazni podaci.\\nUnesite pogotke za Fadilu: Sabit je ostvario 150 poena, Fadila je ostvarila 1 poena. Pobjednik je Sabit, kojem je ostalo jos 151 poena do pobjede."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "IIIIIIXXO.\nT7D8S9S7S2S1OOX."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Sabit je premasio potrebni broj poena, Fadila je ostvarila 106 poena. Pobjednik je Fadila, kojoj je ostalo jos 195 poena do pobjede."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "IIIIIIXXS5.\nS7XOOIIIII."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Oba igraca su premasila potrebni broj poena, rezultat je nerijesen."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "XT9T9T9IIIII.\nS1S2D3XOOXOO."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Sabit je premasio potrebni broj poena, Fadila je ostvarila 109 poena. Pobjednik je Fadila, kojoj je ostalo jos 192 poena do pobjede."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "T1T1T1T2T2T2T3T5T6.\nT6T1T2T1T2T3T5T1T2."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Unesite pogotke za Fadilu: Sabit je ostvario 69 poena, Fadila je ostvarila 69 poena. Rezultat je nerijesen."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 10,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "XXXIIIIOE.\nXXXIIIIOX.\nXXXIIIXXP.\nXXXIIIXXX."
+            },
+            "expected": [
+                "Unesite pogotke za Sabita: Neispravni ulazni podaci.                     \\nUnesite pogotke za Sabita: Unesite pogotke za Fadilu: Neispravni ulazni podaci.\\nUnesite pogotke za Fadilu: Sabit je ostvario 225 poena, Fadila je ostvarila 150 poena. Pobjednik je Sabit, kojem je ostalo jos 76 poena do pobjede."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

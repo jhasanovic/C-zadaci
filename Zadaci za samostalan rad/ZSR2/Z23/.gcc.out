@@ -1,0 +1,10 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z23/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z23/main.c:7:10: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(a1==a2 && b1==b2)
+          ^~
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z23/main.c:7:20: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     if(a1==a2 && b1==b2)
+                    ^~
+/rhome/j/jhasanovic1/workspace/OR/ZSR2/Z23/main.c:9:15: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+     else if(a1==a2)
+               ^~

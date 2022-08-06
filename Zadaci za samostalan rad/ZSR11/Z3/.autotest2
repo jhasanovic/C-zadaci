@@ -1,0 +1,133 @@
+{
+    "id": 7213,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 11, zadatak 3",
+    "languages": [
+        "C"
+    ],
+    "tools": {
+        "compile": {
+            "require": "gcc",
+            "features": [
+                "optimize",
+                "warn",
+                "pedantic"
+            ]
+        },
+        "compile[debug]": {
+            "require": "gcc",
+            "features": [
+                "debug"
+            ]
+        },
+        "execute": {
+            "environment": {
+                "timeout": 10,
+                "memory": 1000000
+            }
+        },
+        "debug": [],
+        "profile[memcheck]": {
+            "require": "valgrind",
+            "features": [
+                "memcheck"
+            ],
+            "environment": {
+                "timeout": 10
+            }
+        },
+        "profile[sgcheck]": {
+            "require": "valgrind",
+            "features": [
+                "sgcheck"
+            ],
+            "environment": {
+                "timeout": 10
+            }
+        }
+    },
+    "tests": [
+        {
+            "compile": [],
+            "options": [
+                "silent",
+                "terminate"
+            ]
+        },
+        {
+            "id": 2123,
+            "patch": [
+                {
+                    "position": "main",
+                    "code": "struct Kurs niz[3] = {{\"EUR\", 1.1}, {\"USD\", 2.2}, {\"HRK\", 3.3}};\nprintf(\"%g\", razmjena(niz, 3, \"USD\", 1.5));",
+                    "use_markers": true
+                }
+            ],
+            "compile[debug]": [],
+            "execute": {
+                "expect": [
+                    "3.3"
+                ]
+            },
+            "debug": [],
+            "profile[memcheck]": [],
+            "profile[sgcheck]": []
+        },
+        {
+            "id": 2124,
+            "patch": [
+                {
+                    "position": "main",
+                    "code": "struct Kurs niz[3] = {{\"AAA\", 1.1}, {\"AAB\", 2.2}, {\"AAC\", 3.3}};\nprintf(\"%g \", razmjena(niz, 3, \"AAA\", 1.5));\nprintf(\"%g \", razmjena(niz, 3, \"AAB\", 1.5));\nprintf(\"%g \", razmjena(niz, 3, \"AAC\", 1.5));\nprintf(\"%g \", razmjena(niz, 3, \"AAD\", 1.5));\n",
+                    "use_markers": true
+                }
+            ],
+            "compile[debug]": [],
+            "execute": {
+                "expect": [
+                    "1.65 3.3 4.95 0"
+                ]
+            },
+            "debug": [],
+            "profile[memcheck]": [],
+            "profile[sgcheck]": []
+        },
+        {
+            "id": 2125,
+            "patch": [
+                {
+                    "position": "main",
+                    "code": "struct Kurs niz[3] = {{\"EUR\", 1.1}, {\"USD\", 2.2}, {\"HRK\", 3.3}};\nprintf(\"%g \", razmjena(niz, 0, \"USD\", 1.5));\nprintf(\"%g \", razmjena(niz, 1, \"USD\", 1.5));\n",
+                    "use_markers": true
+                }
+            ],
+            "compile[debug]": [],
+            "execute": {
+                "expect": [
+                    "0 0 "
+                ]
+            },
+            "debug": [],
+            "profile[memcheck]": [],
+            "profile[sgcheck]": []
+        },
+        {
+            "id": 2126,
+            "patch": [
+                {
+                    "position": "main",
+                    "code": "struct Kurs niz[4] = {{\"ABBB\", 1.8}, {\"USD\", 1.2}, {\"AABC\", 1.5}, {\"USDD\",1.28}};\n  printf(\"%g \", razmjena(niz, 3, \"AB\", 1.4));\n  printf(\"%g \", razmjena(niz, 3, \"ABC\", 1.22));\n  printf(\"%g \", razmjena(niz, 5, \"USD\", 1.955830));\n  printf(\"%g \", razmjena(niz, 4, \"USDD\", 1.955830));",
+                    "use_markers": true
+                }
+            ],
+            "compile[debug]": [],
+            "execute": {
+                "expect": [
+                    "0 0 2.347 2.50346 "
+                ]
+            },
+            "debug": [],
+            "profile[memcheck]": [],
+            "profile[sgcheck]": []
+        }
+    ]
+}

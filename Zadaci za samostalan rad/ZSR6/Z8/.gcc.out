@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z8/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z8/main.c:12:10: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+ if(niz[i]==-1)
+          ^~
+/rhome/j/jhasanovic1/workspace/OR/ZSR6/Z8/main.c:19:12: warning: comparing floating point with == or != is unsafe [-Wfloat-equal]
+  if(trazeni==niz[i]){
+            ^~

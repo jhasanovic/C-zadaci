@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR4/Z2/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR4/Z2/main.c:25:1: error: expected ‘;’ before ‘return’
+ return 0;
+ ^~~~~~

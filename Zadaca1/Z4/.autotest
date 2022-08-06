@@ -1,0 +1,227 @@
+{
+    "id": 5640,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 1, Zadatak 4",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "m 180 60 60\n5\n5"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Odabrani program nije preporucen uz predate podatke.\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "m 180 90 95\n6\n5"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 29.32 (povisen).\\nVas RFM iznosi: 24.00 %.\\nMinimalni broj sedmica za treniranje: 11.\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "z 180 80 80\n6\n5"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 24.69 (normalan).\\nVas RFM iznosi: 31.00 %.\\nMinimalni broj sedmica za treniranje: 11."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "y 170 70 70\nz 170 70 70\n6\n3"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): \\nGreska u unosu za spol.\\nUnesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 24.22 (normalan).\\nVas RFM iznosi: 27.43 %.\\nMinimalni broj sedmica za treniranje: 7."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "z 90 90 90\nz 190 90 90\n5\n5"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): \\nGreska u unosu atributa.                       \\nUnesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 24.93 (normalan).\\nVas RFM iznosi: 33.78 %.\\nMinimalni broj sedmica za treniranje: 11."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "z 170 70 70\n7\n3\n3"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Greska u odabiru opcija.\\nOdaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 24.22 (normalan).\\nVas RFM iznosi: 27.43 %.\\nMinimalni broj sedmica za treniranje: 10."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "z 158 40 40\n4\n4\n4"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Odabrani program nije preporucen uz predate podatke."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "m 190 100 60\n1\n10"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 16.62 (nizak).\\nVas RFM iznosi: 26.00 %."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 9,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "z 158 70 65\n1\n5\n"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 26.04 (povisen).               \\nVas RFM iznosi: 30.86 %.\\nMinimalni broj sedmica za treniranje: 35. "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 10,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "m 160 80 55\n6\n1\n"
+            },
+            "expected": [
+                "Unesite spol (mM\/zZ), visinu (u cm), obim struka (u cm), tezinu (u kg): Odaberite zeljenu opciju za trening:\\n[1] Joga\\n[2] Joga PLUS\\n[3] Cardio\\n[4] Super cardio\\n[5] Total Body\\n[6] Body Builder\\n>> Unesite broj kilograma za koliko zelite smanjiti svoju masu (1-10): Vas BMI iznosi: 21.48 (normalan).\\nVas RFM iznosi: 24.00 %.\\nMinimalni broj sedmica za treniranje: 2."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

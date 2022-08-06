@@ -1,0 +1,80 @@
+{
+    "id": 7025,
+    "name": "Osnove ra\u010dunarstva (2016\/2017), ZSR 7, zadatak 3",
+    "language": "C",
+    "required_compiler": "gcc",
+    "preferred_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "compile": "true",
+    "run": "false",
+    "test": "true",
+    "debug": "true",
+    "profile": "true",
+    "test_specifications": [
+        {
+            "id": 1200,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "\/\/primjer iz teksta zadatka\nint i,niz[3]={1,0,-2};\nudvostruci(niz,3);\nfor(i=0;i<3;i++)\n   printf(\"%d \", niz[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2 0 -4 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1201,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int i,broj=0,niz[5]={1,2,3,4,5};\nudvostruci(niz,5);\nfor(i=0;i<5;i++) broj+=niz[i];\nprintf(\"%d\", broj);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "30"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 1202,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int i,niz[5]={1,3,5,7,9};\nudvostruci(niz,5);\nfor(i=0;i<5;i++) printf(\"%d \", niz[i]);",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "2 6 10 14 18 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

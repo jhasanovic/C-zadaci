@@ -1,0 +1,227 @@
+{
+    "id": 5653,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 3, Zadatak 3",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int matrica[100][100] = {\n    {1, 2, 3, 4, 5, -1}\n};\nprintf(\"%d \", provjeri(matrica, 1));\n\/\/ Matrica sa 0 redova je validna\nprintf(\"%d \", provjeri(matrica, 0)); \n\/\/ Nula nije prirodan broj\nmatrica[0][0] = 0;\nprintf(\"%d\", provjeri(matrica, 1));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int matrica[100][100] = {\n    {1, 2, 3, 4, 5, -1},\n    {-1}\n};\nint i;\n\/\/ Red koji sadrzi samo -1 je validan\nprintf(\"%d \", provjeri(matrica, 2));\n\/\/ Red koji se ne zavrsava sa -1 nije validan\nfor (i=0; i<100; i++)\n    matrica[0][i] = 1;\nprintf(\"%d \", provjeri(matrica, 2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int matrica[100][100] = {\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, 5, -1},\n    {1, 2, 3, 4, -2, -1}\n};\n\/\/ Negativni brojevi nisu prirodni\nprintf(\"%d \", provjeri(matrica, 10));\n\/\/ Zanemarujemo posljednji red\nprintf(\"%d \", provjeri(matrica, 9));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "0 1 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int matrica[100][100] = {\n    {1, -1},\n    {1, 2, 3, 4, 5, -1},\n};\n\/\/ Prvi red je validan fibonaccijev niz, sadrzi samo jedinicu\nprintf(\"%d \", fibonacci_matrica(matrica, 1));\n\/\/ Drugi red nije validan\nprintf(\"%d \", fibonacci_matrica(matrica, 2));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int matrica[100][100] = {\n    {1, 1, 2, 3, 5, 8, -1},\n    {3, 5, 8, 13, -1},\n    {8, -1},\n    {-1},\n    {13, 21, 34, -1},\n    {12, 13, 25, -1}\n};\n\/\/ Prazna matrica je validna fibonaccijeva matrica\nprintf(\"%d \", fibonacci_matrica(matrica, 0));\n\n\/\/ Prvih 5 redova je validno\n\/\/ Red koji sadrzi samo -1 je validan fibonaccijev niz\n\/\/ Fragment iz sredine fibonaccijevog niza je validan\nprintf(\"%d \", fibonacci_matrica(matrica, 5));\n\n\/\/ Sesti red nije validan iako je 25=12+13 jer se ti brojevi ne nalaze u \n\/\/ fibonaccijevom nizu koji pocinje od jedinice\nprintf(\"%d \", fibonacci_matrica(matrica, 6));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 1 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "int matrica[100][100] = {\n    {1, -1},\n    {2, -1},\n    {3, -1},\n    {5, -1},\n    {8, -1},\n    {13, -1},\n    {21, -1},\n    {34, -1},\n    {75025, 121393, 196418, 317811, -1},\n    {3524578, 5702887, 9227465, 14930352, -1},\n};\n\nprintf(\"%d \", fibonacci_matrica(matrica, 10));\n\nmatrica[6][0] = 4;\nprintf(\"%d \", fibonacci_matrica(matrica, 10));\nmatrica[6][0] = 6;\nprintf(\"%d \", fibonacci_matrica(matrica, 10));\nmatrica[6][0] = 7;\nprintf(\"%d \", fibonacci_matrica(matrica, 10));",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": ""
+            },
+            "expected": [
+                "1 0 0 0 "
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();\n\/\/ Ponavlja se unos visine matrice koji je neispravan",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "0\n-3\n1\n1\n-1"
+            },
+            "expected": [
+                "Unesite visinu matrice: Unesite visinu matrice: Unesite visinu matrice: Unesite matricu: \\nMatrica je validna.\\nMatrica je Fibonacci matrica."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 8,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();\n\/\/ Matrica nije fibonaccijeva zbog posljednjeg reda",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5\n13 21 34 -1\n3 5 8 13 -1\n-1\n75025 121393 196418 -1\n4 6 10 -1"
+            },
+            "expected": [
+                "Unesite visinu matrice: Unesite matricu:\\nMatrica je validna.\\nMatrica nije Fibonacci matrica."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 9,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();\n\/\/ Nula ustvari nije unesena jer se ponavlja unos",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "2\n0\n2\n-1\n5\n8\n-1"
+            },
+            "expected": [
+                "Unesite visinu matrice: Unesite matricu:\\nMatrica je validna.\\nMatrica je Fibonacci matrica."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 10,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();\n\/\/ Jos jedna validna matrica",
+            "global_above_main": "",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "5\n5 8 13 21 -1\n-1\n34 -1\n13 21 34 -1\n75025 121393 196418 -1\n3524578 5702887 9227465 14930352 -1"
+            },
+            "expected": [
+                "Unesite visinu matrice: Unesite matricu: \\nMatrica je validna.\\nMatrica je Fibonacci matrica."
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

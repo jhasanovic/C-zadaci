@@ -1,0 +1,7 @@
+/rhome/j/jhasanovic1/workspace/OR/ZSR4/Z15/main.c: In function ‘main’:
+/rhome/j/jhasanovic1/workspace/OR/ZSR4/Z15/main.c:28:16: error: implicit declaration of function ‘fabs’ [-Werror=implicit-function-declaration]
+ while(x < b || fabs(x-b) < EPSILON){
+                ^~~~
+/rhome/j/jhasanovic1/workspace/OR/ZSR4/Z15/main.c:28:16: warning: incompatible implicit declaration of built-in function ‘fabs’
+/rhome/j/jhasanovic1/workspace/OR/ZSR4/Z15/main.c:28:16: note: include ‘<math.h>’ or provide a declaration of ‘fabs’
+cc1: some warnings being treated as errors

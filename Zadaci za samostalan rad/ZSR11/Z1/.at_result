@@ -1,0 +1,232 @@
+{
+    "buildhost_description": {
+        "id": "lab002-c05",
+        "os": "Linux 2.6.32-754.2.1.el6.x86_64 x86_64\n\"CentOS release 6.10 (Final)\"\n"
+    },
+    "tools": {
+        "compile": "gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+        "compile[debug]": "gcc (GCC) 4.4.7 20120313 (Red Hat 4.4.7-23)",
+        "debug": "GNU gdb (GDB) Red Hat Enterprise Linux (7.2-92.el6)",
+        "profile[memcheck]": "valgrind-3.8.1",
+        "profile[sgcheck]": "valgrind-3.8.1"
+    },
+    "status": 4,
+    "test_results": {
+        "1831": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "Trougao 0: (0,0)-(1,1)-(2,1)",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "==20721== Memcheck, a memory error detector\n==20721== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.\n==20721== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20721== Command: outputk0dclL\n==20721==\n====START_TEST_4199====Trougao 0: (0,0)-(1,1)-(2,1)\n====END_TEST_4199======20721==\n==20721== HEAP SUMMARY:\n==20721==     in use at exit: 0 bytes in 0 blocks\n==20721==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==20721==\n==20721== All heap blocks were freed -- no leaks are possible\n==20721==\n==20721== For counts of detected and suppressed errors, rerun with: -v\n==20721== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20724== exp-sgcheck, a stack and global array overrun detector\n==20724== NOTE: This is an Experimental-Class Valgrind Tool\n==20724== Copyright (C) 2003-2012, and GNU GPL'd, by OpenWorks Ltd et al.\n==20724== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20724== Command: outputk0dclL\n==20724==\n====START_TEST_4199====Trougao 0: (0,0)-(1,1)-(2,1)\n====END_TEST_4199======20724==\n==20724== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1832": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "Trougao 0: (0,0)-(1,1)-(2,1)\nTrougao 1: (0,0)-(1,1)-(3,1)",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20738== Memcheck, a memory error detector\n==20738== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.\n==20738== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20738== Command: outputg6o9bq\n==20738==\n====START_TEST_1136====Trougao 0: (0,0)-(1,1)-(2,1)\nTrougao 1: (0,0)-(1,1)-(3,1)\n====END_TEST_1136======20738==\n==20738== HEAP SUMMARY:\n==20738==     in use at exit: 0 bytes in 0 blocks\n==20738==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==20738==\n==20738== All heap blocks were freed -- no leaks are possible\n==20738==\n==20738== For counts of detected and suppressed errors, rerun with: -v\n==20738== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20741== exp-sgcheck, a stack and global array overrun detector\n==20741== NOTE: This is an Experimental-Class Valgrind Tool\n==20741== Copyright (C) 2003-2012, and GNU GPL'd, by OpenWorks Ltd et al.\n==20741== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20741== Command: outputg6o9bq\n==20741==\n====START_TEST_1136====Trougao 0: (0,0)-(1,1)-(2,1)\nTrougao 1: (0,0)-(1,1)-(3,1)\n====END_TEST_1136======20741==\n==20741== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1833": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "0",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "==20755== Memcheck, a memory error detector\n==20755== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.\n==20755== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20755== Command: outputZcljO9\n==20755==\n====START_TEST_1201====0====END_TEST_1201======20755==\n==20755== HEAP SUMMARY:\n==20755==     in use at exit: 0 bytes in 0 blocks\n==20755==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==20755==\n==20755== All heap blocks were freed -- no leaks are possible\n==20755==\n==20755== For counts of detected and suppressed errors, rerun with: -v\n==20755== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20758== exp-sgcheck, a stack and global array overrun detector\n==20758== NOTE: This is an Experimental-Class Valgrind Tool\n==20758== Copyright (C) 2003-2012, and GNU GPL'd, by OpenWorks Ltd et al.\n==20758== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20758== Command: outputZcljO9\n==20758==\n====START_TEST_1201====0====END_TEST_1201======20758==\n==20758== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1834": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "Trougao 0: (0,0)-(1,1)-(3,1)\nTrougao 1: (0,0)-(1,1)-(2,1)",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20772== Memcheck, a memory error detector\n==20772== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.\n==20772== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20772== Command: outputHyy89X\n==20772==\n====START_TEST_2509====Trougao 0: (0,0)-(1,1)-(3,1)\nTrougao 1: (0,0)-(1,1)-(2,1)\n====END_TEST_2509======20772==\n==20772== HEAP SUMMARY:\n==20772==     in use at exit: 0 bytes in 0 blocks\n==20772==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==20772==\n==20772== All heap blocks were freed -- no leaks are possible\n==20772==\n==20772== For counts of detected and suppressed errors, rerun with: -v\n==20772== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20775== exp-sgcheck, a stack and global array overrun detector\n==20775== NOTE: This is an Experimental-Class Valgrind Tool\n==20775== Copyright (C) 2003-2012, and GNU GPL'd, by OpenWorks Ltd et al.\n==20775== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20775== Command: outputHyy89X\n==20775==\n====START_TEST_2509====Trougao 0: (0,0)-(1,1)-(3,1)\nTrougao 1: (0,0)-(1,1)-(2,1)\n====END_TEST_2509======20775==\n==20775== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        },
+        "1835": {
+            "success": true,
+            "status": 1,
+            "tools": {
+                "patch": {
+                    "success": true
+                },
+                "compile[debug]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "execute": {
+                    "output": "Trougao 0: (0,0)-(1,0)-(2,1)\nTrougao 1: (1,0)-(0,0)-(2,1)\nTrougao 2: (0,0)-(2,1)-(1,0)\nTrougao 3: (1,0)-(2,1)-(0,0)\nTrougao 4: (2,1)-(0,0)-(1,0)\nTrougao 5: (2,1)-(1,0)-(0,0)",
+                    "duration": 0,
+                    "status": 1,
+                    "exit_code": 0,
+                    "success": true
+                },
+                "debug": {
+                    "success": true
+                },
+                "profile[memcheck]": {
+                    "status": 1,
+                    "duration": 0,
+                    "output": "==20789== Memcheck, a memory error detector\n==20789== Copyright (C) 2002-2012, and GNU GPL'd, by Julian Seward et al.\n==20789== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20789== Command: outputCZYyiR\n==20789==\n====START_TEST_1660====Trougao 0: (0,0)-(1,0)-(2,1)\nTrougao 1: (1,0)-(0,0)-(2,1)\nTrougao 2: (0,0)-(2,1)-(1,0)\nTrougao 3: (1,0)-(2,1)-(0,0)\nTrougao 4: (2,1)-(0,0)-(1,0)\nTrougao 5: (2,1)-(1,0)-(0,0)\n====END_TEST_1660======20789==\n==20789== HEAP SUMMARY:\n==20789==     in use at exit: 0 bytes in 0 blocks\n==20789==   total heap usage: 0 allocs, 0 frees, 0 bytes allocated\n==20789==\n==20789== All heap blocks were freed -- no leaks are possible\n==20789==\n==20789== For counts of detected and suppressed errors, rerun with: -v\n==20789== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 8 from 6)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                },
+                "profile[sgcheck]": {
+                    "status": 1,
+                    "duration": 1,
+                    "output": "==20792== exp-sgcheck, a stack and global array overrun detector\n==20792== NOTE: This is an Experimental-Class Valgrind Tool\n==20792== Copyright (C) 2003-2012, and GNU GPL'd, by OpenWorks Ltd et al.\n==20792== Using Valgrind-3.8.1 and LibVEX; rerun with -h for copyright info\n==20792== Command: outputCZYyiR\n==20792==\n====START_TEST_1660====Trougao 0: (0,0)-(1,0)-(2,1)\nTrougao 1: (1,0)-(0,0)-(2,1)\nTrougao 2: (0,0)-(2,1)-(1,0)\nTrougao 3: (1,0)-(2,1)-(0,0)\nTrougao 4: (2,1)-(0,0)-(1,0)\nTrougao 5: (2,1)-(1,0)-(0,0)\n====END_TEST_1660======20792==\n==20792== ERROR SUMMARY: 0 errors from 0 contexts (suppressed: 0 from 0)",
+                    "exit_code": 0,
+                    "success": true,
+                    "parsed_output": []
+                }
+            }
+        }
+    },
+    "time": 1578517386
+}

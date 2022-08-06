@@ -1,0 +1,227 @@
+{
+    "id": 5645,
+    "name": "Osnove ra\u010dunarstva (2019\/2020), Zada\u0107a 2, Zadatak 1",
+    "language": "C",
+    "preferred_compiler": "gcc",
+    "required_compiler": "gcc",
+    "compiler_features": [],
+    "compiler_options": "-O1 -Wall -Wuninitialized -Winit-self -Wno-unused-result -Wfloat-equal -Wno-sign-compare -Werror=implicit-function-declaration -Werror=vla -pedantic -lm -pass-exit-codes",
+    "compiler_options_debug": "-ggdb -lm -pass-exit-codes",
+    "profile": "true",
+    "debug": "true",
+    "test": "true",
+    "compile": "true",
+    "run": "false",
+    "test_specifications": [
+        {
+            "id": 1,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n1"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Neispravan interval!\\n\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 2,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n0"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Nedozvoljena vrijednost!\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 3,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n9999"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Neispravan interval!\\n"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 4,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n5\n11"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Neispravan eksponent!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 5,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n5\n1\n0.001"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\\n----------------------------------\\n    1. 1.000000         1.00000\\n    2. 1.001000         1.00100\\n    3. 1.002000         1.00200\\n    4. 1.003000         1.00300\\n(...)\\n 4000. 4.999000         4.99900\\n----------------------------------\\nP(x^1)[1,5]= 11.998000 (dx=0.001)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 6,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "-10"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Nedozvoljena vrijednost!"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 7,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n9\n5\n0.001"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\\n----------------------------------\\n    1. 1.000000         1.00000\\n    2. 1.001000         1.00501\\n    3. 1.002000         1.01004\\n    4. 1.003000         1.01509\\n(...)\\n 8000. 8.999000     59016.20229\\n----------------------------------\\nP(x^5)[1,9]= 88543.812067 (dx=0.001)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 9,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n2\n9\n1"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\\n----------------------------------\\n    1. 1.000000         1.00000\\n\\n----------------------------------\\nP(x^9)[1,2]= 1.000000 (dx=1)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 10,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n2\n9\n0.5"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\\n----------------------------------\\n    1. 1.000000         1.00000\\n    2. 1.500000        38.44336\\n\\n----------------------------------\\nP(x^9)[1,2]= 19.721680 (dx=0.5)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        },
+        {
+            "id": 11,
+            "require_symbols": [],
+            "replace_symbols": [],
+            "code": "_main();",
+            "global_above_main": "#define pow zabranjeno",
+            "global_top": "",
+            "running_params": {
+                "timeout": "10",
+                "vmem": "1000000",
+                "stdin": "1\n5\n5\n1"
+            },
+            "expected": [
+                "Unesite prvu tacku intervala: Unesite drugu tacku intervala: Unesite eksponent: Unesite korak diskretizacije: Korak    x            y = f(x)\\n----------------------------------\\n    1. 1.000000         1.00000\\n    2. 2.000000        32.00000\\n    3. 3.000000       243.00000\\n    4. 4.000000      1024.00000\\n\\n----------------------------------\\nP(x^5)[1,5]= 1300.000000 (dx=1)"
+            ],
+            "expected_exception": "false",
+            "expected_crash": "false",
+            "ignore_whitespace": "false",
+            "regex": "false",
+            "substring": "false"
+        }
+    ]
+}

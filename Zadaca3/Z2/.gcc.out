@@ -1,0 +1,4 @@
+/rhome/j/jhasanovic1/workspace/OR/Z3/Z2/main.c: In function ‘stepenuj_niz’:
+/rhome/j/jhasanovic1/workspace/OR/Z3/Z2/main.c:25:8: warning: variable ‘brojac’ set but not used [-Wunused-but-set-variable]
+  int i,brojac;
+        ^~~~~~
